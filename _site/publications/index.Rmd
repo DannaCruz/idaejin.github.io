@@ -3,7 +3,6 @@
 #### Journal papers
 
 
-
 *    **Lee, D.-J., and Toscas, P. (2015)** “Flexible geostatistical modelling and risk assessment analysis of lead concentration levels of residential soil in the Coeur D’Alene River Basin” *to appear in Environmental and Ecological Statistics*.
 *    **Lee, D.-J., Zhu, Z., and Toscas, P. (2015)** "Spatio-temporal functional data analysis for wireless sensor networks data" *to appear in Environmetrics*.
 *    **Álvarez-Rodríguez, MX., Lee, D.-J., Durbán, M., Eilers, P.H.C. and Kneib, T. (2015)** "Fast smoothing parameter selection in multidimensional generalized P-splines: the SAP algorithm" *Statistics and Computing, September 2015, Volume 25, Issue 5, pp 941-957*.
@@ -16,7 +15,7 @@
 
 #### In proceedings
 
-* Lee, D.-J. Zhu, Z. and Toscas (2013) "Clustering based imputation for spatial-temporal wire- less sensor network data"" in the Proceedings of the International Environ- mentrics Society (TIES), Anchorage, Alaska, June (2013).
+* Lee, D.-J. Zhu, Z. and Toscas (2013) "Clustering based imputation for spatial-temporal wireless sensor network data"" in the Proceedings of the International Environ- mentrics Society (TIES), Anchorage, Alaska, June (2013).
 
 * Lee, D.-J. and Durbán, M. (2013) “Spatio-temporal seasonal data modelling and forecasting with penalized smooth-ANOVA models” in the Proceedings in the 28rd International Workshop on Statistical Modelling, Palermo, Italy (July 2013).
 
@@ -42,7 +41,7 @@
 
 
 ------------------------------------      
-[Back to main](http://idaejin.github.io/aboutme/)
+[Back to main](http://idaejin.github.io/)
 
 ### Contact
 
@@ -56,5 +55,5 @@ Fax: +34 946 567 843
 
 **email:** dlee[at]bcamath.org
 
-**Github** [idaejin](https://github.com/idaejin/bcam-courses)
+**Github** [idaejin](https://github.com/idaejin/)
 <img src="http://www.bcamath.org/public_images/logo_bcam.jpg" style="width: 150px;" align="right">
