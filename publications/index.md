@@ -70,4 +70,9 @@ Fax: +34 946 567 843
 
 **BCAM webpage** [dlee](http://www.bcamath.org/en/people/dlee)
 
+<a href="https://es.linkedin.com/pub/dae-jin-lee/b/405/ab7">
+      
+          <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_profile_bluetxt_80x15.png" width="80" height="15" border="0" alt="View Dae-Jin Lee's profile on LinkedIn">
+        
+    </a>
 <img src="http://www.bcamath.org/public_images/logo_bcam.jpg" style="width: 150px;" align="right">
