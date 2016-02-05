@@ -1,4 +1,6 @@
-# Minimal Theme
+# Theme
+
+This them is based on **minimal theme** 
 
 [Demo the Theme](http://orderedlist.github.com/minimal/)
 
