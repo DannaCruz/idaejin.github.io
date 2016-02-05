@@ -1,5 +1,6 @@
 ---
 title: '**Publications**'
+date: "Dae-Jin Lee"
 output:
   html_document:
     fig_caption: yes
@@ -7,6 +8,10 @@ output:
     keep_md: yes
     theme: spacelab
 ---
+
+----------------------------
+
+[Back to main](http://idaejin.github.io/)
 
 ----------------------------
 
