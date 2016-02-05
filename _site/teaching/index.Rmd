@@ -1,6 +1,6 @@
 ----------------------------
 
-[Back to main](http://idaejin.github.io/)
+[Back to `idaejin.github.io`](http://idaejin.github.io/)
 
 ----------------------------
 
@@ -24,7 +24,11 @@
 
 
 ------------------------------------      
-[Back to main](http://idaejin.github.io/)
+
+
+[Back to `idaejin.github.io`](http://idaejin.github.io/)
+
+
 
 ### Contact
 

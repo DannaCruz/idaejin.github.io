@@ -3,7 +3,7 @@ Dae-Jin Lee
 
 ----------------------------
 
-[Back to main](http://idaejin.github.io/)
+[Back to `idaejin.github.io`](http://idaejin.github.io/)
 
 ----------------------------
 
@@ -38,7 +38,7 @@ Dae-Jin Lee
 
 * **Toscas, P., García-Flores R., and Lee, D.-J. (2011)** *"Wireless Sensor Networks and the Statistical Sciences".* In proceedings of the International Statistical Institute (ISI) Conference in Dublin.
 
-* **Lee, D.-J. and Durbán, M. (2010)** "Spatial point pattern analysis: a multidimensional P-spline approach"** Proceedings of the 25th International Workshop on Statistical Modelling, Glasgow, UK.
+* **Lee, D.-J. and Durbán, M. (2010)** *"Spatial point pattern analysis: a multidimensional P-spline approach"* Proceedings of the 25th International Workshop on Statistical Modelling, Glasgow, UK.
 
 * **Lee, D.-J. and Durbán, M. (2009)** *"Nested B-spline Bases: an Efficient Method for Spatio- temporal Smoothing"* Proceedings of the 24nd International Workshop on Statistical Modelling, Ithaca, NY, US.
 
@@ -52,7 +52,7 @@ Dae-Jin Lee
 
 
 ------------------------------------      
-[Back to main](http://idaejin.github.io/)
+[Back to `idaejin.github.io`](http://idaejin.github.io/)
 
 ### Contact
 

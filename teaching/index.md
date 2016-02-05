@@ -3,7 +3,7 @@ Dae-Jin Lee
 
 ----------------------------
 
-[Back to main](http://idaejin.github.io/)
+[Back to `idaejin.github.io`](http://idaejin.github.io/)
 
 ----------------------------
 
@@ -27,7 +27,11 @@ Dae-Jin Lee
 
 
 ------------------------------------      
-[Back to main](http://idaejin.github.io/)
+
+
+[Back to `idaejin.github.io`](http://idaejin.github.io/)
+
+
 
 ### Contact
 
