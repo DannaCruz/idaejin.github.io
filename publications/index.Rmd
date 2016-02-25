@@ -17,6 +17,9 @@ output:
 
 #### Journal papers
 
+* **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** “Penalized composite link models for aggregated spatial count data: a mixed model approach“, *under review*.
+
+* **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2016)** “A comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients”. *submitted*.
 
 *    **Lee, D.-J., and Toscas, P. (2015)** “Flexible geostatistical modelling and risk assessment analysis of lead concentration levels of residential soil in the Coeur D’Alene River Basin” *Environmental and Ecological Statistics, Vol. 22, Issue 3, pp 551-570*. DOI: 10.1007/s10651-015-0310-2.
 *    **Lee, D.-J., Zhu, Z., and Toscas, P. (2015)** "Spatio-temporal functional data analysis for wireless sensor networks data" *Environmetrics, Vol. 26, Issue 5, pp 354-362*. DOI: 10.1002/env.2344
