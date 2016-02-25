@@ -20,7 +20,7 @@ output:
 
 * **2016**
 
-    + *Coming soon*
+    + **Neiker-Tecnalia Courses in Statistical Modeling.** March 7th-8th, 14th-15th, 21st-22nd. (24 hours) *Introduction to Generalized Linear Models and Mixed-effects models*.
 
 * **2015** 
     
