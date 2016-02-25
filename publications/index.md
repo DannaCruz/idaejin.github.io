@@ -22,7 +22,11 @@ Dae-Jin Lee
 
 #### In proceedings
 
-* **Rodríguez-Álvarez, Durbán, M. Lee, D.-J., and Eilers, P.H.C. (2015)** *"Fast estimation of multidimensional adaptive P-spline Models"* in the Proceedings in the 29rd International Workshop on Statistical Modelling, Göttingen, Austria.
+* **Lee, D.-J. and Durbán (2015)** *"Multidimensional P-splines as mixed models"* in ISNPS Meeting, Graz, Austria.
+
+* **Rodríguez-Álvarez,  Eilers, P.H.C., Durbán, M. Lee, D.-J. (2015)** *"Smoothing parameter selection in Penalized splines with overlapping penalties"* in ISNPS Meeting, Graz, Austria.
+
+* **Rodríguez-Álvarez, Durbán, M. Lee, D.-J., and Eilers, P.H.C. (2015)** *"Fast estimation of multidimensional adaptive P-spline Models"* in the Proceedings in the 30th International Workshop on Statistical Modelling, Linz, Austria.
 
 * **Ayma, D., Durbán, M. and Lee, D.-J. (2014)** *"Penalized Composite Link Mixed Models for Spatially Aggregated Data"* in the Proceedings in the 29rd International Workshop on Statistical Modelling, Göttingen, Germany.
 
