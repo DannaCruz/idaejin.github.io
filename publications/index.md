@@ -7,6 +7,10 @@ Dae-Jin Lee
 
 ----------------------------
 
+##### View on [ORCID](http://orcid.org/0000-0002-8995-8535)
+
+----------------------------
+
 #### Journal papers
 
 * **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** “Penalized composite link models for aggregated spatial count data: a mixed model approach“, *under review*.

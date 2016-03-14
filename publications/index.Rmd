@@ -14,7 +14,6 @@ output:
 [Back to `idaejin.github.io`](http://idaejin.github.io/)
 
 ----------------------------
-
 #### Journal papers
 
 * **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** “Penalized composite link models for aggregated spatial count data: a mixed model approach“, *under review*.
