@@ -14,17 +14,23 @@ output:
 [Back to `idaejin.github.io`](http://idaejin.github.io/)
 
 ----------------------------
+
 #### Journal papers
 
-* **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** “Penalized composite link models for aggregated spatial count data: a mixed model approach“, *accepted in Spatial Statistics*.
+* **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** "Penalized composite link models for aggregated spatial count data: a mixed model approach", *accepted in Spatial Statistics*.
 
 * **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2016)** “A comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients”. *submitted*.
 
 *    **Lee, D.-J., and Toscas, P. (2015)** “Flexible geostatistical modelling and risk assessment analysis of lead concentration levels of residential soil in the Coeur D’Alene River Basin” *Environmental and Ecological Statistics, Vol. 22, Issue 3, pp 551-570*. DOI: 10.1007/s10651-015-0310-2.
+
 *    **Lee, D.-J., Zhu, Z., and Toscas, P. (2015)** "Spatio-temporal functional data analysis for wireless sensor networks data" *Environmetrics, Vol. 26, Issue 5, pp 354-362*. DOI: 10.1002/env.2344
+
 *    **Álvarez-Rodríguez, MX., Lee, D.-J., Durbán, M., Eilers, P.H.C. and Kneib, T. (2015)** "Fast smoothing parameter selection in multidimensional generalized P-splines: the SAP algorithm" *Statistics and Computing, September 2015, Volume 25, Issue 5, pp 941-957*.
+
 *    **Lee, D.-J., Durbán, M., and Eilers, P.H.C. (2013)** "Efficient two-dimensional smoothing with P-spline ANOVA mixed models and nested bases" *Computational Statistics and Data Analysis (2013), Vol. 61, May, Pages 22-37* http://dx.doi.org/10.1016/j.csda.2012.11.013
+
 *    **Lee, D.-J. and Durbán, M. (2011)** "P-spline ANOVA-type interaction models for spatio-temporal smoothing" *Statistical Modelling, Vol. 11, Issue 1, Pages 49-69*.
+
 *    **Lee, D.-J. and Durbán, M. (2009)** "Smooth-CAR Mixed Models for Spatial Count Data" *Computational Statistics and Data Analysis (2009), Vol. 53, Issue 8, Pages 2968-2979* http://dx.doi.org/10.1016/j.csda.2008.07.025
     
 
