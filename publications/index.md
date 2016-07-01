@@ -6,14 +6,9 @@ Dae-Jin Lee
 [Back to `idaejin.github.io`](http://idaejin.github.io/)
 
 ----------------------------
-
-##### View on [ORCID](http://orcid.org/0000-0002-8995-8535)
-
-----------------------------
-
 #### Journal papers
 
-* **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** “Penalized composite link models for aggregated spatial count data: a mixed model approach“, *under review*.
+* **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** “Penalized composite link models for aggregated spatial count data: a mixed model approach“, *accepted in Spatial Statistics*.
 
 * **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2016)** “A comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients”. *submitted*.
 
