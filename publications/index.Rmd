@@ -17,7 +17,7 @@ output:
 
 #### Journal papers
 
-* **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** "Penalized composite link models for aggregated spatial count data: a mixed model approach", *accepted in Spatial Statistics* [doi:10.1016/j.spasta.2016.06.007](doi:10.1016/j.spasta.2016.06.007).
+* **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** "Penalized composite link models for aggregated spatial count data: a mixed model approach", *accepted in Spatial Statistics*  [doi:10.1016/j.spasta.2016.06.007](doi:10.1016/j.spasta.2016.06.007).
 
 * **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2016)** “A comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients”. *submitted*.
 
