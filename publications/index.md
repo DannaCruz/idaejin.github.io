@@ -30,7 +30,7 @@ Dae-Jin Lee
 
 #### In proceedings
 
-* **Lee, D.-J. Ayma, D., Durbán M. and Jan Van de Kasteele (2016)** *"Smooth
+* **Lee, D.-J. Ayma, D., Durbán M. and Van de Kasteele, J. (2016)** *"Smooth
 composite link models for spatio-temporal dissagregation of epidemiological data"* in the Proceedings of the 31st International Workshop on Statistical Modelling, Rennes, France.
 
 * **Rodríguez-Álvarez, Durbán, M. Lee, D.-J., Eilers, P.H.C. and González, F. (2016)** *"Spatio-temporal adaptive penalized splines with application to Neuroscience"* in the Proceedings of the 31st International Workshop on Statistical Modelling, Rennes, France.
