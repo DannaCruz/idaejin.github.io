@@ -1,0 +1,141 @@
+---
+title: '**Talks**'
+date: "Dae-Jin Lee"
+output:
+  html_document:
+    fig_caption: yes
+    highlight: haddock
+    keep_md: yes
+    theme: spacelab
+---
+
+----------------------------
+
+[Back to `idaejin.github.io`](http://idaejin.github.io/)
+
+----------------------------
+
+#### Conferences
+
+* **2016**
+
+    + *"Smooth composite link models for spatio-temporal dissagregation of epidemiological data"*, 31st International Conference on Statistical Modelling, Rennes, France, July 4th to July 8th. [Link](http://www.lebesgue.fr/content/sem2016-iwsm2016)
+    
+    + *"Spatio-temporal adaptive penalized splines with application to Neuroscience"*, 31st International Conference on Statistical Modelling, Rennes, France, July 4th to July 8th. [Link](http://www.medunigraz.at/imi/isnps2015/)
+    
+    
+* **2015**
+
+    + *"Multidimensional P-splines as mixed models"*, ISNPS Meeting
+"Biosciences, Medicine, and novel Non-Parametric Methods", Graz, Austria, 12th to 14th July.
+    + 
+
+* **2014**
+
+* **2013**
+
+    + *"Spatio-temporal seasonal data modelling and forecasting with penalized smooth-ANOVA models"*, 28th International Conference on Statistical Modelling, Palermo, Italy, July 8th to July 12th. [Link](http://iwsm2013.unipa.it/)
+    
+    
+* **2012**
+
+    + *"Seasonal modulation smoothing mixed models for times series forecasting"* 27th International Conference on Statistical Modelling, Prague, Czech Republic, July 16th to July 20th. [Link](http://iwsm2012.karlin.mff.cuni.cz/)
+
+* **2011**
+
+* **2010**
+
+* **2009**
+
+
+
+#### Invited seminars
+
+* **2015**
+
+* **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** "Penalized composite link models for aggregated spatial count data: a mixed model approach", *accepted in Spatial Statistics*  [doi:10.1016/j.spasta.2016.06.007](doi:10.1016/j.spasta.2016.06.007).
+
+* **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2016)** “Comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients”. *Under review*.
+
+*    **Lee, D.-J., and Toscas, P. (2015)** “Flexible geostatistical modelling and risk assessment analysis of lead concentration levels of residential soil in the Coeur D’Alene River Basin” *Environmental and Ecological Statistics, Vol. 22, Issue 3, pp 551-570*. DOI: 10.1007/s10651-015-0310-2.
+
+*    **Lee, D.-J., Zhu, Z., and Toscas, P. (2015)** "Spatio-temporal functional data analysis for wireless sensor networks data" *Environmetrics, Vol. 26, Issue 5, pp 354-362*. DOI: 10.1002/env.2344
+
+*    **Álvarez-Rodríguez, MX., Lee, D.-J., Durbán, M., Eilers, P.H.C. and Kneib, T. (2015)** "Fast smoothing parameter selection in multidimensional generalized P-splines: the SAP algorithm" *Statistics and Computing, September 2015, Volume 25, Issue 5, pp 941-957*.
+
+*    **Lee, D.-J., Durbán, M., and Eilers, P.H.C. (2013)** "Efficient two-dimensional smoothing with P-spline ANOVA mixed models and nested bases" *Computational Statistics and Data Analysis (2013), Vol. 61, May, Pages 22-37* http://dx.doi.org/10.1016/j.csda.2012.11.013
+
+*    **Lee, D.-J. and Durbán, M. (2011)** "P-spline ANOVA-type interaction models for spatio-temporal smoothing" *Statistical Modelling, Vol. 11, Issue 1, Pages 49-69*.
+
+*    **Lee, D.-J. and Durbán, M. (2009)** "Smooth-CAR Mixed Models for Spatial Count Data" *Computational Statistics and Data Analysis (2009), Vol. 53, Issue 8, Pages 2968-2979* http://dx.doi.org/10.1016/j.csda.2008.07.025
+    
+
+----------------------------
+
+#### Invited sessions in conferences
+
+* **Lee, D.-J. Ayma, D., Durbán M. and Van de Kasteele, J. (2016)** *"Smooth
+composite link models for spatio-temporal dissagregation of epidemiological data"* in the Proceedings of the 31st International Workshop on Statistical Modelling, Rennes, France.
+
+* **Rodríguez-Álvarez, Durbán, M., Lee, D.-J., Eilers, P.H.C. and González, F. (2016)** *"Spatio-temporal adaptive penalized splines with application to Neuroscience"* in the Proceedings of the 31st International Workshop on Statistical Modelling, Rennes, France.
+
+* **Carballo, A., Durbán, M., Lee, D.-J. and Eilers, P.H.C. (2016)** *"The memory of extrapolating
+P-splines"* in the Proceedings of the 31st International Workshop on Statistical Modelling, Rennes, France.
+
+* **Najera-Zuloaga, J., Lee, D.-J. and Arostegui, I. (2016)** *"Comparison of beta-binomial regression model approaches to analyze health related quality of life data"* in the Proceedings of the 31st International Workshop on Statistical Modelling, Rennes, France.
+
+* **Lee, D.-J. Ayma, D. and Durbán M. (2016)** *"Spatial and spatio-temporal modeling of aggregated counts with applications in epidemiology: Methods and tools"* in 61st RBras, Salvador, Brazil.
+
+* **Lee, D.-J. and Durbán, M. (2015)** *"Multidimensional P-splines as mixed models"* in ISNPS Meeting, Graz, Austria.
+
+* **Rodríguez-Álvarez,  Eilers, P.H.C., Durbán, M. Lee, D.-J. (2015)** *"Smoothing parameter selection in Penalized splines with overlapping penalties"* in ISNPS Meeting, Graz, Austria.
+
+* **Rodríguez-Álvarez, Durbán, M. Lee, D.-J., and Eilers, P.H.C. (2015)** *"Fast estimation of multidimensional adaptive P-spline Models"* in the Proceedings in the 30th International Workshop on Statistical Modelling, Linz, Austria.
+
+* **Ayma, D., Durbán, M. and Lee, D.-J. (2014)** *"Penalized Composite Link Mixed Models for Spatially Aggregated Data"* in the Proceedings in the 29rd International Workshop on Statistical Modelling, Göttingen, Germany.
+
+* **Lee, D.-J. Zhu, Z. and Toscas (2013)** *"Clustering based imputation for spatial-temporal wireless sensor network data"* in the Proceedings of the International Environ- mentrics Society (TIES), Anchorage, Alaska.
+
+* **Lee, D.-J. and Durbán, M. (2013)** *"Spatio-temporal seasonal data modelling and forecasting with penalized smooth-ANOVA models"* in the Proceedings in the 28rd International Workshop on Statistical Modelling, Palermo.
+
+* **Lee, D.-J. and Durbán, M. (2012).** *"Seasonal modulation smoothing mixed models for time series forecasting"* Proceedings in the 27th International Workshop on Statistical Modelling, Prague, Czech Republic.
+
+* **García-Flores, R., Toscas P., Gavriliouk, O. Robinson, G. and Lee, D.-J.  (2012)** *"A Comparison of Methods for Solving the Sensor Location Problem".* In proceeding of the 9th International Geostatistics Congress.
+
+* **Lee, D.-J. (2011)** *"Flexible Spatio-Temporal Smoothing with Array Methods"* In proceeding of the International Statistical Institute (ISI) Conference in Dublin.
+
+* **Toscas, P., García-Flores R., and Lee, D.-J. (2011)** *"Wireless Sensor Networks and the Statistical Sciences".* In proceedings of the International Statistical Institute (ISI) Conference in Dublin.
+
+* **Lee, D.-J. and Durbán, M. (2010)** *"Spatial point pattern analysis: a multidimensional P-spline approach"* Proceedings of the 25th International Workshop on Statistical Modelling, Glasgow, UK.
+
+* **Lee, D.-J. and Durbán, M. (2009)** *"Nested B-spline Bases: an Efficient Method for Spatio- temporal Smoothing"* Proceedings of the 24nd International Workshop on Statistical Modelling, Ithaca, NY, US.
+
+* **Lee, D.-J. and Durbán, M. (2008)** *"P-spline ANOVA-Type Interaction Models for Spatio- temporal Smoothing"* Proceedings of the 23nd International Workshop on Statistical Modelling, pp. 315-320. Ed.: Eilers, P. H. C. In Utrecht, The Netherlands.
+
+* **Lee, D.-J. and Durbán, M. (2007)** *"Smoothing Mixed Models for Overdispersed Spatial Count Data"* Proceedings in the 22nd International Workshop on Statistical Modelling, pp. 400-403. Ed.: del Castillo, J. Espinal, A. and Puig, P. In Barcelona, Spain.
+
+
+
+
+
+
+------------------------------------      
+[Back to `idaejin.github.io`](http://idaejin.github.io/)
+
+### Contact
+
+Alameda de Mazarredo, 14
+
+E-48009 Bilbao, Basque Country - Spain
+
+Tel: +34 946 567 842 (Ext. 277)
+
+Fax: +34 946 567 843
+
+**email:** dlee[at]bcamath.org
+
+**Github** [idaejin](https://github.com/idaejin/)
+
+**BCAM webpage** [dlee](http://www.bcamath.org/en/people/dlee)
+
+<img src="http://www.bcamath.org/public_images/logo_bcam.jpg" style="width: 150px;" align="right">
