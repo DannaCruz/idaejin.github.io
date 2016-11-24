@@ -9,7 +9,9 @@ Dae-Jin Lee
 
 #### Journal papers
 
-* **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** "Penalized composite link models for aggregated spatial count data: a mixed model approach", *accepted in Spatial Statistics*  [doi:10.1016/j.spasta.2016.06.007](doi:10.1016/j.spasta.2016.06.007).
+* **Sánchez-González, M., Durbán, M., Lee, D.-J., Cañellas, I, Sixto, H. (2016)** , "Smooth additive mixed models for predicting aboveground biomass" *to appear in Journal of Agricultural, Biological and Environmental Statistics.*
+
+* **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** "Penalized composite link models for aggregated spatial count data: a mixed model approach", *Spatial Statistics*  [doi:10.1016/j.spasta.2016.06.007](doi:10.1016/j.spasta.2016.06.007).
 
 * **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2016)** “Comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients”. *Under review*.
 
@@ -33,14 +35,12 @@ Dae-Jin Lee
 * **Lee, D.-J. Ayma, D., Durbán M. and Van de Kasteele, J. (2016)** *"Smooth
 composite link models for spatio-temporal dissagregation of epidemiological data"* in the Proceedings of the 31st International Workshop on Statistical Modelling, Rennes, France.
 
-* **Rodríguez-Álvarez, Durbán, M. Lee, D.-J., Eilers, P.H.C. and González, F. (2016)** *"Spatio-temporal adaptive penalized splines with application to Neuroscience"* in the Proceedings of the 31st International Workshop on Statistical Modelling, Rennes, France.
+* **Rodríguez-Álvarez, Durbán, M., Lee, D.-J., Eilers, P.H.C. and González, F. (2016)** *"Spatio-temporal adaptive penalized splines with application to Neuroscience"* in the Proceedings of the 31st International Workshop on Statistical Modelling, Rennes, France.
 
 * **Carballo, A., Durbán, M., Lee, D.-J. and Eilers, P.H.C. (2016)** *"The memory of extrapolating
 P-splines"* in the Proceedings of the 31st International Workshop on Statistical Modelling, Rennes, France.
 
-
-* **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2016)** *"Comparison of beta-binomial regression model approaches to analyze health related quality of life data"* in the Proceedings of the 31st International Workshop on Statistical Modelling, Rennes, France.
-
+* **Najera-Zuloaga, J., Lee, D.-J. and Arostegui, I. (2016)** *"Comparison of beta-binomial regression model approaches to analyze health related quality of life data"* in the Proceedings of the 31st International Workshop on Statistical Modelling, Rennes, France.
 
 * **Lee, D.-J. Ayma, D. and Durbán M. (2016)** *"Spatial and spatio-temporal modeling of aggregated counts with applications in epidemiology: Methods and tools"* in 61st RBras, Salvador, Brazil.
 
