@@ -9,6 +9,9 @@ Dae-Jin Lee
 
 #### Journal papers
 
+* **Garmendia, J.M., Valle, M., Borja, A., Chust, G., Lee, D.-J., Rodríguez, J.G. and Franco J. (2016)** , "Effect of trampling and digging from shellfishing on Zostera noltei (Zosteraceae) intertidal seagrass beds" *to appear in Scientia Marina.*
+
+
 * **Sánchez-González, M., Durbán, M., Lee, D.-J., Cañellas, I, Sixto, H. (2016)** , "Smooth additive mixed models for predicting aboveground biomass" *to appear in Journal of Agricultural, Biological and Environmental Statistics.*
 
 * **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** "Penalized composite link models for aggregated spatial count data: a mixed model approach", *Spatial Statistics*  [doi:10.1016/j.spasta.2016.06.007](doi:10.1016/j.spasta.2016.06.007).
