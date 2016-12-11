@@ -20,7 +20,7 @@ output:
 * **Garmendia, J.M., Valle, M., Borja, A., Chust, G., Lee, D.-J., Rodríguez, J.G. and Franco J. (2016)** , "Effect of trampling and digging from shellfishing on Zostera noltei (Zosteraceae) intertidal seagrass beds" *to appear in Scientia Marina.*
 
 
-* **Sánchez-González, M., Durbán, M., Lee, D.-J., Cañellas, I, Sixto, H. (2016)** , "Smooth additive mixed models for predicting aboveground biomass" *to appear in Journal of Agricultural, Biological and Environmental Statistics.*
+* **Sánchez-González, M., Durbán, M., Lee, D.-J., Cañellas, I, Sixto, H. (2016)** , "Smooth additive mixed models for predicting aboveground biomass" *Journal of Agricultural, Biological and Environmental Statistics.* [doi:10.1007/s13253-016-0271-4](doi:10.1007/s13253-016-0271-4)
 
 * **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** "Penalized composite link models for aggregated spatial count data: a mixed model approach", *Spatial Statistics*  [doi:10.1016/j.spasta.2016.06.007](doi:10.1016/j.spasta.2016.06.007).
 
@@ -38,6 +38,13 @@ output:
 
 *    **Lee, D.-J. and Durbán, M. (2009)** "Smooth-CAR Mixed Models for Spatial Count Data" *Computational Statistics and Data Analysis (2009), Vol. 53, Issue 8, Pages 2968-2979* http://dx.doi.org/10.1016/j.csda.2008.07.025
     
+
+----------------------------
+
+#### In books
+
+* **García-Flores, R., Toscas, P., Lee, D.-J., Gavriliouk, O. and Robinson, G. (2012)** *"A Comparison of Methods for Solving the Sensor Location Problem"* Geostatistics Oslo 2012. Volume 17 of the series Quantitative Geology and Geostatistics pp 531-542. http://dx.doi.org/10.1007/978-94-007-4153-9_43
+
 
 ----------------------------
 

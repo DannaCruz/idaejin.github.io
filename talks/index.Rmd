@@ -28,7 +28,6 @@ output:
 
     + *"Multidimensional P-splines as mixed models"*, ISNPS Meeting
 "Biosciences, Medicine, and novel Non-Parametric Methods", Graz, Austria, 12th to 14th July.
-    + 
 
 * **2014**
 
