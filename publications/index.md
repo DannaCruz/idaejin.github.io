@@ -9,14 +9,14 @@ Dae-Jin Lee
 
 #### Journal papers
 
+* **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2017)** “Comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients”. *Accepted in Statistical Methods in Medical Research*.
+
 * **Garmendia, J.M., Valle, M., Borja, A., Chust, G., Lee, D.-J., Rodríguez, J.G. and Franco J. (2016)** , "Effect of trampling and digging from shellfishing on Zostera noltei (Zosteraceae) intertidal seagrass beds" *to appear in Scientia Marina.*
 
 
 * **Sánchez-González, M., Durbán, M., Lee, D.-J., Cañellas, I, Sixto, H. (2016)** , "Smooth additive mixed models for predicting aboveground biomass" *Journal of Agricultural, Biological and Environmental Statistics.* [doi:10.1007/s13253-016-0271-4](doi:10.1007/s13253-016-0271-4)
 
 * **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** "Penalized composite link models for aggregated spatial count data: a mixed model approach", *Spatial Statistics*  [doi:10.1016/j.spasta.2016.06.007](doi:10.1016/j.spasta.2016.06.007).
-
-* **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2016)** “Comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients”. *Under review*.
 
 *    **Lee, D.-J., and Toscas, P. (2015)** “Flexible geostatistical modelling and risk assessment analysis of lead concentration levels of residential soil in the Coeur D’Alene River Basin” *Environmental and Ecological Statistics, Vol. 22, Issue 3, pp 551-570*. DOI: 10.1007/s10651-015-0310-2.
 
