@@ -17,9 +17,9 @@ output:
 
 #### Journal papers
 
-* **De La Cruz, R., Fuentes, C., Meza, C., Lee, D.-J., Arribas-Gil. (2017) ** "Predicting Pregnancy Outcomes Using Longitudinal Information: A Penalized Splines Mixed–Effects Model Approach". *Accepted in Statistics in Medicine.*
+* **De La Cruz, R., Fuentes, C., Meza, C., Lee, D.-J., Arribas-Gil, A. (2017) ** "Predicting Pregnancy Outcomes Using Longitudinal Information: A Penalized Splines Mixed–Effects Model Approach" *to appear in Statistics in Medicine.*
 
-* **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2017)** “Comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients”. *Accepted in Statistical Methods in Medical Research*.
+* **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2017)** “Comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients” *to appear in Statistical Methods in Medical Research*.
 
 * **Garmendia, J.M., Valle, M., Borja, A., Chust, G., Lee, D.-J., Rodríguez, J.G. and Franco J. (2016)** , "Effect of trampling and digging from shellfishing on Zostera noltei (Zosteraceae) intertidal seagrass beds" *to appear in Scientia Marina.*
 
