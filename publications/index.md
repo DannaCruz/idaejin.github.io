@@ -11,33 +11,32 @@ Dae-Jin Lee
 
 * **De La Cruz, R., Fuentes, C., Meza, C., Lee, D.-J., Arribas-Gil, A. (2017) ** "Predicting Pregnancy Outcomes Using Longitudinal Information: A Penalized Splines Mixed–Effects Model Approach" *to appear in Statistics in Medicine.*
 
-* **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2017)** “Comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients” *to appear in Statistical Methods in Medical Research*.
+* **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2017)** “Comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients” *to appear in Statistical Methods in Medical Research*. [Preprint](https://bird.bcamath.org/handle/20.500.11824/343)
 
 * **Garmendia, J.M., Valle, M., Borja, A., Chust, G., Lee, D.-J., Rodríguez, J.G. and Franco J. (2016)** , "Effect of trampling and digging from shellfishing on Zostera noltei (Zosteraceae) intertidal seagrass beds" *to appear in Scientia Marina.*
 
+* **Sánchez-González, M., Durbán, M., Lee, D.-J., Cañellas, I, Sixto, H. (2016)** , "Smooth additive mixed models for predicting aboveground biomass" *Journal of Agricultural, Biological and Environmental Statistics.* [Link](http://link.springer.com/article/10.1007/s13253-016-0271-4)
 
-* **Sánchez-González, M., Durbán, M., Lee, D.-J., Cañellas, I, Sixto, H. (2016)** , "Smooth additive mixed models for predicting aboveground biomass" *Journal of Agricultural, Biological and Environmental Statistics.* [doi:10.1007/s13253-016-0271-4](doi:10.1007/s13253-016-0271-4)
+* **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** "Penalized composite link models for aggregated spatial count data: a mixed model approach", *Spatial Statistics*  [Link](http://www.sciencedirect.com/science/article/pii/S2211675316300318).
 
-* **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** "Penalized composite link models for aggregated spatial count data: a mixed model approach", *Spatial Statistics*  [doi:10.1016/j.spasta.2016.06.007](doi:10.1016/j.spasta.2016.06.007).
+*    **Lee, D.-J., and Toscas, P. (2015)** “Flexible geostatistical modelling and risk assessment analysis of lead concentration levels of residential soil in the Coeur D’Alene River Basin” *Environmental and Ecological Statistics, Vol. 22, Issue 3, pp 551-570*. [Link](http://link.springer.com/article/10.1007/s10651-015-0310-2).
 
-*    **Lee, D.-J., and Toscas, P. (2015)** “Flexible geostatistical modelling and risk assessment analysis of lead concentration levels of residential soil in the Coeur D’Alene River Basin” *Environmental and Ecological Statistics, Vol. 22, Issue 3, pp 551-570*. DOI: 10.1007/s10651-015-0310-2.
+*    **Lee, D.-J., Zhu, Z., and Toscas, P. (2015)** "Spatio-temporal functional data analysis for wireless sensor networks data" *Environmetrics, Vol. 26, Issue 5, pp 354-362*. [link](http://onlinelibrary.wiley.com/doi/10.1002/env.2344/abstract)
 
-*    **Lee, D.-J., Zhu, Z., and Toscas, P. (2015)** "Spatio-temporal functional data analysis for wireless sensor networks data" *Environmetrics, Vol. 26, Issue 5, pp 354-362*. DOI: 10.1002/env.2344
+*    **Álvarez-Rodríguez, MX., Lee, D.-J., Durbán, M., Eilers, P.H.C. and Kneib, T. (2015)** "Fast smoothing parameter selection in multidimensional generalized P-splines: the SAP algorithm" *Statistics and Computing, September 2015, Volume 25, Issue 5, pp 941-957*. [Preprint](https://bird.bcamath.org/bitstream/handle/20.500.11824/117/ws133026.pdf%3Bjsessionid%3DC39FF7BD89D72E5BAC956F9BABD58C1A.pdf?sequence=1&isAllowed=y)
 
-*    **Álvarez-Rodríguez, MX., Lee, D.-J., Durbán, M., Eilers, P.H.C. and Kneib, T. (2015)** "Fast smoothing parameter selection in multidimensional generalized P-splines: the SAP algorithm" *Statistics and Computing, September 2015, Volume 25, Issue 5, pp 941-957*.
+*    **Lee, D.-J., Durbán, M., and Eilers, P.H.C. (2013)** "Efficient two-dimensional smoothing with P-spline ANOVA mixed models and nested bases" *Computational Statistics and Data Analysis (2013), Vol. 61, May, Pages 22-37* [http://dx.doi.org/10.1016/j.csda.2012.11.013](http://dx.doi.org/10.1016/j.csda.2012.11.013)
 
-*    **Lee, D.-J., Durbán, M., and Eilers, P.H.C. (2013)** "Efficient two-dimensional smoothing with P-spline ANOVA mixed models and nested bases" *Computational Statistics and Data Analysis (2013), Vol. 61, May, Pages 22-37* http://dx.doi.org/10.1016/j.csda.2012.11.013
+*    **Lee, D.-J. and Durbán, M. (2011)** "P-spline ANOVA-type interaction models for spatio-temporal smoothing" *Statistical Modelling, Vol. 11, Issue 1, Pages 49-69*. [Link](http://journals.sagepub.com/doi/pdf/10.1177/1471082X1001100104)
 
-*    **Lee, D.-J. and Durbán, M. (2011)** "P-spline ANOVA-type interaction models for spatio-temporal smoothing" *Statistical Modelling, Vol. 11, Issue 1, Pages 49-69*.
-
-*    **Lee, D.-J. and Durbán, M. (2009)** "Smooth-CAR Mixed Models for Spatial Count Data" *Computational Statistics and Data Analysis (2009), Vol. 53, Issue 8, Pages 2968-2979* http://dx.doi.org/10.1016/j.csda.2008.07.025
+*    **Lee, D.-J. and Durbán, M. (2009)** "Smooth-CAR Mixed Models for Spatial Count Data" *Computational Statistics and Data Analysis (2009), Vol. 53, Issue 8, Pages 2968-2979* [Link](http://dx.doi.org/10.1016/j.csda.2008.07.025)
     
 
 ----------------------------
 
 #### In books
 
-* **García-Flores, R., Toscas, P., Lee, D.-J., Gavriliouk, O. and Robinson, G. (2012)** *"A Comparison of Methods for Solving the Sensor Location Problem"* Geostatistics Oslo 2012. Volume 17 of the series Quantitative Geology and Geostatistics pp 531-542. http://dx.doi.org/10.1007/978-94-007-4153-9_43
+* **García-Flores, R., Toscas, P., Lee, D.-J., Gavriliouk, O. and Robinson, G. (2012)** *"A Comparison of Methods for Solving the Sensor Location Problem"* Geostatistics Oslo 2012. Volume 17 of the series Quantitative Geology and Geostatistics pp 531-542. [link](http://dx.doi.org/10.1007/978-94-007-4153-9_43)
 
 
 ----------------------------
