@@ -13,7 +13,7 @@ Dae-Jin Lee
 
 * **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2017)** “Comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients” *to appear in Statistical Methods in Medical Research*. [Preprint](https://bird.bcamath.org/handle/20.500.11824/343)
 
-* **Garmendia, J.M., Valle, M., Borja, A., Chust, G., Lee, D.-J., Rodríguez, J.G. and Franco J. (2016)** , "Effect of trampling and digging from shellfishing on Zostera noltei (Zosteraceae) intertidal seagrass beds" *to appear in Scientia Marina.* [Available online](http://scimar.icm.csic.es/scimar/index.php/secId/6/IdArt/4429/)
+* **Garmendia, J.M., Valle, M., Borja, A., Chust, G., Lee, D.-J., Rodríguez, J.G. and Franco J. (2016)** , "Effect of trampling and digging from shellfishing on Zostera noltei (Zosteraceae) intertidal seagrass beds" *to appear in Scientia Marina.* [Link](http://scimar.icm.csic.es/scimar/index.php/secId/6/IdArt/4429/)
 
 * **Sánchez-González, M., Durbán, M., Lee, D.-J., Cañellas, I, Sixto, H. (2016)** , "Smooth additive mixed models for predicting aboveground biomass" *Journal of Agricultural, Biological and Environmental Statistics.* [Link](http://link.springer.com/article/10.1007/s13253-016-0271-4)
 
