@@ -13,6 +13,10 @@ Dae-Jin Lee
 * **2016**
 
     + **Neiker-Tecnalia Courses in Statistical Modeling.** March 7th-8th, 14th-15th, 21st-22nd. (24 hours) *Introduction to Generalized Linear Models and Mixed-effects models*.
+    
+    + **Azti Courses in Statistical Modeling.** September 14th-15th, (8 hours). *Introduction to `R` statistical software*.
+    
+    + **BCAM-UPV/EHU Courses** 24/10/2014 - 28/10/2014 (10 hours), *Introduction to Statistical Modelling in R*.
 
 * **2015** 
     
