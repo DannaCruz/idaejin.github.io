@@ -24,13 +24,16 @@ output:
     
     + **Azti Courses in Statistical Modeling.** September 14th-15th, (8 hours). *Introduction to `R` statistical software*.
     
-    + **BCAM-UPV/EHU Courses** 24/10/2014 - 28/10/2014 (10 hours), *Introduction to Statistical Modelling in R*.
+    + **BCAM-UPV/EHU Courses** 24/10/2014 - 28/10/2014 (10 hours), *Introduction to Statistical Modelling in `R`*.
 
 * **2015** 
     
     + **Azti Courses in Statistical Modeling.** October 14th, 21st and 28th (15 hours). *Mixed effects and Generalized Additive Models*.
-    + **Azti Courses in Statistical Modeling.** May 14th, 21th (10 hours). *Introduction to Generalized Linear Models with R*.
-    + **BCAM-Courses** 02/02/2015 - 05/02/2015 (10 hours), *Introduction to Generalized Linear Models with R (2nd Edition)*.
+    + **Azti Courses in Statistical Modeling.** May 14th, 21th (10 hours). *Introduction to Generalized Linear Models with `R`*.
+    + **BCAM-Courses** 02/02/2015 - 05/02/2015 (10 hours), *Introduction to Generalized Linear Models with `R` (2nd Edition)*.
+    
+* **2014** 
+
     + **BCAM-UPV/EHU Courses** 24/11/2014 - 28/11/2014 (10 hours), *Introduction to Generalized Linear Models with R (1st Edition)*.
     
 -----------------------------------------------------
