@@ -7,14 +7,14 @@ Dae-Jin Lee
 
 ----------------------------
 
-#### Journal papers
+#### Research projects
 
 * 
     
 
 ----------------------------
 
-#### Industrial Projects
+#### Industrial projects
 
 * 
 
