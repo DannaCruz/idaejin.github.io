@@ -9,6 +9,8 @@ Dae-Jin Lee
 
 #### Journal papers
 
+* **De La Cruz, R., Fuentes, C., Meza, C., Lee, D.-J., Arribas-Gil, A. (2017)** "Predicting Pregnancy Outcomes Using Longitudinal Information: A Penalized Splines Mixed–Effects Model Approach" *BBA Clinical.* [Available online.](http://linkinghub.elsevier.com/retrieve/pii/S2214647417300363)
+
 * **De La Cruz, R., Fuentes, C., Meza, C., Lee, D.-J., Arribas-Gil, A. (2017)** "Predicting Pregnancy Outcomes Using Longitudinal Information: A Penalized Splines Mixed–Effects Model Approach" *Statistics in Medicine.* [Available online.](http://onlinelibrary.wiley.com/doi/10.1002/sim.7256/full)
 
 * **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2017)** “Comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients” *to appear in Statistical Methods in Medical Research*. [Available online.](http://journals.sagepub.com/doi/full/10.1177/0962280217690413)
