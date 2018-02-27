@@ -31,17 +31,12 @@ Dae-Jin Lee
 
 *    **Lee, D.-J., Durbán, M., and Eilers, P.H.C. (2013)** "Efficient two-dimensional smoothing with P-spline ANOVA mixed models and nested bases" *Computational Statistics and Data Analysis (2013), Vol. 61, May, Pages 22-37* [Available online.](http://dx.doi.org/10.1016/j.csda.2012.11.013)
 
+* **García-Flores, R., Toscas, P., Lee, D.-J., Gavriliouk, O. and Robinson, G. (2012)** *"A Comparison of Methods for Solving the Sensor Location Problem"* Geostatistics Oslo 2012. Volume 17 of the series Quantitative Geology and Geostatistics pp 531-542. [Available online.](http://dx.doi.org/10.1007/978-94-007-4153-9_43)
+
 *    **Lee, D.-J. and Durbán, M. (2011)** "P-spline ANOVA-type interaction models for spatio-temporal smoothing" *Statistical Modelling, Vol. 11, Issue 1, Pages 49-69*. [Available online.](http://journals.sagepub.com/doi/pdf/10.1177/1471082X1001100104)
 
 *    **Lee, D.-J. and Durbán, M. (2009)** "Smooth-CAR Mixed Models for Spatial Count Data" *Computational Statistics and Data Analysis (2009), Vol. 53, Issue 8, Pages 2968-2979* [Available online.](http://dx.doi.org/10.1016/j.csda.2008.07.025)
     
-
-----------------------------
-
-#### In books
-
-* **García-Flores, R., Toscas, P., Lee, D.-J., Gavriliouk, O. and Robinson, G. (2012)** *"A Comparison of Methods for Solving the Sensor Location Problem"* Geostatistics Oslo 2012. Volume 17 of the series Quantitative Geology and Geostatistics pp 531-542. [Available online.](http://dx.doi.org/10.1007/978-94-007-4153-9_43)
-
 
 ----------------------------
 
