@@ -15,19 +15,21 @@ output:
 
 ----------------------------
 
-#### Journal papers
+#### Journal papers and Book chapters
 
-* **De La Cruz, R., Fuentes, C., Meza, C., Lee, D.-J., Arribas-Gil, A. (2017)** "Predicting Pregnancy Outcomes Using Longitudinal Information: A Penalized Splines Mixed–Effects Model Approach" *BBA Clinical.* [Available online.](http://linkinghub.elsevier.com/retrieve/pii/S2214647417300363)
+* **Durban, M. Lee, D.-J., Aguilera-Morillo, M.C. and Aguilera, A.M. (2018)**. From spatio-temporal smoothing to functional spatial regression: a penalized approach. Geostatistical Functional Data Analysis. Theory and Methods. *John Wiley & Sons (to appear)*.
 
-* **De La Cruz, R., Fuentes, C., Meza, C., Lee, D.-J., Arribas-Gil, A. (2017)** "Predicting Pregnancy Outcomes Using Longitudinal Information: A Penalized Splines Mixed–Effects Model Approach" *Statistics in Medicine.* [Available online.](http://onlinelibrary.wiley.com/doi/10.1002/sim.7256/full)
+* **Miles, J., Applebee, C.J., Leboucher, P., Lopez-Fernandez, S., Lee, D.-J., Guarch, R., Ward, S., Parker, P.J., López, J.I., Larijani, B (2017)** "Time Resolved Amplified FRET Identifies Protein Kinase B Activation State as a Marker for Poor Prognosis in Clear Cell Renal Cell Carcinoma " *BBA Clinical, Volume 8, December 2017, Pages 97-102.* [Available online.](http://linkinghub.elsevier.com/retrieve/pii/S2214647417300363)
 
-* **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2017)** “Comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients” *to appear in Statistical Methods in Medical Research*. [Available online.](http://journals.sagepub.com/doi/full/10.1177/0962280217690413)
+* **De La Cruz, R., Fuentes, C., Meza, C., Lee, D.-J., Arribas-Gil, A. (2017)** "Predicting Pregnancy Outcomes Using Longitudinal Information: A Penalized Splines Mixed–Effects Model Approach" *Statistics in Medicine. DOI: [10.1002/sim.7256](10.1002/sim.7256)*. [Available online.](http://onlinelibrary.wiley.com/doi/10.1002/sim.7256/full)
 
-* **Garmendia, J.M., Valle, M., Borja, A., Chust, G., Lee, D.-J., Rodríguez, J.G. and Franco J. (2016)** , "Effect of trampling and digging from shellfishing on Zostera noltei (Zosteraceae) intertidal seagrass beds" *to appear in Scientia Marina.* [Available online.](http://scimar.icm.csic.es/scimar/index.php/secId/6/IdArt/4429/)
+* **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2017)** “Comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients” *to appear in Statistical Methods in Medical Research. DOI: [https://doi.org/10.1177/0962280217690413](https://doi.org/10.1177/0962280217690413)*. [Available online.](http://journals.sagepub.com/doi/full/10.1177/0962280217690413)
 
-* **Sánchez-González, M., Durbán, M., Lee, D.-J., Cañellas, I, Sixto, H. (2016)** , "Smooth additive mixed models for predicting aboveground biomass" *Journal of Agricultural, Biological and Environmental Statistics.* [Available online.](http://link.springer.com/article/10.1007/s13253-016-0271-4)
+* **Garmendia, J.M., Valle, M., Borja, A., Chust, G., Lee, D.-J., Rodríguez, J.G. and Franco J. (2016)** , "Effect of trampling and digging from shellfishing on Zostera noltei (Zosteraceae) intertidal seagrass beds" *Scientia Marina 81(1) : 121-128.* [Available online.](http://scimar.icm.csic.es/scimar/index.php/secId/6/IdArt/4429/)
 
-* **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** "Penalized composite link models for aggregated spatial count data: a mixed model approach", *Spatial Statistics*  [Available online.](http://www.sciencedirect.com/science/article/pii/S2211675316300318)
+* **Sánchez-González, M., Durbán, M., Lee, D.-J., Cañellas, I, Sixto, H. (2017)** , "Smooth additive mixed models for predicting aboveground biomass" *Journal of Agricultural, Biological and Environmental Statistics, March 2017, Volume 22, Issue 1, pp 23–41.* [Available online.](http://link.springer.com/article/10.1007/s13253-016-0271-4)
+
+* **Ayma, D., Durbán, M., Lee, D.-J., and Eilers, P.H.C. (2016)** "Penalized composite link models for aggregated spatial count data: a mixed model approach", *Spatial Statistics, Volume 17, August 2016, Pages 179-198* [Available online.](http://www.sciencedirect.com/science/article/pii/S2211675316300318)
 
 *    **Lee, D.-J., and Toscas, P. (2015)** “Flexible geostatistical modelling and risk assessment analysis of lead concentration levels of residential soil in the Coeur D’Alene River Basin” *Environmental and Ecological Statistics, Vol. 22, Issue 3, pp 551-570*. [Available online.](http://link.springer.com/article/10.1007/s10651-015-0310-2)
 
