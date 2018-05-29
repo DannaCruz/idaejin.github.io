@@ -206,7 +206,7 @@ head(rainforest)
 
 + **Resultado:**
 
-\small
+
 ```{r,echo=TRUE}
 table(rainforest$species)
 ```
@@ -232,7 +232,6 @@ Acmena <- subset(rainforest, species == "Acmena smithii")
 
  `par` y `mfrow`
 
-\footnotesize
 ```{r,echo=TRUE, fig.align='center'}
 par(mfrow=c(1,2))
 plot(wood~dbh,data=Acmena,pch=19, main="plot of dbh vs wood")
@@ -296,7 +295,7 @@ textxy(log(x),log(y),labs=species,col = "blue",cex=0.85)
 
 + Mediante `set.seed(1234)` generaremos números aleatorios a partir de la misma semilla. 
 
-\footnotesize
+
 ```{r, echo = TRUE}
 set.seed(1234)
 uData <- rnorm(20)
@@ -308,7 +307,7 @@ d <- data.frame(u=uData,v=vData,w=wData,x=xData,y=yData)
 ```
 
 `pairs`
-\footnotesize
+
 ```{r, echo = TRUE, fig.align='center'}
 pairs(d)
 ```
@@ -316,7 +315,6 @@ pairs(d)
 
 `corrplot`
 
-\footnotesize
 ```{r, echo = TRUE, fig.align='center'}
 library(corrplot)
 M <- cor(d)
@@ -430,7 +428,6 @@ hist(faithful$eruptions,50)
 
 + **Estimación de densidad** construye una estimación dada una distribucion de probabilidad para una muestra dada.
 
-\footnotesize
 ```{r, echo = TRUE, fig.align='center', fig.width=6}
 library(graphics)
 d <- density(faithful$eruptions)
