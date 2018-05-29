@@ -941,7 +941,7 @@ levels(top20[,"country"])
 ```
 
 
- + As a simple summary statistic, the frequencies of the levels of such a factor variable can be found from
+ + Como un simple resumen estadístico, las frecuencias de los niveles de dicha variable factorial se pueden encontrar en
 
 
 
@@ -961,9 +961,8 @@ table(top20[,"country"])
 ##                          11
 ```
 
-+ Which type of companies?
++ ¿Qué tipo de empresas?
 
-\footnotesize
 
 ```r
 levels(Forbes2000[,"category"])
@@ -986,7 +985,7 @@ levels(Forbes2000[,"category"])
 ## [27] "Utilities"
 ```
 
- + How many of each category?
+ + ¿Cuántas de cada categoría?
 
 
 
@@ -1026,9 +1025,9 @@ table(Forbes2000[,"category"])
 ##                              110
 ```
 
- + A simple summary statistics such as the mean, median, quantiles and range can be found from continuous variables such as `sales`
+ + Un simple resumen estadístico como la media, la mediana, los cuantiles y el rango se puede encontrar a partir de variables continuas como las ventas (`sales`).
 
-\footnotesize
+ 
 
 ```r
 summary(Forbes2000[,"sales"])

@@ -1093,7 +1093,7 @@ h2 &lt;-<span class="st"> </span><span class="kw">hist2d</span>(faithful, <span 
 ## [5] &quot;Switzerland&quot;                 &quot;United Kingdom&quot;             
 ## [7] &quot;United States&quot;</code></pre>
 <ul>
-<li>As a simple summary statistic, the frequencies of the levels of such a factor variable can be found from</li>
+<li>Como un simple resumen estadístico, las frecuencias de los niveles de dicha variable factorial se pueden encontrar en</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">table</span>(top20[,<span class="st">&quot;country&quot;</span>])</code></pre></div>
 <pre><code>## 
@@ -1106,9 +1106,8 @@ h2 &lt;-<span class="st"> </span><span class="kw">hist2d</span>(faithful, <span 
 ##               United States 
 ##                          11</code></pre>
 <ul>
-<li>Which type of companies?</li>
+<li>¿Qué tipo de empresas?</li>
 </ul>
-
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">levels</span>(Forbes2000[,<span class="st">&quot;category&quot;</span>])</code></pre></div>
 <pre><code>##  [1] &quot;Aerospace &amp; defense&quot;              &quot;Banking&quot;                         
 ##  [3] &quot;Business services &amp; supplies&quot;     &quot;Capital goods&quot;                   
@@ -1125,7 +1124,7 @@ h2 &lt;-<span class="st"> </span><span class="kw">hist2d</span>(faithful, <span 
 ## [25] &quot;Trading companies&quot;                &quot;Transportation&quot;                  
 ## [27] &quot;Utilities&quot;</code></pre>
 <ul>
-<li>How many of each category?</li>
+<li>¿Cuántas de cada categoría?</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">table</span>(Forbes2000[,<span class="st">&quot;category&quot;</span>])</code></pre></div>
 <pre><code>## 
@@ -1158,9 +1157,8 @@ h2 &lt;-<span class="st"> </span><span class="kw">hist2d</span>(faithful, <span 
 ##                        Utilities 
 ##                              110</code></pre>
 <ul>
-<li>A simple summary statistics such as the mean, median, quantiles and range can be found from continuous variables such as <code>sales</code></li>
+<li>Un simple resumen estadístico como la media, la mediana, los cuantiles y el rango se puede encontrar a partir de variables continuas como las ventas (<code>sales</code>).</li>
 </ul>
-
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(Forbes2000[,<span class="st">&quot;sales&quot;</span>])</code></pre></div>
 <pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 ##   0.010   2.018   4.365   9.697   9.548 256.300</code></pre>
