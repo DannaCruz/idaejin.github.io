@@ -44,8 +44,6 @@ install.packages(c("MASS","DAAG","effects","ggplot2","gdata","foreign","Hmisc","
 
 # Material extra
 
-  * [Algunos ejemplos con `R`](http://idaejin.github.io/bcam-courses/R/intro/examples.html)
-
   * [`R` for Data Science](http://r4ds.had.co.nz/) o [aquí](http://courses.had.co.nz/)
 
   * Otros enlaces de interés (en inglés):
