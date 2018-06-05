@@ -23,6 +23,8 @@ subtitle: Instituto de Estadística PUCV - Magister en Estadística
 
 --------------------------------------
 
+[Página principal](http://idaejin.github.io/courses/pucv/)
+
 [Presentación ``Data Visualization in Social Sciences''](files/DataVisSS.pdf)
 
 [Versión en *.pdf](DataViz.pdf)
