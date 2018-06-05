@@ -19,7 +19,7 @@ output:
 
 * **Rodriguez-Alvarez, MX., Durban, M., Lee, D.-J. and Eilers, P.H.C. (2018)** "On the estimation of variance parameters in non-standard generalised linear mixed models: Application to penalised smoothing". Accepted for publication in _Statistics and Computing._
 
-* **Durban, M. Lee, D.-J., Aguilera-Morillo, M.C. and Aguilera, A.M. (2018)**. From spatio-temporal smoothing to functional spatial regression: a penalized approach. Geostatistical Functional Data Analysis. Theory and Methods. *John Wiley & Sons (to appear)*.
+* **Durban, M., Lee, D.-J., Aguilera-Morillo, M.C. and Aguilera, A.M. (2018)**. From spatio-temporal smoothing to functional spatial regression: a penalized approach. Geostatistical Functional Data Analysis. Theory and Methods. *John Wiley & Sons (to appear)*.
 
 * **Miles, J., Applebee, C.J., Leboucher, P., Lopez-Fernandez, S., Lee, D.-J., Guarch, R., Ward, S., Parker, P.J., López, J.I., Larijani, B (2017)** "Time Resolved Amplified FRET Identifies Protein Kinase B Activation State as a Marker for Poor Prognosis in Clear Cell Renal Cell Carcinoma " *BBA Clinical, Volume 8, December 2017, Pages 97-102.* [Available online.](http://linkinghub.elsevier.com/retrieve/pii/S2214647417300363)
 
