@@ -1,5 +1,13 @@
-# **Publications**
-Dae-Jin Lee  
+---
+title: '**Publications**'
+date: "Dae-Jin Lee"
+output:
+  html_document:
+    fig_caption: yes
+    highlight: haddock
+    keep_md: yes
+    theme: spacelab
+---
 
 ----------------------------
 
@@ -8,6 +16,8 @@ Dae-Jin Lee
 ----------------------------
 
 #### Journal papers and Book chapters
+
+* **Rodríguez-Álvarez, MX., Durbán, M., Lee, D.-J. and Eilers, P.H.C. (2018)** "On the estimation of variance parameters in non-standard generalised linear mixed models: Application to penalised smoothing". Accepted for publication in _Statistics and Computing._
 
 * **Durban, M. Lee, D.-J., Aguilera-Morillo, M.C. and Aguilera, A.M. (2018)**. From spatio-temporal smoothing to functional spatial regression: a penalized approach. Geostatistical Functional Data Analysis. Theory and Methods. *John Wiley & Sons (to appear)*.
 
