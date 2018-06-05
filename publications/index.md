@@ -1,6 +1,6 @@
 ---
 title: '**Publications**'
-date: "Dae-Jin Lee"
+subtitle: "Dae-Jin Lee"
 output:
   html_document:
     fig_caption: yes
