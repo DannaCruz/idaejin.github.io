@@ -17,18 +17,14 @@ output:
 
 ### `R` Software
 
-* **`PROreg`: Patient Reported Outcomes Regression Analysis**
+* **`PROreg`: Patient Reported Outcomes Regression Analysis** Najera-Zuloaga J., Lee D.-J. and Arostegui I. (2017)
 
-    + _Offers a variety of tools, such as specific plots and regression model approaches, for analyzing different patient reported questionnaires. Especially, mixed-effects models based on the beta-binomial distribution are implemented to deal with binomial data with over-dispersion (see Najera-Zuloaga J., Lee D.-J. and Arostegui I. (2017)._
-    
     + Available via [CRAN](https://cran.r-project.org/web/packages/PROreg/index.html).
 
 
 ### Publications data and codes
 
-*  **Paper:** *"A beta-binomial mixed-effects model approach for analysing longitudinal discrete and bounded outcomes"* (Najera-Zuloaga, Lee and Arostegui). [Data]() and [R codes]().
-
-* **Paper:** *"Comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients"* (Najera-Zuloaga, Lee and Arostegui). [Data]() and [R codes]().
+*  **Paper:** *"A beta-binomial mixed-effects model approach for analysing longitudinal discrete and bounded outcomes"* (Najera-Zuloaga, Lee and Arostegui). **Data** [COPD.rda](http://idaejin.github.io/software/COPD.rda) and **R codes** [sims.R](http://idaejin.github.io/software/sims.R) and [Simulation_function.R](http://idaejin.github.io/software/Simulation_function.R).
 
 
 
