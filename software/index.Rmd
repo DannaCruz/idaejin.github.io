@@ -24,7 +24,7 @@ output:
 
 ### Publications data and codes
 
-* *"A beta-binomial mixed-effects model approach for analysing longitudinal discrete and bounded outcomes"* (Najera-Zuloaga, Lee and Arostegui). **Data** [COPD.rda](http://idaejin.github.io/software/COPD.rda) and **R codes** [sims.R](http://idaejin.github.io/software/sims.R) and [Simulation_function.R](http://idaejin.github.io/software/Simulation_function.R).
+* *"A beta-binomial mixed-effects model approach for analysing longitudinal discrete and bounded outcomes"* (Najera-Zuloaga, Lee and Arostegui). [Supplementary material](http://idaejin.github.io/software/Najera-Zuloaga_etal_Supplementary_Material.pdf). **Data** [COPD.rda](http://idaejin.github.io/software/COPD.rda) and **R codes** [sims.R](http://idaejin.github.io/software/sims.R) and [Simulation_function.R](http://idaejin.github.io/software/Simulation_function.R).
 
 
 
