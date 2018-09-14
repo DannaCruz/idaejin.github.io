@@ -17,7 +17,9 @@ output:
 
 #### Journal papers and Book chapters
 
-* **Rodriguez-Alvarez, MX., Durbán, M., Lee, D.-J. and Eilers, P.H.C. (2018)**, "On the estimation of variance parameters in non-standard generalised linear mixed models: Application to penalised smoothing". Accepted for publication in _Statistics and Computing._
+* **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2018)**, "A beta-binomial mixed-effects model approach for analysing longitudinal discrete and bounded outcomes". Accepted for publication in *Biometrical Journal*.
+
+* **Rodriguez-Alvarez, MX., Durbán, M., Lee, D.-J. and Eilers, P.H.C. (2018)**, "On the estimation of variance parameters in non-standard generalised linear mixed models: Application to penalised smoothing". *Statistics and Computing*. [DOI:https://doi.org/10.1007/s11222-018-9818-2](https://doi.org/10.1007/s11222-018-9818-2).
 
 * **Durbán, M., Lee, D.-J., Aguilera-Morillo, M.C. and Aguilera, A.M. (2018)**, "From spatio-temporal smoothing to functional spatial regression: a penalized approach. Geostatistical Functional Data Analysis". Theory and Methods. *John Wiley & Sons (to appear)*.
 
