@@ -15,6 +15,12 @@ output:
 
 ----------------------------
 
+#### Under review
+
+* **Page, G. L., Rodríguez-Álvarez, MX., Lee, D.-J.** "Hierarchical Modeling of Growth Curve Derivatives via Sequences of Quotient Differences".
+
+* **Ayma, D., Durbán, M., Lee, D.-J. and Van de Kasteele, J.** "Modeling latent spatio-temporal disease incidence using smooth composite link models".
+
 #### Journal papers and Book chapters
 
 * **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2018)**, "A beta-binomial mixed-effects model approach for analysing longitudinal discrete and bounded outcomes". Accepted for publication in *Biometrical Journal*.
