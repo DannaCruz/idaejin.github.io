@@ -29,9 +29,10 @@ Dae-Jin Lee &lt; <a href="mailto:dlee@bcamath.org">dlee@bcamath.org</a> &gt;
 <div id="introduction-to-the-r-language" class="slide section level1">
 <h1>Introduction to the <code>R</code> language</h1>
 <ul>
-<li><p>This course is an introduction to statistical software <code>R</code>.</p></li>
+<li><p>This course is an introduction to the statistical software <code>R</code>.</p></li>
 <li><p>The course will introduce the student to the basics of using <code>R</code> for statistical programming, computation, graphics, and basic statistical modelling.</p></li>
 <li><p>This course is oriented to undergraduate and Master students, or any researcher interested in learning the statistical software <code>R</code>.</p></li>
+<li><p><a href="http://idaejin.github.io/courses/R/">Course Material</a></p></li>
 </ul>
 </div>
 <div id="objectives-of-this-course" class="slide section level1">
@@ -58,14 +59,14 @@ Dae-Jin Lee &lt; <a href="mailto:dlee@bcamath.org">dlee@bcamath.org</a> &gt;
 <li><p>Lots of online resources (e.g.: <a href="http://r4ds.had.co.nz/"><code>R</code> for Data Science</a>)</p></li>
 </ul>
 </div>
-<div id="statistical-features" class="slide section level1">
-<h1>Statistical features</h1>
+<div id="statistical-features-only-some-of-them" class="slide section level1">
+<h1>Statistical features (only some of them)</h1>
 <ul>
 <li><p>Graphical Techniques (Exploratory Data Analysis)</p></li>
 <li><p>Classical statistical tests</p></li>
 <li><p>Time-series analysis</p></li>
 <li><p>Survival analysis</p></li>
-<li><p>Classification and clustering (data mining, machine learning)</p></li>
+<li><p>Classification and clustering</p></li>
 <li><p>Optimization and Mathematical Programming</p></li>
 <li><p>Bayesian inference etc.</p></li>
 </ul>
@@ -73,8 +74,10 @@ Dae-Jin Lee &lt; <a href="mailto:dlee@bcamath.org">dlee@bcamath.org</a> &gt;
 </div>
 <div id="example-the-forbes-2000-ranking-of-the-worlds-biggest-companies-year-2004" class="slide section level1">
 <h1>Example: The Forbes 2000 Ranking of the World’s Biggest Companies (Year 2004)</h1>
-<p>The data handling and manipulation techniques explained will be illustrated by means of a data set of 2000 world leading companies, the Forbes 2000 list for the year 2004 collected by Forbes Magazine. This list is originally available from <a href="http://www.forbes.com">www.forbes.com</a></p>
-<p>Here we show a subset of the data set:</p>
+<ul>
+<li><p>The data handling and manipulation techniques explained will be illustrated by means of a data set of 2000 world leading companies, the Forbes 2000 list for the year 2004 collected by Forbes Magazine. This list is originally available from <a href="http://www.forbes.com">www.forbes.com</a></p></li>
+<li><p>Here we show a subset of the data set:</p></li>
+</ul>
 <table>
 <thead>
 <tr class="header">
@@ -151,7 +154,8 @@ Dae-Jin Lee &lt; <a href="mailto:dlee@bcamath.org">dlee@bcamath.org</a> &gt;
 </tr>
 </tbody>
 </table>
-<p>The data consists of 2000 observations on the following 8 variables.</p>
+<ul>
+<li><p>The data consists of 2000 observations on the following 8 variables.</p>
 <ul>
 <li><code>rank</code>: the ranking of the company.</li>
 <li><code>name</code>: the name of the company.</li>
@@ -161,6 +165,7 @@ Dae-Jin Lee &lt; <a href="mailto:dlee@bcamath.org">dlee@bcamath.org</a> &gt;
 <li><code>profits</code>: the profit of the company in billion USD.</li>
 <li><code>assets</code>: the assets of the company in billion USD.</li>
 <li><code>marketvalue</code>: the market value of the company in billion USD.</li>
+</ul></li>
 </ul>
 <h2 id="types-of-variables">Types of variables</h2>
 <p><code>R</code> output</p>
@@ -659,7 +664,8 @@ Dae-Jin Lee &lt; <a href="mailto:dlee@bcamath.org">dlee@bcamath.org</a> &gt;
 </tr>
 </tbody>
 </table>
-<p>A data consists of 48 observations on the following 5 variables.</p>
+<p> </p>
+<p>The data frame consists of 48 observations on the following 5 variables.</p>
 <ul>
 <li><p><code>mortality</code>: number of white males died due to malignant melanoma 1950-1969 per one million inhabitants.</p></li>
 <li><p><code>latitude</code>: latitude of the geographic centre of the state.</p></li>
