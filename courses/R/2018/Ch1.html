@@ -46,16 +46,15 @@ Dae-Jin Lee &lt; <a href="mailto:dlee@bcamath.org">dlee@bcamath.org</a> &gt;
   </p>
   <p class="date">BCAM-UPV/EHU Courses 2018-2019</p>
 </div>
-<div id="introduction-to-the-r-language" class="slide section level1">
-<h1>Introduction to the <code>R</code> language</h1>
-<h2 id="installing-r">Installing <code>R</code></h2>
-<ul>
-<li>Latest version of <code>R</code>. Download it <a href="https://cran.r-project.org/">here</a></li>
-</ul>
-<h2 id="the-rstudio-environment">The RStudio environment</h2>
-<ul>
-<li>Rstudio is a user-friendly interface. Download it <a href="https://www.rstudio.com/products/rstudio/download/">here</a> <strong>Highly recommended!!!</strong></li>
-</ul>
+<div id="install-and-load-an-r-library" class="slide section level1">
+<h1>Install and load an <code>R</code> library</h1>
+<p>Install a package</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;DAAG&quot;</span>) <span class="co"># (Data Analysis And Graphics)</span></code></pre></div>
+<p>or several packages</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="kw">c</span>(<span class="st">&quot;DAAG&quot;</span>,<span class="st">&quot;HSAUR2&quot;</span>,<span class="st">&quot;Hmisc&quot;</span>,<span class="st">&quot;psych&quot;</span>,<span class="st">&quot;foreign&quot;</span>,<span class="st">&quot;xlsx&quot;</span>))</code></pre></div>
+<p>In <code>Rstudio</code> (go to <code>Packages</code> and click <code>Install</code>)</p>
+<p>Once installed the package, load it</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(DAAG) <span class="co"># or require(DAAG)</span></code></pre></div>
 <h2 id="start-with-r">Start with <code>R</code></h2>
 <ul>
 <li>Get current working directory</li>
@@ -87,7 +86,7 @@ Dae-Jin Lee &lt; <a href="mailto:dlee@bcamath.org">dlee@bcamath.org</a> &gt;
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">save.image</span>()</code></pre></div>
 <ul>
-<li>save specific objects to a file if you don’t specify the path, the cwd is assumed</li>
+<li>save specific objects to a file if you don't specify the path, the cwd is assumed</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">save</span>(<span class="op">&lt;</span>object list<span class="op">&gt;</span>,<span class="dt">file=</span><span class="st">&quot;myfile.RData&quot;</span>) </code></pre></div>
 <ul>
@@ -98,17 +97,9 @@ Dae-Jin Lee &lt; <a href="mailto:dlee@bcamath.org">dlee@bcamath.org</a> &gt;
 <li>quit <code>R</code>. You will be prompted to save the workspace.</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">q</span>()</code></pre></div>
-<h2 id="install-and-load-an-r-library">Install and load an <code>R</code> library</h2>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;DAAG&quot;</span>) <span class="co"># (Data Analysis And Graphics)</span></code></pre></div>
-<p>or several packages</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="kw">c</span>(<span class="st">&quot;DAAG&quot;</span>,<span class="st">&quot;HSAUR2&quot;</span>,<span class="st">&quot;Hmisc&quot;</span>,<span class="st">&quot;psych&quot;</span>,<span class="st">&quot;foreign&quot;</span>,<span class="st">&quot;xlsx&quot;</span>))</code></pre></div>
-<p>In Rstudio (go to <code>package</code> and click <code>Install</code>)</p>
-<p>Once installed the package, load it</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(DAAG) <span class="co"># or require(DAAG)</span></code></pre></div>
 </div>
-<div class="slide section level1">
-
-<h2 id="reading-data">Reading data</h2>
+<div id="reading-data-in-r" class="slide section level1">
+<h1>Reading data in <code>R</code></h1>
 <p>The <code>R</code> console</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">7.82</span>,<span class="fl">8.00</span>,<span class="fl">7.95</span>) <span class="co"># c means &quot;combine&quot;</span>
 x</code></pre></div>
@@ -132,7 +123,9 @@ Read <span class="dv">3</span> items</code></pre></div>
 Read <span class="dv">4</span> items  </code></pre></div>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">id</code></pre></div>
 <pre><code>## [1] &quot;John&quot;   &quot;Paul&quot;   &quot;George&quot; &quot;Ringo&quot;</code></pre>
-<h2 id="data-import">Data Import</h2>
+</div>
+<div id="data-import" class="slide section level1">
+<h1>Data Import</h1>
 <p>In most situations, we need to read data from a separate data file. There are several methods for doing this.</p>
 <ul>
 <li><code>scan()</code> (see <code>?scan</code> for help)</li>
@@ -144,7 +137,7 @@ Read <span class="dv">4</span> items  </code></pre></div>
 <pre><code>## [1] 2 3 5 7</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">unlink</span>(<span class="st">&quot;ex.data&quot;</span>) <span class="co"># tidy up</span></code></pre></div>
 <ul>
-<li><p>Several formats are available (<code>.txt</code>, <code>.csv</code>, <code>.xls</code>, <code>.xlsx</code>, <code>SAS</code>, <code>Stata</code>, etc…)</p></li>
+<li><p>Several formats are available (<code>.txt</code>, <code>.csv</code>, <code>.xls</code>, <code>.xlsx</code>, <code>SAS</code>, <code>Stata</code>, etc...)</p></li>
 <li><p>Some <code>R</code> libraries to import data are</p></li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(gdata)
@@ -268,7 +261,7 @@ bmi</code></pre></div>
 </div>
 <div id="creating-your-own-functions-in-r" class="slide section level1">
 <h1>Creating your own functions in <code>R</code></h1>
-<p>One of the great strengths of <code>R</code> is the user’s ability to add functions. In fact, many of the functions in <code>R</code> are actually functions of functions. The structure of a function is given below.</p>
+<p>One of the great strengths of <code>R</code> is the user's ability to add functions. In fact, many of the functions in <code>R</code> are actually functions of functions. The structure of a function is given below.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">myfunction &lt;-<span class="st"> </span><span class="cf">function</span>(arg1, arg2, ... ){
   statements
 <span class="kw">return</span>(object)
