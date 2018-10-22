@@ -17,7 +17,7 @@ output:
 
 #### Under review
 
-* **Page, G. L., Rodríguez-Álvarez, MX., Lee, D.-J.** "Hierarchical Modeling of Growth Curve Derivatives via Sequences of Quotient Differences".
+* **Page, G.L., Rodríguez-Álvarez, MX., Lee, D.-J.** "Hierarchical Modeling of Growth Curve Derivatives via Sequences of Quotient Differences".
 
 * **Ayma, D., Durbán, M., Lee, D.-J. and Van de Kasteele, J.** "Modeling latent spatio-temporal disease incidence using smooth composite link models".
 
