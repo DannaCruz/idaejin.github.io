@@ -1,0 +1,61 @@
+---
+title: '**Introduction to Statistical Modelling in `R`**'
+author: "Dae-Jin Lee < dlee@bcamath.org >"
+date: "BCAM-UPV/EHU Courses 2018-2019"
+output:
+  slidy_presentation:
+    fig_caption: yes
+    font_adjustment: 5
+    highlight: monochrome
+    smart: no
+    theme: cerulean
+  beamer_presentation:
+    colortheme: seahorse
+    fonttheme: professionalfonts
+  ioslides_presentation:
+    highlight: monochrome
+---
+
+
+***********
+
+# Analyzing data in `R`
+
+* We are studying inflammation in patients who have been given a new treatment for arthritis.
+
+* The data sets are stored in *comma-separated values* (CSV) format. Each row holds the observations for just one patient. 
+
+* Each column holds the inflammation measured in a day, so we have a set of values in successive days. 
+
+* Download data [here]("http://idaejin.github.io/courses/R/2018/data/inflammation-01.csv")
+
+
+## Aims
+
+  + Load data into memory.
+  
+  + Calculate the average value of inflammation per day across all patients, and
+  
+  + Plot results.
+  
+# Loading Data
+
+
+  + Let's import `inflammation-01.csv` into our `R` environment.
+  
+```{r,eval=FALSE}
+setwd("~/.../data/")
+```
+
+
+  + Read file
+```{r, results='hide'}
+read.csv(file = "data/inflammation-01.csv", header = FALSE)
+```
+
+ + Check the difference with 
+ 
+```{r, eval = FALSE}
+read.csv(file = "data/inflammation-01.csv") # by default is set to header = TRUE
+```
+ 
