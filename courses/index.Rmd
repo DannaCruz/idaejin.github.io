@@ -19,9 +19,6 @@ output:
 
  + [Introducción al software estadístico `R`.](http://idaejin.github.io/courses/R/2019/euskaltel)
 
-# 2018
-
- + 
 
 ------------------------------------      
 [Back to `idaejin.github.io`](http://idaejin.github.io/)
