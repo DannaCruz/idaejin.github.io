@@ -1,0 +1,65 @@
+--- 
+title: "Introducción al software estadístico `R`"
+author: "Dae-Jin Lee < dlee@bcamath.org >"
+date: "Marzo 2019"
+site: bookdown::bookdown_site
+output: 
+  bookdown::gitbook:
+    config:
+      sharing:
+        facebook: false
+        twitter: false
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: idaejin/xxx
+description: "Material del curso de Formación en `R` Euskaltel"
+---
+
+
+<!-- bookdown::render_book("index.Rmd", "bookdown::pdf_book") -->
+
+#  Información y pre-requisitos
+
+* **Requisitos:**
+
+    * Última versión del software `R` (<a href="https://www.r-project.org" target="_blank">https://www.r-project.org</a>)
+    * `Rstudio` (<a href="https://www.rstudio.com" target="_blank">https://www.rstudio.com</a>).
+
+&nbsp;
+
+* **Horario:**
+
+      + Día 11 de marzo 10:30 a 14:30 horas
+      + Días 12 y 13 de marzo de 09.00 a 13.00 horas
+      + Día 14 de marzo 09.00 a 12.00 horas
+    
+&nbsp;
+
+* **Objetivos del curso**
+
+El curso proporcionará conocimientos básicos y habilidades para utilizar el software estadístico `R` como entorno de trabajo y análisis de datos. Para ello, el curso ofrecerá una visión general de las herramientas ofrecidas por `R`, por ejemplo, desde el manejo de matrices y conjuntos de datos, a representaciones gráficas, pruebas y análisis estadísticos, programación en `R` y técnicas de modelización estadística y aprendizaje automático. 
+
+El objetivo es que al final del curso todos se hayan familiarizado con el software estadístico `R`.
+
+
+* **Material complementario (en inglés)**
+
+    + [Table of useful `R` commands](https://www.calvin.edu/~scofield/courses/m143/materials/RcmdsFromClass.pdf)
+  
+    + [Base `R` cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/10/r-cheat-sheet-3.pdf)
+  
+    + [Not so short list of `R` commands](http://www.webpages.uidaho.edu/~stevel/251/comR.pdf)
+
+    + [Additional material: `R` for Data Science](http://r4ds.had.co.nz/) or [here](http://courses.had.co.nz/)
+
+    +  Some interesting links:
+  
+          + [Karl Broman's talks](http://kbroman.org/pages/talks.html)
+      
+          + [Plots to avoid](http://genomicsclass.github.io/book/pages/plots_to_avoid.html)
+      
+          + [RSeek](http://rseek.org/) - a Google search engine for R documentation and help. A MUST see!
+      
+
