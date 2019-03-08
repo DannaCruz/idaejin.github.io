@@ -196,7 +196,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><p>Para asignar contenido a un objeto usamos <code>&lt;-</code>. Por ejemplo, <code>x &lt;- 10</code> asigna a <code>x</code> el valor <code>10</code>. También podemos usar =.</p></li>
 <li><p>Para ver el contenido de un objeto simplemente escribimos su nombre.</p></li>
 <li><p>Para usar los comandos escribimos el nombre del comando seguido de sus argumentos entre paréntesis. Por ejemplo, <code>ls()</code>da una lista de los objetos en el área de trabajo. Como no usamos argumentos (diferentes a los que el comando tenga por defecto) no escribimos nada en el paréntesis.</p></li>
-<li><p>Para obtener ayuda usamos el comando <code>help</code>. Por ejemplo, <code>help(mean)</code> para obtener ayuda sobre el comando <code>mean</code> que calcula la media.</p></li>
+<li><p>Para ver la clase de un objeto <code>class(obj)</code>.</p></li>
+<li><p>Para obtener ayuda usamos el comando <code>help</code>. Por ejemplo, <code>help(mean)</code> para obtener ayuda sobre el comando <code>mean</code> que calcula la media. O simplemente <code>?mean</code>.</p></li>
+<li><p>Para borrar objetos <code>rm()</code>.</p></li>
 </ul>
 </div>
 <div id="guardar-los-resultados-y-el-codigo" class="section level2">
@@ -260,7 +262,7 @@ Figure 2.1: Interfaz RStudio
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">setwd</span>(<span class="st">&quot;/Users/dlee&quot;</span>) </code></pre></div>
 <ul>
-<li><p>Desde Rstudio: <code>Files &gt; Click en ... &gt; More &gt; Set as workind directory</code></p></li>
+<li><p>Desde Rstudio: <code>Files &gt; Click en ... &gt; More &gt; Set as working directory</code></p></li>
 <li><p>Ver los últimos comandos utilizados en la consola</p></li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">history</span>() <span class="co"># mostrar los últimos 25 comandos</span>
@@ -385,9 +387,9 @@ mydata =<span class="st"> </span><span class="kw">spss.get</span>(<span class="s
 </div>
 <div id="vectores" class="section level2">
 <h2><span class="header-section-number">2.10</span> Vectores</h2>
+<!-- * Descargar el siguiente código de `R` [aquí](http://idaejin.github.io/bcam-courses/rbasics/rbasics.R) -->
 <ul>
-<li><p>Descargar el siguiente código de <code>R</code> <a href="http://idaejin.github.io/bcam-courses/rbasics/rbasics.R">aquí</a></p></li>
-<li><p>Crear dos vectores</p></li>
+<li>Crear dos vectores</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">weight&lt;-<span class="kw">c</span>(<span class="dv">60</span>,<span class="dv">72</span>,<span class="dv">57</span>,<span class="dv">90</span>,<span class="dv">95</span>,<span class="dv">72</span>)  
 <span class="kw">class</span>(weight)</code></pre></div>
@@ -467,7 +469,7 @@ sex &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&qu
 <div id="data-frames" class="section level2">
 <h2><span class="header-section-number">2.13</span> Data frames</h2>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Dat &lt;-<span class="st"> </span><span class="kw">data.frame</span>(subject,sex,weight,height)
-<span class="co"># a?adir el bmi a Dat</span>
+<span class="co"># añadir el bmi a Dat</span>
 Dat<span class="op">$</span>bmi &lt;-<span class="st"> </span>bmi  <span class="co"># o Dat$bmi &lt;- weight/height^2</span>
 <span class="kw">class</span>(Dat)</code></pre></div>
 <pre><code>## [1] &quot;data.frame&quot;</code></pre>
@@ -759,7 +761,22 @@ airquality[ok,]</code></pre></div>
 ##  $ gear: num  4 4 4 3 3 3 3 4 4 4 ...
 ##  $ carb: num  4 4 1 1 2 1 4 2 2 4 ...</code></pre>
 <ul>
-<li>Select a car model:</li>
+<li><p>Definición de las variables:</p>
+<ul>
+<li><p>Modelo: Los tipos de coches son una mezcla que incluye sedanes (Datsun, Ford, Honda,…), sedanes de lujo (Mercedes, Cadellac,…), muscle cars (Javelin, Challenger, Camero…) y coches deportivos de alta gama (Porsche, Lotus, Maserati, Ferrari…).</p></li>
+<li><p><code>mpg</code>(<em>Miles/US Gallon</em>). Es la variable para determinar la eficiencia de combustible.</p></li>
+<li><p><code>cyl</code>(nº de cilindros). Los datos incluyen vehículos con motores de 4,6,8 cilindros.</p></li>
+<li><p><code>disp</code> (<em>displacement</em>). El desplazamiento mide el volumen total del motor como factor de circunstancia del cilindro, profundidad y número total de cilindros. Esta métrica da un buen proxy para la cantidad total de potencia que el motor puede generar.</p></li>
+<li><p><code>hp</code> (<em>horse power</em>). La potencia bruta mide la potencia teórica de un motor.</p></li>
+<li><p><code>drat</code> (<em>Relación del eje trasero</em>) . La relación de transmisión del eje trasero indica el número de vueltas del eje de transmisión por cada rotación del eje de la rueda. Un vehículo con una relación elevada proporcionaría, por ejemplo, más par y, por lo tanto, más capacidad de remolque. La configuración de la transmisión a menudo puede influir en la relación de transmisión de un fabricante.</p></li>
+<li><p><code>wt</code> (<em>peso (libras/1000)</em>). El peso total del vehículo por cada 1000 libras (media tonelada de EE.UU.).</p></li>
+<li><p><code>qsec</code> (1/4 mile time). Una medida de rendimiento, principalmente de la aceleración. El tiempo más rápido para viajar 1/4 de milla desde la parada (en segundos).</p></li>
+<li><p><code>vs</code> (V/S). Variable binaria que señala la configuración del cilindro del motor en forma de V (vs=0) o en línea recta (vs=1). <code>V===0</code> y <code>S==1</code>.</p></li>
+<li><p><code>am</code> (tipo de transmisión). Variable binaria que indica si el vehículo tiene una transmisión automática (<code>am=0</code>) o manual (<code>am=1</code>).</p></li>
+<li><p><code>gear</code> (nº de marchas hacia adelante). Nº de marchas en la transmisión. Las transmisiones manuales tienen 4 ó 5 marchas hacia adelante; Automáticas 3 ó 4.</p></li>
+<li><p><code>carb</code> (nº de carburadores).</p></li>
+</ul></li>
+<li><p>Seleccionar un modelo:</p></li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mtcars[<span class="st">&quot;Mazda RX4&quot;</span>,] <span class="co"># usando nombres de las filas y las columnas</span></code></pre></div>
 <pre><code>##           mpg cyl disp  hp drat   wt  qsec vs am gear carb
@@ -805,6 +822,9 @@ airquality[ok,]</code></pre></div>
 ## Ferrari Dino        19.7  1
 ## Maserati Bora       15.0  1
 ## Volvo 142E          21.4  1</code></pre>
+<ul>
+<li>La librería <code>psych</code>, contiene la función <code>describe</code> que permite calcular medidas descriptivas de un data frame:</li>
+</ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(psych)
 <span class="kw">describe</span>(mtcars)</code></pre></div>
 <pre><code>##      vars  n   mean     sd median trimmed    mad   min    max  range  skew

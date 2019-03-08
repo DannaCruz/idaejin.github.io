@@ -3,7 +3,7 @@
 ## Gráficos sencillos
 
 
-*  Scatterplot
+*  _Scatterplot_:
 
 ```{r}
 attach(mtcars)
@@ -11,26 +11,25 @@ plot(wt, mpg, main="Scatterplot Example",
    xlab="Car Weight ", ylab="Miles Per Gallon ", pch=19) 
 ```
 
-* Matriz scatterplot
+* Matriz _scatterplot_:
 
-```{r}
+```{r, fig.align='center'}
 pairs(~mpg+disp+drat+wt,data=mtcars,
    main="Simple Scatterplot Matrix")
 ```
 
-* Barplot o diagrama de barras
+* Barplot o diagrama de barras:
 
-```{r,fig.pos='center'}
+```{r,fig.align='center'}
 tab <- table(mtcars[,c("cyl")])
 barplot(tab)
 ```
 
-* Piechart o diagrama de tarta
+* Piechart o diagrama de tarta:
 
 ```{r,fig.align='center'}
 pie(tab)
 ```
-
 
 
 **Ejercicio:**
@@ -87,7 +86,7 @@ Acmena <- subset(rainforest, species == "Acmena smithii")
 ```
 
  
-```{r,echo=FALSE, fig.width=10,fig.height=8}
+```{r,echo=FALSE, fig.width=10,fig.height=8,fig.align='center'}
 par(mfrow=c(1,2))
 plot(wood~dbh,data=Acmena,pch=19, main="plot of dbh vs wood")
 plot(log(wood)~log(dbh),data=Acmena,pch=19,main="log transformation")
@@ -100,7 +99,7 @@ plot(log(wood)~log(dbh),data=Acmena,pch=19,main="log transformation")
 hist(Acmena$dbh,col="grey")
 ```
 
-4. Crea un vector de n?meros enteros positivos impares the longitud 100 y  calcula los valores entre 60 y 80.
+4. Crea un vector de números enteros positivos impares the longitud 100 y  calcula los valores entre 60 y 80.
 
     * **Result:** 
     
@@ -110,7 +109,7 @@ hist(Acmena$dbh,col="grey")
 ```
 
 
-* [Soluciones aquí](http://idaejin.github.io/bcam-courses/rbasics/rbasics_sol.R)
+<!-- * [Soluciones aquí](http://idaejin.github.io/bcam-courses/rbasics/rbasics_sol.R) -->
 
 
 ***********
@@ -136,7 +135,7 @@ plot(x,y, xlab = "body weight in kgr", ylab = "brain weight in gr",
 textxy(x,y,labs=species,col = "blue",cex=0.85) 
 ```
 
-Identificar un punto en el scatterplot
+Identificar un punto en el scatterplot:
 
 ```{r, eval=FALSE}
 identify(x,y,species)
@@ -155,7 +154,7 @@ Identificar un punto en la escala logarítmica
 identify(log(x),log(y),species)
 ```
 
-## más opciones gráficas
+## Más opciones gráficas
 
 **Varios conjuntos de datos en un sólo gráfico**
 
@@ -201,7 +200,7 @@ y2 <- 2.5*x2 - 1.0 + runif(8,-6,6)
 
 **Varios gráficos en un sola imagen**
 
-```{r}
+```{r,fig.align='center'}
 set.seed(1234)
  par(mfrow=c(2,3))
  boxplot(rnorm(100),main="first plot")
@@ -229,7 +228,7 @@ pairs(d)
 
 La función `corrplot` de la librer?a `corrplot` permite visualizar una matriz de correlaciones calculada mediante la función `cor`
 
-```{r, fig.width=8}
+```{r, fig.align='center', fig.width=8}
 library(corrplot)
 M <- cor(d)
 corrplot(M, method="circle",type="upper")
@@ -237,7 +236,7 @@ corrplot(M, method="circle",type="upper")
 
 **Gráficos de superficies: `image`, `contour` y `persp`**
 
-```{r, fig.width=10, fig.height=10}
+```{r, fig.width=10, fig.height=10, fig.align='center'}
 x <- seq(0,2*pi,by=pi/50)
 y <- x
 xg <- (x*0+1) %*% t(y)
@@ -260,7 +259,7 @@ persp(x,y,f,theta=-30,phi=55,col="lightgrey",shade=.01)
 ```
 
 
-o representar im?genes
+o representar imágenes
 
 ```{r,message=FALSE,warning=FALSE,fig.width=10,fig.height=10}
 library(fields)
@@ -268,7 +267,7 @@ data(lennon)
 image(lennon,col=grey(seq(0,1,l=256)))
 ```
 
-## Tablas de clasificación cruzada o de contigencia
+## Tablas de clasificación cruzada o de contingencia
 
 ```{r}
 library(MASS)
@@ -283,7 +282,7 @@ xtabs(~Sex+Age,data=quine)
 xtabs(~Sex+Age+Eth,data=quine)
 ```
 
-## cálculos sobre tablas de contigencia
+## cálculos sobre tablas de contingencia
 
 ```{r}
 tapply(Days,Age,mean)
@@ -310,13 +309,13 @@ improved <- factor(rep(c(1, 2, 3, 1, 2, 3), c(29, 7, 7, 13, 7, 21)),
                    levels = c(1, 2, 3),
                    labels = c("none", "some", "marked"))
 ```
-Tabla de contigencia
+Tabla de contingencia
 ```{r}
 xtabs(~treatment+improved)
 ```
 
 De manera gráfica,
-```{r}
+```{r, fig.align='center'}
 spineplot(improved ~ treatment)
 ```
 
@@ -350,19 +349,18 @@ ftable(round(prop.table(UCBAdmissions, c(2,3)), 2),
 ```{r}
 ## Data aggregated over departments
 apply(UCBAdmissions, c(1, 2), sum)
-````
+```
 
-gr?ficamente
+Gráficamente
 
-```{r}
+```{r,fig.align='center'}
 spineplot(margin.table(UCBAdmissions, c(3, 2)),
            main = "Applications at UCB")
 spineplot(margin.table(UCBAdmissions, c(3, 1)),
            main = "Admissions at UCB")
-
 ```
 
-Estos datos ilustran la denominada *paradoja de Simpson*. Este hecho ha sido analizado como un posible caso de discriminación por sexo en las tasas de admisión en Berkeley. De los 2691 hombres que solicitaron se admitidos, 1198 (44.5%) fueron admitidos, comparado con las 1835 mujeres de las cuales tan s?lo 557 (30.4%) fueron admitidas. Se podr?a por tanto concluir que los hombres tienes tasas de admisión mayores que las mujeres. [Wikipedia: Gender Bias UC Berkeley](https://en.wikipedia.org/wiki/Simpson%27s_paradox#UC_Berkeley_gender_bias). See animation at [link](http://vudlab.com/simpsons/) 
+Estos datos ilustran la denominada *paradoja de Simpson*. Este hecho ha sido analizado como un posible caso de discriminación por sexo en las tasas de admisión en Berkeley. De los 2691 hombres que solicitaron se admitidos, 1198 (44.5%) fueron admitidos, comparado con las 1835 mujeres de las cuales tan s?lo 557 (30.4%) fueron admitidas. Se podr?a por tanto concluir que los hombres tienes tasas de admisión mayores que las mujeres. [Wikipedia: Gender Bias UC Berkeley](https://en.wikipedia.org/wiki/Simpson%27s_paradox#UC_Berkeley_gender_bias).
  
 
 
@@ -377,7 +375,7 @@ head(faithful)
 
 Consideremos los datos del geyse Old Faithful en el parque nacional de Yellowstone, EEUU. 
 
-```{r}
+```{r, fig.align='center'}
 plot(faithful)
 ```
 
@@ -412,7 +410,7 @@ duration.freq
 
 Con `hist` podemos realizarlo de manera autom?tica: 
 
-```{r}
+```{r, fig.align='center'}
 freq <- hist(duration)
 freq
 
@@ -424,7 +422,7 @@ hist(duration,50)
 
 **Estimación de densidad** construye una estimación dada una distribucion de probabilidad para una muestra dada.
 
-```{r}
+```{r, fig.align='center'}
 require(graphics)
 d <- density(faithful$eruptions)
 d
@@ -433,7 +431,7 @@ plot(d)
 
 En dos dimensiones:
 
-```{r,message=FALSE,warning=FALSE}
+```{r,message=FALSE,warning=FALSE,fig.align='center'}
 library(gplots)
 h2 <- hist2d(faithful, nbins=30,xlab="Duration in minutes",ylab="Waiting")
 h2
@@ -473,7 +471,8 @@ cumsum(duration.relfreq)
 <!-- ``` -->
 
 **Estimación bivariante tipo kernel**
-```{r}
+
+```{r, fig.align='center'}
 data("faithful")
 attach(faithful)
 Dens2d<-kde2d(eruptions,waiting)
@@ -484,7 +483,7 @@ detach("faithful")
 
 **Gráficos `persp`**
 
-```{r}
+```{r, fig.align='center'}
 persp(Dens2d,phi=30,theta=20,d=5,xlab="eruptions",ylab="waiting",zlab="",shade=.2,col="lightblue",expand=.85,ticktype = "detailed")
 ```
 

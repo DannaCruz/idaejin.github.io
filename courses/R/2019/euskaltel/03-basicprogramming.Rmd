@@ -215,7 +215,7 @@ z
 
 ## `while`
 
-Similar al bucle `for`, pero las iteraciones est?n controladas por una condici?n.
+Similar al bucle `for`, pero las iteraciones están controladas por una condición.
 
 ```{r}
 z <- 0

@@ -15,10 +15,14 @@ Más información [aquí](https://es.wikipedia.org/wiki/R_(lenguaje_de_programac
  - Para asignar contenido a un objeto usamos `<-`. Por ejemplo, `x <- 10` asigna a `x` el valor `10`. También podemos usar =.
 
  - Para ver el contenido de un objeto simplemente escribimos su nombre.
-
- - Para usar los comandos escribimos el nombre del comando seguido de sus argumentos entre paréntesis. Por ejemplo, `ls()`da una lista de los objetos en el área de trabajo. Como no usamos argumentos (diferentes a los que el comando tenga por defecto) no escribimos nada en el paréntesis.
  
- - Para obtener ayuda usamos el comando `help`. Por ejemplo, `help(mean)` para obtener ayuda sobre el comando `mean` que calcula la media.
+ - Para usar los comandos escribimos el nombre del comando seguido de sus argumentos entre paréntesis. Por ejemplo, `ls()`da una lista de los objetos en el área de trabajo. Como no usamos argumentos (diferentes a los que el comando tenga por defecto) no escribimos nada en el paréntesis.
+
+ - Para ver la clase de un objeto `class(obj)`.
+ 
+ - Para obtener ayuda usamos el comando `help`. Por ejemplo, `help(mean)` para obtener ayuda sobre el comando `mean` que calcula la media. O simplemente `?mean`.
+ 
+ - Para borrar objetos `rm()`.
  
 
 ## Guardar los resultados y el código
@@ -98,7 +102,7 @@ ls()
 setwd("/Users/dlee") 
 ```
 
-* Desde Rstudio: `Files > Click en ... > More > Set as workind directory` 
+* Desde Rstudio: `Files > Click en ... > More > Set as working directory` 
 
 * Ver los últimos comandos utilizados en la consola
 
@@ -155,6 +159,7 @@ install.packages("DAAG") # (Data Analysis And Graphics)
 ```
 
 * Una vez instalada la librería, tenemos que cargarla con el comando `library` o `require`
+
 ```{r,warning=FALSE,message=FALSE}
 library(DAAG) # o require(DAAG)
 ```
@@ -287,7 +292,7 @@ write.xlsx(mydata, "mydata.xlsx")
 
 ## Vectores
 
-* Descargar el siguiente código de `R` [aquí](http://idaejin.github.io/bcam-courses/rbasics/rbasics.R)
+<!-- * Descargar el siguiente código de `R` [aquí](http://idaejin.github.io/bcam-courses/rbasics/rbasics.R) -->
 
 * Crear dos vectores
 
@@ -622,7 +627,6 @@ airquality[ok,]
 mtcars
 ?mtcars       # help(mtcars)
 ```
-
 * Observemos las primeras filas
 
 ```{r}
@@ -635,7 +639,34 @@ head(mtcars)
 str(mtcars) # visualiza la estructura del marco de datos
 ```
 
-* Select a car model:
+* Definición de las variables:
+
+      + Modelo: Los tipos de coches son una mezcla que incluye sedanes (Datsun, Ford, Honda,...), sedanes de lujo (Mercedes, Cadellac,...), muscle cars (Javelin, Challenger, Camero...) y coches deportivos de alta gama (Porsche, Lotus, Maserati, Ferrari...).
+
+      + `mpg`(_Miles/US Gallon_). Es la variable para determinar la eficiencia de combustible.
+      
+      + `cyl`(nº de cilindros). Los datos incluyen vehículos con motores de 4,6,8 cilindros.
+      
+      + `disp` (_displacement_). El desplazamiento mide el volumen total del motor como factor de circunstancia del cilindro, profundidad y número total de cilindros. Esta métrica da un buen proxy para la cantidad total de potencia que el motor puede generar.
+      
+      + `hp` (_horse power_). La potencia bruta mide la potencia teórica de un motor.
+      
+      + `drat` (_Relación del eje trasero_) . La relación de transmisión del eje trasero indica el número de vueltas del eje de transmisión por cada rotación del eje de la rueda. Un vehículo con una relación elevada proporcionaría, por ejemplo, más par y, por lo tanto, más capacidad de remolque. La configuración de la transmisión a menudo puede influir en la relación de transmisión de un fabricante.
+      
+      + `wt` (_peso (libras/1000)_). El peso total del vehículo por cada 1000 libras (media tonelada de EE.UU.).
+      
+      + `qsec` (1/4 mile time). Una medida de rendimiento, principalmente de la aceleración. El tiempo más rápido para viajar 1/4 de milla desde la parada (en segundos).
+
+      + `vs` (V/S). Variable binaria que señala la configuración del cilindro del motor en forma de V (vs=0) o en línea recta (vs=1). `V===0` y `S==1`. 
+      
+      + `am` (tipo de transmisión). Variable binaria que indica si el vehículo tiene una transmisión automática (`am=0`) o manual (`am=1`).
+      
+      + `gear` (nº de marchas hacia adelante). Nº de marchas en la transmisión. Las transmisiones manuales tienen 4 ó 5 marchas hacia adelante; Automáticas 3 ó 4.
+      
+      + `carb` (nº de carburadores). 
+      
+      
+* Seleccionar un modelo:
 ```{r}
 mtcars["Mazda RX4",] # usando nombres de las filas y las columnas
 mtcars[c("Datsun 710", "Camaro Z28"),] 
@@ -646,6 +677,9 @@ mtcars[c("Datsun 710", "Camaro Z28"),]
 ```{r}
 mtcars[,c("mpg","am")]
 ```
+
+
+*  La librería `psych`, contiene la función `describe` que permite calcular medidas descriptivas de un data frame:
 
 ```{r, message=FALSE, warning=FALSE}
 library(psych)
