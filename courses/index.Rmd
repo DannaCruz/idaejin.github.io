@@ -17,7 +17,7 @@ output:
 
 # 2019
 
- + [Introducción al software estadístico `R`.](http://idaejin.github.io/courses/R/2019/euskaltel)
+ + [Introducción al software estadístico `R`.](http://idaejin.github.io/courses/R/2019/)
 
 
 ------------------------------------      
