@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> 5 Casos de estudio | Introducción al software estadístico R</title>
+  <meta name="description" content="Material del curso de Formación en R Euskaltel">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content=" 5 Casos de estudio | Introducción al software estadístico R" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Material del curso de Formación en R Euskaltel" />
+  <meta name="github-repo" content="idaejin/xxx" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content=" 5 Casos de estudio | Introducción al software estadístico R" />
+  
+  <meta name="twitter:description" content="Material del curso de Formación en R Euskaltel" />
+  
+
+<meta name="author" content="Dae-Jin Lee &lt; dlee@bcamath.org &gt;">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="introduccion-a-la-programacion-basica-con-r.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Curso de formación en R</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Información y pre-requisitos</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introducción al software estadístico <code>R</code></a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#instalar-un-paquete-de-r"><i class="fa fa-check"></i><b>2.1</b> Instalar un paquete de <code>R</code></a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#empezando-con-r"><i class="fa fa-check"></i><b>2.2</b> Empezando con <code>R</code></a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#instalar-y-cargar-librerias-en-r"><i class="fa fa-check"></i><b>2.3</b> Instalar y cargar librerías en <code>R</code></a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#lectura-de-datos"><i class="fa fa-check"></i><b>2.4</b> Lectura de datos</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#importar-datos"><i class="fa fa-check"></i><b>2.5</b> Importar datos</a></li>
+<li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#exportar-datos"><i class="fa fa-check"></i><b>2.6</b> Exportar datos</a></li>
+<li class="chapter" data-level="2.7" data-path="intro.html"><a href="intro.html#vectores"><i class="fa fa-check"></i><b>2.7</b> Vectores</a></li>
+<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#estadistica-basica"><i class="fa fa-check"></i><b>2.8</b> Estadística básica</a></li>
+<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#vectores-caracteres-y-variables-factor"><i class="fa fa-check"></i><b>2.9</b> Vectores caracteres y variables factor</a></li>
+<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#data-frames"><i class="fa fa-check"></i><b>2.10</b> Data frames</a></li>
+<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#trabajando-con-data-frames"><i class="fa fa-check"></i><b>2.11</b> Trabajando con data frames</a></li>
+<li class="chapter" data-level="2.12" data-path="intro.html"><a href="intro.html#vectores-logicos"><i class="fa fa-check"></i><b>2.12</b> Vectores lógicos</a></li>
+<li class="chapter" data-level="2.13" data-path="intro.html"><a href="intro.html#trabajando-con-vectores"><i class="fa fa-check"></i><b>2.13</b> Trabajando con vectores</a></li>
+<li class="chapter" data-level="2.14" data-path="intro.html"><a href="intro.html#matrices-y-arrays"><i class="fa fa-check"></i><b>2.14</b> Matrices y arrays</a></li>
+<li class="chapter" data-level="2.15" data-path="intro.html"><a href="intro.html#factores"><i class="fa fa-check"></i><b>2.15</b> Factores</a></li>
+<li class="chapter" data-level="2.16" data-path="intro.html"><a href="intro.html#indexando-vectores-con-condiciones-logicas"><i class="fa fa-check"></i><b>2.16</b> Indexando vectores con condiciones lógicas</a></li>
+<li class="chapter" data-level="2.17" data-path="intro.html"><a href="intro.html#valores-faltantes"><i class="fa fa-check"></i><b>2.17</b> Valores faltantes</a></li>
+<li class="chapter" data-level="2.18" data-path="intro.html"><a href="intro.html#trabajando-con-data-frames-1"><i class="fa fa-check"></i><b>2.18</b> Trabajando con data frames</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="analisis-de-datos-basico-en-r.html"><a href="analisis-de-datos-basico-en-r.html"><i class="fa fa-check"></i><b>3</b> Análisis de datos básico en <code>R</code></a><ul>
+<li class="chapter" data-level="3.1" data-path="analisis-de-datos-basico-en-r.html"><a href="analisis-de-datos-basico-en-r.html#graficos-sencillos"><i class="fa fa-check"></i><b>3.1</b> Gráficos sencillos</a></li>
+<li class="chapter" data-level="3.2" data-path="analisis-de-datos-basico-en-r.html"><a href="analisis-de-datos-basico-en-r.html#scatterplots"><i class="fa fa-check"></i><b>3.2</b> Scatterplots</a></li>
+<li class="chapter" data-level="3.3" data-path="analisis-de-datos-basico-en-r.html"><a href="analisis-de-datos-basico-en-r.html#mas-opciones-graficas"><i class="fa fa-check"></i><b>3.3</b> más opciones gráficas</a></li>
+<li class="chapter" data-level="3.4" data-path="analisis-de-datos-basico-en-r.html"><a href="analisis-de-datos-basico-en-r.html#tablas-de-clasificacion-cruzada-o-de-contigencia"><i class="fa fa-check"></i><b>3.4</b> Tablas de clasificación cruzada o de contigencia</a></li>
+<li class="chapter" data-level="3.5" data-path="analisis-de-datos-basico-en-r.html"><a href="analisis-de-datos-basico-en-r.html#calculos-sobre-tablas-de-contigencia"><i class="fa fa-check"></i><b>3.5</b> cálculos sobre tablas de contigencia</a></li>
+<li class="chapter" data-level="3.6" data-path="analisis-de-datos-basico-en-r.html"><a href="analisis-de-datos-basico-en-r.html#datos-cualitativos"><i class="fa fa-check"></i><b>3.6</b> Datos cualitativos</a></li>
+<li class="chapter" data-level="3.7" data-path="analisis-de-datos-basico-en-r.html"><a href="analisis-de-datos-basico-en-r.html#datos-cuantitativos"><i class="fa fa-check"></i><b>3.7</b> Datos cuantitativos</a><ul>
+<li class="chapter" data-level="3.7.1" data-path="analisis-de-datos-basico-en-r.html"><a href="analisis-de-datos-basico-en-r.html#distribuciones-de-frecuencias"><i class="fa fa-check"></i><b>3.7.1</b> Distribuciones de frecuencias</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html"><i class="fa fa-check"></i><b>4</b> Introducción a la programación básica con <code>R</code></a><ul>
+<li class="chapter" data-level="4.1" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#condicionales"><i class="fa fa-check"></i><b>4.1</b> Condicionales</a></li>
+<li class="chapter" data-level="4.2" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#operadores-logicos"><i class="fa fa-check"></i><b>4.2</b> Operadores Lógicos</a></li>
+<li class="chapter" data-level="4.3" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#if-statements"><i class="fa fa-check"></i><b>4.3</b> <code>if</code> statements</a></li>
+<li class="chapter" data-level="4.4" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#ifelse"><i class="fa fa-check"></i><b>4.4</b> <code>ifelse</code></a></li>
+<li class="chapter" data-level="4.5" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#while"><i class="fa fa-check"></i><b>4.5</b> <code>while</code></a></li>
+<li class="chapter" data-level="4.6" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#loops-o-bucles"><i class="fa fa-check"></i><b>4.6</b> Loops o Bucles</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#for"><i class="fa fa-check"></i><b>4.6.1</b> <code>for</code></a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#while-1"><i class="fa fa-check"></i><b>4.7</b> <code>while</code></a></li>
+<li class="chapter" data-level="4.8" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#famila-de-funciones-apply"><i class="fa fa-check"></i><b>4.8</b> Famila de funciones <code>apply</code></a></li>
+<li class="chapter" data-level="4.9" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#other-loops"><i class="fa fa-check"></i><b>4.9</b> Other Loops</a></li>
+<li class="chapter" data-level="4.10" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#improving-speed-performance-of-loops"><i class="fa fa-check"></i><b>4.10</b> Improving Speed Performance of Loops</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="casos-de-estudio.html"><a href="casos-de-estudio.html"><i class="fa fa-check"></i><b>5</b> Casos de estudio</a><ul>
+<li class="chapter" data-level="5.1" data-path="casos-de-estudio.html"><a href="casos-de-estudio.html#el-ranking-forbes-2000-de-las-mayores-empresas-del-mundo-ano-2004"><i class="fa fa-check"></i><b>5.1</b> El ranking Forbes 2000 de las mayores empresas del mundo (año 2004)</a></li>
+<li class="chapter" data-level="5.2" data-path="casos-de-estudio.html"><a href="casos-de-estudio.html#melanoma-maligno-en-los-estados-unidos"><i class="fa fa-check"></i><b>5.2</b> Melanoma maligno en los Estados Unidos</a></li>
+<li class="chapter" data-level="5.3" data-path="casos-de-estudio.html"><a href="casos-de-estudio.html#mapeo-de-las-tasas-de-mortalidad"><i class="fa fa-check"></i><b>5.3</b> Mapeo de las tasas de mortalidad</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="http://idaejin.github.io/" target="blank">Mi página personal</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introducción al software estadístico <code>R</code></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="casos-de-estudio" class="section level1">
+<h1><span class="header-section-number"> 5</span> Casos de estudio</h1>
+<div id="el-ranking-forbes-2000-de-las-mayores-empresas-del-mundo-ano-2004" class="section level2">
+<h2><span class="header-section-number">5.1</span> El ranking Forbes 2000 de las mayores empresas del mundo (año 2004)</h2>
+<p>Las técnicas de tratamiento y manipulación de datos explicadas se ilustrarán mediante un conjunto de datos de 2000 empresas líderes mundiales, la lista Forbes 2000 para el año 2004 recogida por la revista Forbes. Esta lista está disponible originalmente en <code>www.forbes.com</code>.</p>
+<p>Aquí mostramos un subconjunto del conjunto de datos:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(<span class="st">&quot;HSAUR2&quot;</span>)
+<span class="kw">data</span>(<span class="st">&quot;Forbes2000&quot;</span>)</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">rank</th>
+<th align="left">name</th>
+<th align="left">country</th>
+<th align="left">category</th>
+<th align="right">sales</th>
+<th align="right">profits</th>
+<th align="right">assets</th>
+<th align="right">marketvalue</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">Citigroup</td>
+<td align="left">United States</td>
+<td align="left">Banking</td>
+<td align="right">94.71</td>
+<td align="right">17.85</td>
+<td align="right">1264.03</td>
+<td align="right">255.30</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">General Electric</td>
+<td align="left">United States</td>
+<td align="left">Conglomerates</td>
+<td align="right">134.19</td>
+<td align="right">15.59</td>
+<td align="right">626.93</td>
+<td align="right">328.54</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="left">American Intl Group</td>
+<td align="left">United States</td>
+<td align="left">Insurance</td>
+<td align="right">76.66</td>
+<td align="right">6.46</td>
+<td align="right">647.66</td>
+<td align="right">194.87</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="left">ExxonMobil</td>
+<td align="left">United States</td>
+<td align="left">Oil &amp; gas operations</td>
+<td align="right">222.88</td>
+<td align="right">20.96</td>
+<td align="right">166.99</td>
+<td align="right">277.02</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="left">BP</td>
+<td align="left">United Kingdom</td>
+<td align="left">Oil &amp; gas operations</td>
+<td align="right">232.57</td>
+<td align="right">10.27</td>
+<td align="right">177.57</td>
+<td align="right">173.54</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="left">Bank of America</td>
+<td align="left">United States</td>
+<td align="left">Banking</td>
+<td align="right">49.01</td>
+<td align="right">10.81</td>
+<td align="right">736.45</td>
+<td align="right">117.55</td>
+</tr>
+</tbody>
+</table>
+<p>Los datos consisten en 2.000 observaciones sobre las 8 variables siguientes.</p>
+<ul>
+<li><code>rank</code>: el ranking de la empresa.</li>
+<li><code>name</code>: el nombre de la empresa.</li>
+<li><code>country</code>: un factor que determina el país en el que está situada la empresa.</li>
+<li><code>category</code>: un factor que describe los productos que produce la empresa.</li>
+<li><code>sales</code>: el importe de las ventas de la empresa en miles de millones de USD.</li>
+<li><code>profits</code>: el beneficio de la empresa en miles de millones de dólares.</li>
+<li><code>assets</code>: los activos de la empresa en miles de millones de dólares.</li>
+<li><code>marketvalue</code>: el valor de mercado de la empresa en miles de millones de dólares.</li>
+</ul>
+<p><strong>Tipos de variables</strong></p>
+<p>En la consola de <code>R</code></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">str</span>(Forbes2000)</code></pre></div>
+<pre><code>## &#39;data.frame&#39;:    2000 obs. of  8 variables:
+##  $ rank       : int  1 2 3 4 5 6 7 8 9 10 ...
+##  $ name       : chr  &quot;Citigroup&quot; &quot;General Electric&quot; &quot;American Intl Group&quot; &quot;ExxonMobil&quot; ...
+##  $ country    : Factor w/ 61 levels &quot;Africa&quot;,&quot;Australia&quot;,..: 60 60 60 60 56 60 56 28 60 60 ...
+##  $ category   : Factor w/ 27 levels &quot;Aerospace &amp; defense&quot;,..: 2 6 16 19 19 2 2 8 9 20 ...
+##  $ sales      : num  94.7 134.2 76.7 222.9 232.6 ...
+##  $ profits    : num  17.85 15.59 6.46 20.96 10.27 ...
+##  $ assets     : num  1264 627 648 167 178 ...
+##  $ marketvalue: num  255 329 195 277 174 ...</code></pre>
+<p><strong>Factor levels</strong></p>
+<p>Nominal measurements are represented by factor variables in <code>R</code>, such as the country of the company or the category of the business segment.</p>
+<p>A factor in <code>R</code> is divided into levels</p>
+<p>How many countries are on the top 2000 ranking?</p>
+<p><code>R</code> command</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">nlevels</span>(Forbes2000[,<span class="st">&quot;country&quot;</span>])</code></pre></div>
+<pre><code>## [1] 61</code></pre>
+<p>Which countries?</p>
+<p><code>R</code> command</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">levels</span>(Forbes2000[,<span class="st">&quot;country&quot;</span>])</code></pre></div>
+<pre><code>##  [1] &quot;Africa&quot;                       &quot;Australia&quot;                   
+##  [3] &quot;Australia/ United Kingdom&quot;    &quot;Austria&quot;                     
+##  [5] &quot;Bahamas&quot;                      &quot;Belgium&quot;                     
+##  [7] &quot;Bermuda&quot;                      &quot;Brazil&quot;                      
+##  [9] &quot;Canada&quot;                       &quot;Cayman Islands&quot;              
+## [11] &quot;Chile&quot;                        &quot;China&quot;                       
+## [13] &quot;Czech Republic&quot;               &quot;Denmark&quot;                     
+## [15] &quot;Finland&quot;                      &quot;France&quot;                      
+## [17] &quot;France/ United Kingdom&quot;       &quot;Germany&quot;                     
+## [19] &quot;Greece&quot;                       &quot;Hong Kong/China&quot;             
+## [21] &quot;Hungary&quot;                      &quot;India&quot;                       
+## [23] &quot;Indonesia&quot;                    &quot;Ireland&quot;                     
+## [25] &quot;Islands&quot;                      &quot;Israel&quot;                      
+## [27] &quot;Italy&quot;                        &quot;Japan&quot;                       
+## [29] &quot;Jordan&quot;                       &quot;Kong/China&quot;                  
+## [31] &quot;Korea&quot;                        &quot;Liberia&quot;                     
+## [33] &quot;Luxembourg&quot;                   &quot;Malaysia&quot;                    
+## [35] &quot;Mexico&quot;                       &quot;Netherlands&quot;                 
+## [37] &quot;Netherlands/ United Kingdom&quot;  &quot;New Zealand&quot;                 
+## [39] &quot;Norway&quot;                       &quot;Pakistan&quot;                    
+## [41] &quot;Panama/ United Kingdom&quot;       &quot;Peru&quot;                        
+## [43] &quot;Philippines&quot;                  &quot;Poland&quot;                      
+## [45] &quot;Portugal&quot;                     &quot;Russia&quot;                      
+## [47] &quot;Singapore&quot;                    &quot;South Africa&quot;                
+## [49] &quot;South Korea&quot;                  &quot;Spain&quot;                       
+## [51] &quot;Sweden&quot;                       &quot;Switzerland&quot;                 
+## [53] &quot;Taiwan&quot;                       &quot;Thailand&quot;                    
+## [55] &quot;Turkey&quot;                       &quot;United Kingdom&quot;              
+## [57] &quot;United Kingdom/ Australia&quot;    &quot;United Kingdom/ Netherlands&quot; 
+## [59] &quot;United Kingdom/ South Africa&quot; &quot;United States&quot;               
+## [61] &quot;Venezuela&quot;</code></pre>
+<p>And in the top 20?</p>
+<p><code>R</code> commands</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">top20 &lt;-<span class="st"> </span><span class="kw">droplevels</span>(<span class="kw">subset</span>(Forbes2000,rank<span class="op">&lt;=</span><span class="dv">20</span>))
+<span class="kw">levels</span>(top20[,<span class="st">&quot;country&quot;</span>])</code></pre></div>
+<pre><code>## [1] &quot;France&quot;                      &quot;Japan&quot;                      
+## [3] &quot;Netherlands&quot;                 &quot;Netherlands/ United Kingdom&quot;
+## [5] &quot;Switzerland&quot;                 &quot;United Kingdom&quot;             
+## [7] &quot;United States&quot;</code></pre>
+<p>As a simple summary statistic, the frequencies of the levels of such a factor variable can be found from</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">table</span>(top20[,<span class="st">&quot;country&quot;</span>])</code></pre></div>
+<pre><code>## 
+##                      France                       Japan 
+##                           2                           1 
+##                 Netherlands Netherlands/ United Kingdom 
+##                           1                           1 
+##                 Switzerland              United Kingdom 
+##                           1                           3 
+##               United States 
+##                          11</code></pre>
+<p>Which type of companies?</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">levels</span>(Forbes2000[,<span class="st">&quot;category&quot;</span>])</code></pre></div>
+<pre><code>##  [1] &quot;Aerospace &amp; defense&quot;              &quot;Banking&quot;                         
+##  [3] &quot;Business services &amp; supplies&quot;     &quot;Capital goods&quot;                   
+##  [5] &quot;Chemicals&quot;                        &quot;Conglomerates&quot;                   
+##  [7] &quot;Construction&quot;                     &quot;Consumer durables&quot;               
+##  [9] &quot;Diversified financials&quot;           &quot;Drugs &amp; biotechnology&quot;           
+## [11] &quot;Food drink &amp; tobacco&quot;             &quot;Food markets&quot;                    
+## [13] &quot;Health care equipment &amp; services&quot; &quot;Hotels restaurants &amp; leisure&quot;    
+## [15] &quot;Household &amp; personal products&quot;    &quot;Insurance&quot;                       
+## [17] &quot;Materials&quot;                        &quot;Media&quot;                           
+## [19] &quot;Oil &amp; gas operations&quot;             &quot;Retailing&quot;                       
+## [21] &quot;Semiconductors&quot;                   &quot;Software &amp; services&quot;             
+## [23] &quot;Technology hardware &amp; equipment&quot;  &quot;Telecommunications services&quot;     
+## [25] &quot;Trading companies&quot;                &quot;Transportation&quot;                  
+## [27] &quot;Utilities&quot;</code></pre>
+<p>How many of each category?</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">table</span>(Forbes2000[,<span class="st">&quot;category&quot;</span>])</code></pre></div>
+<pre><code>## 
+##              Aerospace &amp; defense                          Banking 
+##                               19                              313 
+##     Business services &amp; supplies                    Capital goods 
+##                               70                               53 
+##                        Chemicals                    Conglomerates 
+##                               50                               31 
+##                     Construction                Consumer durables 
+##                               79                               74 
+##           Diversified financials            Drugs &amp; biotechnology 
+##                              158                               45 
+##             Food drink &amp; tobacco                     Food markets 
+##                               83                               33 
+## Health care equipment &amp; services     Hotels restaurants &amp; leisure 
+##                               65                               37 
+##    Household &amp; personal products                        Insurance 
+##                               44                              112 
+##                        Materials                            Media 
+##                               97                               61 
+##             Oil &amp; gas operations                        Retailing 
+##                               90                               88 
+##                   Semiconductors              Software &amp; services 
+##                               26                               31 
+##  Technology hardware &amp; equipment      Telecommunications services 
+##                               59                               67 
+##                Trading companies                   Transportation 
+##                               25                               80 
+##                        Utilities 
+##                              110</code></pre>
+<p>A simple summary statistics such as the mean, median, quantiles and range can be found from continuous variables such as <code>sales</code></p>
+<p><code>R</code> command</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(Forbes2000[,<span class="st">&quot;sales&quot;</span>])</code></pre></div>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   0.010   2.018   4.365   9.697   9.547 256.330</code></pre>
+<p><strong>Simple Graphics</strong></p>
+<p><em>Chambers et al. (1983)</em>, “there is no statistical tool that is as powerful as a well chosen graph”</p>
+<p>Histograms and boxplots</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">layout</span>(<span class="kw">matrix</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">4</span>, <span class="dt">nrow =</span> <span class="dv">2</span>,<span class="dt">ncol=</span><span class="dv">2</span>))
+<span class="kw">hist</span>(Forbes2000<span class="op">$</span>marketvalue, <span class="dt">col=</span><span class="st">&quot;lightgrey&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Histogram of market value&quot;</span>)
+<span class="kw">hist</span>(<span class="kw">log</span>(Forbes2000<span class="op">$</span>marketvalue),<span class="dt">col=</span><span class="st">&quot;lightgrey&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Histogram of log(market value)&quot;</span>)
+<span class="kw">boxplot</span>(Forbes2000<span class="op">$</span>marketvalue, <span class="dt">col=</span><span class="st">&quot;lightgrey&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Boxplot of market value&quot;</span>)
+<span class="kw">boxplot</span>(<span class="kw">log</span>(Forbes2000<span class="op">$</span>marketvalue),<span class="dt">col=</span><span class="st">&quot;lightgrey&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Boxplot of log(market value)&quot;</span>)</code></pre></div>
+<p><img src="curso_Euskaltel_files/figure-html/unnamed-chunk-11-1.png" width="1152" /></p>
+<p>Scatterplots to visualize the relationship betwen variables</p>
+<p><img src="curso_Euskaltel_files/figure-html/unnamed-chunk-12-1.png" width="1152" /></p>
+<p><strong>Cool Graphics</strong></p>
+<p>Using the <code>ggplot2</code> library</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ggplot2)
+<span class="co">#?qplot</span>
+<span class="kw">qplot</span>(marketvalue,<span class="dt">data =</span> Forbes2000)</code></pre></div>
+<p><img src="curso_Euskaltel_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">qplot</span>(<span class="kw">log</span>(marketvalue),  <span class="dt">data =</span> Forbes2000)</code></pre></div>
+<p><img src="curso_Euskaltel_files/figure-html/unnamed-chunk-13-2.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">qplot</span>(marketvalue,sales, <span class="dt">data=</span>Forbes2000)</code></pre></div>
+<p><img src="curso_Euskaltel_files/figure-html/unnamed-chunk-13-3.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">qplot</span>(<span class="kw">log</span>(marketvalue),<span class="kw">log</span>(sales),<span class="dt">size=</span>assets,<span class="dt">alpha =</span> <span class="kw">I</span>(<span class="fl">0.1</span>),<span class="dt">data=</span>Forbes2000)</code></pre></div>
+<p><img src="curso_Euskaltel_files/figure-html/unnamed-chunk-13-4.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(calibrate)
+profits_all =<span class="st"> </span><span class="kw">na.omit</span>(Forbes2000<span class="op">$</span>profits)  <span class="co"># all_profts without No data</span>
+order_profits =<span class="st"> </span><span class="kw">order</span>(profits_all)     <span class="co"># index of the profitable companies </span>
+                                       <span class="co">#    in decreasing order</span>
+top_<span class="dv">50</span> =<span class="st"> </span><span class="kw">rev</span>(order_profits)[<span class="dv">1</span><span class="op">:</span><span class="dv">50</span>]      <span class="co"># top 50 profitable companies</span>
+
+sales =<span class="st"> </span>Forbes2000<span class="op">$</span>sales[top_<span class="dv">50</span>]       <span class="co"># sales of the 50 top profitable companies</span>
+assets =<span class="st"> </span>Forbes2000<span class="op">$</span>assets[top_<span class="dv">50</span>]     <span class="co"># assets of the 50 top profitable companies</span>
+countries =<span class="st"> </span>Forbes2000<span class="op">$</span>country[top_<span class="dv">50</span>] <span class="co"># countries where the 50 top profitable </span>
+                                       <span class="co">#    companies are found</span>
+
+<span class="kw">plot</span>(assets,sales,<span class="dt">pch =</span><span class="dv">1</span>)
+<span class="kw">textxy</span>(assets,sales, <span class="kw">abbreviate</span>(countries,<span class="dv">2</span>),<span class="dt">col =</span> <span class="st">&quot;blue&quot;</span>,<span class="dt">cex=</span><span class="fl">0.5</span>)  <span class="co"># used to put the </span>
+                                                                    <span class="co"># countries where the companies are found</span>
+<span class="kw">title</span>(<span class="dt">main =</span> <span class="st">&quot;Sales and Assets in billion </span>
+<span class="st">              USD </span><span class="ch">\n</span><span class="st"> of the 50 most profitable companies &quot;</span>, <span class="dt">col.main =</span> <span class="st">&quot;gray&quot;</span>)</code></pre></div>
+<p><img src="curso_Euskaltel_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p><strong>Graphics by factor</strong></p>
+<p>Boxplots of the logarithms of the market value for four selected countries, the width of the boxes is proportional to the square roots of the number of companies.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">tmp &lt;-<span class="st"> </span><span class="kw">subset</span>(Forbes2000,
+        country <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;United Kingdom&quot;</span>, <span class="st">&quot;Germany&quot;</span>,
+                       <span class="st">&quot;India&quot;</span>, <span class="st">&quot;Turkey&quot;</span>))
+tmp<span class="op">$</span>country &lt;-<span class="st"> </span>tmp<span class="op">$</span>country[,drop =<span class="st"> </span><span class="ot">TRUE</span>]
+<span class="kw">plot</span>(<span class="kw">log</span>(marketvalue) <span class="op">~</span><span class="st"> </span>country, <span class="dt">data =</span> tmp, <span class="dt">col =</span> <span class="dv">3</span><span class="op">:</span><span class="dv">6</span>,
+       <span class="dt">ylab =</span> <span class="st">&quot;log(marketvalue)&quot;</span>, <span class="dt">varwidth =</span> <span class="ot">TRUE</span>)</code></pre></div>
+<p><img src="curso_Euskaltel_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p>Scatterplots by country</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(lattice)
+<span class="kw">xyplot</span>(<span class="kw">log</span>(marketvalue)<span class="op">~</span><span class="kw">log</span>(sales)<span class="op">|</span>country,<span class="dt">data=</span>tmp)</code></pre></div>
+<p><img src="curso_Euskaltel_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<!-- ## Questions -->
+<!--   1. Calculate the median profit for the companies in the US and the median profit for the companies in the UK, France and Germany. -->
+<!--   2. Find all German companies with negative profit. -->
+<!--   3. To which business category do most of the Bermuda island companies belong? -->
+<!--   4. For the 50 companies in the Forbes data set with the highest profits, plot sales against assets (or some suitable transformation of each variable), labelling each point with the appropriate country name which may need to be abbreviated (using abbreviate) to avoid making the plot look too "messy". -->
+<!--   5. Find the average value of sales for the companies in each country in the Forbes data set, and find the number of companies in each country with profits above 5 billion US dollars. -->
+</div>
+<div id="melanoma-maligno-en-los-estados-unidos" class="section level2">
+<h2><span class="header-section-number">5.2</span> Melanoma maligno en los Estados Unidos</h2>
+<p>Fisher y Belle (1993) reportan tasas de mortalidad por melanoma maligno de la piel en hombres blancos durante el período 1950-1969, para cada estado del territorio continental de los Estados Unidos.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">data</span>(<span class="st">&quot;USmelanoma&quot;</span>,<span class="dt">package=</span><span class="st">&quot;HSAUR2&quot;</span>)</code></pre></div>
+<p>El conjunto de datos consiste en 48 observaciones sobre las siguientes 5 variables.</p>
+<ul>
+<li><p><code>mortality</code>: número de varones blancos muertos por melanoma maligno entre 1950 y 1969 por cada millón de habitantes.</p></li>
+<li><p><code>latitude</code>: latitud del centro geográfico del estado.</p></li>
+<li><p><code>longitude</code>: longitud del centro geográfico de cada estado.</p></li>
+<li><p><code>ocean</code>: una variable binaria que indica la contigüidad a un océano a niveles <code>no</code> o <code>sí</code>.</p></li>
+</ul>
+<p><strong>Gráficos de las tasas de mortalidad</strong></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">xr &lt;-<span class="st"> </span><span class="kw">range</span>(USmelanoma<span class="op">$</span>mortality) <span class="op">*</span><span class="st"> </span><span class="kw">c</span>(<span class="fl">0.9</span>, <span class="fl">1.1</span>)</code></pre></div>
+<p>Dibujemos las tasas de mortalidad en</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#layout(matrix(1:2, nrow = 2))</span>
+<span class="kw">boxplot</span>(USmelanoma<span class="op">$</span>mortality, <span class="dt">ylim =</span> xr, <span class="dt">horizontal =</span> <span class="ot">TRUE</span>,<span class="dt">xlab =</span> <span class="st">&quot;Mortality&quot;</span>)</code></pre></div>
+<p><img src="curso_Euskaltel_files/figure-html/unnamed-chunk-19-1.png" width="672" style="display: block; margin: auto;" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(USmelanoma<span class="op">$</span>mortality, <span class="dt">xlim =</span> xr, <span class="dt">xlab =</span> <span class="st">&quot;&quot;</span>, <span class="dt">main =</span> <span class="st">&quot;&quot;</span>,<span class="dt">axes =</span> <span class="ot">FALSE</span>, <span class="dt">ylab =</span> <span class="st">&quot;&quot;</span>)
+<span class="kw">axis</span>(<span class="dv">1</span>)</code></pre></div>
+<p><img src="curso_Euskaltel_files/figure-html/unnamed-chunk-19-2.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Tasas de mortalidad por melanoma maligno por contigüidad a un océano:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(mortality <span class="op">~</span><span class="st"> </span>ocean, <span class="dt">data =</span> USmelanoma, <span class="dt">xlab =</span> <span class="st">&quot;Contiguity to an ocean&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Mortality&quot;</span>)</code></pre></div>
+<p><img src="curso_Euskaltel_files/figure-html/unnamed-chunk-20-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Los histogramas a menudo pueden ser engañosos a la hora de mostrar distribuciones debido a su dependencia del número de clases elegidas. Una alternativa es estimar formalmente la función de densidad de una variable y luego trazar la estimación resultante.</p>
+<p>Las densidades estimadas de las tasas de mortalidad por melanoma maligno por contigüidad a un océano se ven así:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dyes &lt;-<span class="st"> </span><span class="kw">with</span>(USmelanoma, <span class="kw">density</span>(mortality[ocean <span class="op">==</span><span class="st"> &quot;yes&quot;</span>]))
+dno &lt;-<span class="st"> </span><span class="kw">with</span>(USmelanoma, <span class="kw">density</span>(mortality[ocean <span class="op">==</span><span class="st"> &quot;no&quot;</span>]))
+<span class="kw">plot</span>(dyes, <span class="dt">lty =</span> <span class="dv">1</span>, <span class="dt">xlim =</span> xr, <span class="dt">main =</span> <span class="st">&quot;&quot;</span>, <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="fl">0.018</span>))
+<span class="kw">lines</span>(dno, <span class="dt">lty =</span> <span class="dv">2</span>)
+<span class="kw">legend</span>(<span class="st">&quot;topright&quot;</span>, <span class="dt">lty =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">2</span>, <span class="dt">legend =</span> <span class="kw">c</span>(<span class="st">&quot;Coastal State&quot;</span>,<span class="st">&quot;Land State&quot;</span>), <span class="dt">bty =</span> <span class="st">&quot;n&quot;</span>)</code></pre></div>
+<p><img src="curso_Euskaltel_files/figure-html/unnamed-chunk-21-1.png" width="1152" style="display: block; margin: auto;" /></p>
+<p>Ahora podríamos pasar a ver cómo se relacionan las tasas de mortalidad con la ubicación geográfica de un estado, representada por la latitud y longitud del centro del estado.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">layout</span>(<span class="kw">matrix</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>, <span class="dt">ncol =</span> <span class="dv">2</span>))
+<span class="kw">plot</span>(mortality <span class="op">~</span><span class="st"> </span><span class="op">-</span>longitude, <span class="dt">data =</span> USmelanoma)
+<span class="kw">plot</span>(mortality <span class="op">~</span><span class="st"> </span>latitude, <span class="dt">data =</span> USmelanoma)</code></pre></div>
+<p><img src="curso_Euskaltel_files/figure-html/unnamed-chunk-22-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="mapeo-de-las-tasas-de-mortalidad" class="section level2">
+<h2><span class="header-section-number">5.3</span> Mapeo de las tasas de mortalidad</h2>
+<p>Los datos contienen la longitud y latitud de los centroides</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(<span class="op">-</span>USmelanoma<span class="op">$</span>longitude,USmelanoma<span class="op">$</span>latitude,<span class="dt">asp=</span><span class="fl">1.5</span>,<span class="dt">cex=</span>.<span class="dv">3</span>,<span class="dt">pch=</span><span class="dv">19</span>,<span class="dt">col=</span><span class="st">&quot;blue&quot;</span>)</code></pre></div>
+<p><img src="curso_Euskaltel_files/figure-html/unnamed-chunk-23-1.png" width="672" style="display: block; margin: auto;" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(<span class="st">&quot;sp&quot;</span>)
+<span class="kw">library</span>(<span class="st">&quot;maps&quot;</span>)
+<span class="kw">library</span>(<span class="st">&quot;maptools&quot;</span>)
+<span class="kw">library</span>(<span class="st">&quot;RColorBrewer&quot;</span>)
+<span class="kw">map</span>(<span class="st">&quot;state&quot;</span>)
+<span class="kw">points</span>(<span class="op">-</span>USmelanoma<span class="op">$</span>longitude,USmelanoma<span class="op">$</span>latitude,<span class="dt">asp=</span><span class="fl">1.5</span>,<span class="dt">cex=</span>.<span class="dv">3</span>,<span class="dt">pch=</span><span class="dv">19</span>,<span class="dt">col=</span><span class="st">&quot;blue&quot;</span>)</code></pre></div>
+<p><img src="curso_Euskaltel_files/figure-html/unnamed-chunk-24-1.png" width="672" style="display: block; margin: auto;" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#Create a function to generate a continuous color palette</span>
+rbPal &lt;-<span class="st"> </span><span class="kw">colorRampPalette</span>(<span class="kw">c</span>(<span class="st">&#39;blue&#39;</span>,<span class="st">&#39;grey&#39;</span>,<span class="st">&#39;red&#39;</span>))
+<span class="co">#This adds a column of color values</span>
+<span class="co"># based on the y values</span>
+USmelanoma<span class="op">$</span>Col &lt;-<span class="st"> </span>(<span class="kw">rbPal</span>(<span class="dv">10</span>)[<span class="kw">as.numeric</span>(<span class="kw">cut</span>(USmelanoma<span class="op">$</span>mortality,<span class="dt">breaks =</span> <span class="dv">10</span>))])
+<span class="kw">map</span>(<span class="st">&quot;state&quot;</span>,<span class="dt">xlim=</span><span class="kw">c</span>(<span class="op">-</span><span class="dv">135</span>,<span class="op">-</span><span class="dv">65</span>))
+<span class="kw">points</span>(<span class="op">-</span>USmelanoma<span class="op">$</span>longitude,USmelanoma<span class="op">$</span>latitude,<span class="dt">col=</span>USmelanoma<span class="op">$</span>Col,<span class="dt">asp=</span><span class="fl">1.5</span>,<span class="dt">pch=</span><span class="dv">19</span>,<span class="dt">cex=</span><span class="fl">1.2</span>)
+<span class="kw">legend</span>(<span class="st">&quot;topleft&quot;</span>,<span class="dt">title=</span><span class="st">&quot;Decile&quot;</span>,
+       <span class="dt">legend=</span><span class="kw">quantile</span>(USmelanoma<span class="op">$</span>mortality,<span class="kw">seq</span>(<span class="fl">0.1</span>,<span class="dv">1</span>,<span class="dt">l=</span><span class="dv">10</span>)),<span class="dt">col =</span><span class="kw">rbPal</span>(<span class="dv">10</span>),<span class="dt">pch=</span><span class="dv">15</span>,<span class="dt">cex=</span><span class="dv">1</span>.,<span class="dt">box.col =</span> <span class="ot">NA</span>)</code></pre></div>
+<p><img src="curso_Euskaltel_files/figure-html/unnamed-chunk-25-1.png" width="672" style="display: block; margin: auto;" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">states &lt;-<span class="st"> </span><span class="kw">map</span>(<span class="st">&quot;state&quot;</span>, <span class="dt">plot =</span> <span class="ot">FALSE</span>, <span class="dt">fill =</span> <span class="ot">TRUE</span>)
+IDs &lt;-<span class="st"> </span><span class="kw">sapply</span>(<span class="kw">strsplit</span>(states<span class="op">$</span>names, <span class="st">&quot;:&quot;</span>), <span class="cf">function</span>(x) x[<span class="dv">1</span>])
+<span class="kw">rownames</span>(USmelanoma) &lt;-<span class="st"> </span><span class="kw">tolower</span>(<span class="kw">rownames</span>(USmelanoma))
+
+us1 &lt;-<span class="st"> </span><span class="kw">map2SpatialPolygons</span>(states, <span class="dt">IDs=</span>IDs,<span class="dt">proj4string =</span> <span class="kw">CRS</span>(<span class="st">&quot;+proj=longlat +datum=WGS84&quot;</span>))
+us2 &lt;-<span class="st"> </span><span class="kw">SpatialPolygonsDataFrame</span>(us1, USmelanoma)
+
+col &lt;-<span class="st"> </span><span class="kw">colorRampPalette</span>(<span class="kw">c</span>(<span class="st">&#39;blue&#39;</span>, <span class="st">&#39;gray80&#39;</span>,<span class="st">&#39;red&#39;</span>))
+
+<span class="kw">spplot</span>(us2, <span class="st">&quot;mortality&quot;</span>, <span class="dt">col.regions =</span> <span class="kw">col</span>(<span class="dv">200</span>), 
+       <span class="dt">par.settings =</span> <span class="kw">list</span>(<span class="dt">axis.line =</span> <span class="kw">list</span>(<span class="dt">col =</span>  <span class="st">&#39;transparent&#39;</span>)),
+       <span class="dt">main=</span><span class="st">&quot;Map of the US showing malignant melanoma mortality rates&quot;</span>) </code></pre></div>
+<p><img src="curso_Euskaltel_files/figure-html/unnamed-chunk-26-1.png" width="1152" style="display: block; margin: auto;" /></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduccion-a-la-programacion-basica-con-r.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/idaejin/master/04-casos-de-estudio.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["curso_Euskaltel.pdf", "curso_Euskaltel.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

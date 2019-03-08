@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> 6 Modelos lineales y análisis de la varianza | Introducción al software estadístico R</title>
+  <meta name="description" content="Material del curso de Formación en R Euskaltel">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content=" 6 Modelos lineales y análisis de la varianza | Introducción al software estadístico R" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Material del curso de Formación en R Euskaltel" />
+  <meta name="github-repo" content="idaejin/xxx" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content=" 6 Modelos lineales y análisis de la varianza | Introducción al software estadístico R" />
+  
+  <meta name="twitter:description" content="Material del curso de Formación en R Euskaltel" />
+  
+
+<meta name="author" content="Dae-Jin Lee &lt; dlee@bcamath.org &gt;">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="probability-distributions.html">
+<link rel="next" href="casos-de-estudio.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Curso de formación en R</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Información y pre-requisitos</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introducción al software estadístico <code>R</code></a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#instalar-un-paquete-de-r"><i class="fa fa-check"></i><b>2.1</b> Instalar un paquete de <code>R</code></a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#empezando-con-r"><i class="fa fa-check"></i><b>2.2</b> Empezando con <code>R</code></a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#instalar-y-cargar-librerias-en-r"><i class="fa fa-check"></i><b>2.3</b> Instalar y cargar librerías en <code>R</code></a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#lectura-de-datos"><i class="fa fa-check"></i><b>2.4</b> Lectura de datos</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#importar-datos"><i class="fa fa-check"></i><b>2.5</b> Importar datos</a></li>
+<li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#exportar-datos"><i class="fa fa-check"></i><b>2.6</b> Exportar datos</a></li>
+<li class="chapter" data-level="2.7" data-path="intro.html"><a href="intro.html#vectores"><i class="fa fa-check"></i><b>2.7</b> Vectores</a></li>
+<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#estadistica-basica"><i class="fa fa-check"></i><b>2.8</b> Estadística básica</a></li>
+<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#vectores-caracteres-y-variables-factor"><i class="fa fa-check"></i><b>2.9</b> Vectores caracteres y variables factor</a></li>
+<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#data-frames"><i class="fa fa-check"></i><b>2.10</b> Data frames</a></li>
+<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#trabajando-con-data-frames"><i class="fa fa-check"></i><b>2.11</b> Trabajando con data frames</a></li>
+<li class="chapter" data-level="2.12" data-path="intro.html"><a href="intro.html#vectores-logicos"><i class="fa fa-check"></i><b>2.12</b> Vectores lógicos</a></li>
+<li class="chapter" data-level="2.13" data-path="intro.html"><a href="intro.html#trabajando-con-vectores"><i class="fa fa-check"></i><b>2.13</b> Trabajando con vectores</a></li>
+<li class="chapter" data-level="2.14" data-path="intro.html"><a href="intro.html#matrices-y-arrays"><i class="fa fa-check"></i><b>2.14</b> Matrices y arrays</a></li>
+<li class="chapter" data-level="2.15" data-path="intro.html"><a href="intro.html#factores"><i class="fa fa-check"></i><b>2.15</b> Factores</a></li>
+<li class="chapter" data-level="2.16" data-path="intro.html"><a href="intro.html#indexando-vectores-con-condiciones-logicas"><i class="fa fa-check"></i><b>2.16</b> Indexando vectores con condiciones lógicas</a></li>
+<li class="chapter" data-level="2.17" data-path="intro.html"><a href="intro.html#valores-faltantes"><i class="fa fa-check"></i><b>2.17</b> Valores faltantes</a></li>
+<li class="chapter" data-level="2.18" data-path="intro.html"><a href="intro.html#trabajando-con-data-frames-1"><i class="fa fa-check"></i><b>2.18</b> Trabajando con data frames</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="analisis-de-datos-basico-en-r.html"><a href="analisis-de-datos-basico-en-r.html"><i class="fa fa-check"></i><b>3</b> Análisis de datos básico en <code>R</code></a><ul>
+<li class="chapter" data-level="3.1" data-path="analisis-de-datos-basico-en-r.html"><a href="analisis-de-datos-basico-en-r.html#graficos-sencillos"><i class="fa fa-check"></i><b>3.1</b> Gráficos sencillos</a></li>
+<li class="chapter" data-level="3.2" data-path="analisis-de-datos-basico-en-r.html"><a href="analisis-de-datos-basico-en-r.html#scatterplots"><i class="fa fa-check"></i><b>3.2</b> Scatterplots</a></li>
+<li class="chapter" data-level="3.3" data-path="analisis-de-datos-basico-en-r.html"><a href="analisis-de-datos-basico-en-r.html#mas-opciones-graficas"><i class="fa fa-check"></i><b>3.3</b> más opciones gráficas</a></li>
+<li class="chapter" data-level="3.4" data-path="analisis-de-datos-basico-en-r.html"><a href="analisis-de-datos-basico-en-r.html#tablas-de-clasificacion-cruzada-o-de-contigencia"><i class="fa fa-check"></i><b>3.4</b> Tablas de clasificación cruzada o de contigencia</a></li>
+<li class="chapter" data-level="3.5" data-path="analisis-de-datos-basico-en-r.html"><a href="analisis-de-datos-basico-en-r.html#calculos-sobre-tablas-de-contigencia"><i class="fa fa-check"></i><b>3.5</b> cálculos sobre tablas de contigencia</a></li>
+<li class="chapter" data-level="3.6" data-path="analisis-de-datos-basico-en-r.html"><a href="analisis-de-datos-basico-en-r.html#datos-cualitativos"><i class="fa fa-check"></i><b>3.6</b> Datos cualitativos</a></li>
+<li class="chapter" data-level="3.7" data-path="analisis-de-datos-basico-en-r.html"><a href="analisis-de-datos-basico-en-r.html#datos-cuantitativos"><i class="fa fa-check"></i><b>3.7</b> Datos cuantitativos</a><ul>
+<li class="chapter" data-level="3.7.1" data-path="analisis-de-datos-basico-en-r.html"><a href="analisis-de-datos-basico-en-r.html#distribuciones-de-frecuencias"><i class="fa fa-check"></i><b>3.7.1</b> Distribuciones de frecuencias</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html"><i class="fa fa-check"></i><b>4</b> Introducción a la programación básica con <code>R</code></a><ul>
+<li class="chapter" data-level="4.1" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#condicionales"><i class="fa fa-check"></i><b>4.1</b> Condicionales</a></li>
+<li class="chapter" data-level="4.2" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#operadores-logicos"><i class="fa fa-check"></i><b>4.2</b> Operadores Lógicos</a></li>
+<li class="chapter" data-level="4.3" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#if-statements"><i class="fa fa-check"></i><b>4.3</b> <code>if</code> statements</a></li>
+<li class="chapter" data-level="4.4" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#ifelse"><i class="fa fa-check"></i><b>4.4</b> <code>ifelse</code></a></li>
+<li class="chapter" data-level="4.5" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#while"><i class="fa fa-check"></i><b>4.5</b> <code>while</code></a></li>
+<li class="chapter" data-level="4.6" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#loops-o-bucles"><i class="fa fa-check"></i><b>4.6</b> Loops o Bucles</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#for"><i class="fa fa-check"></i><b>4.6.1</b> <code>for</code></a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#while-1"><i class="fa fa-check"></i><b>4.7</b> <code>while</code></a></li>
+<li class="chapter" data-level="4.8" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#famila-de-funciones-apply"><i class="fa fa-check"></i><b>4.8</b> Famila de funciones <code>apply</code></a></li>
+<li class="chapter" data-level="4.9" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#other-loops"><i class="fa fa-check"></i><b>4.9</b> Other Loops</a></li>
+<li class="chapter" data-level="4.10" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#improving-speed-performance-of-loops"><i class="fa fa-check"></i><b>4.10</b> Improving Speed Performance of Loops</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="probability-distributions.html"><a href="probability-distributions.html"><i class="fa fa-check"></i><b>5</b> Probability distributions</a><ul>
+<li class="chapter" data-level="5.1" data-path="probability-distributions.html"><a href="probability-distributions.html#binomial-distribution-binnp"><i class="fa fa-check"></i><b>5.1</b> Binomial distribution <span class="math inline">\(Bin(n,p)\)</span></a></li>
+<li class="chapter" data-level="5.2" data-path="probability-distributions.html"><a href="probability-distributions.html#poisson-distribution-poislambda"><i class="fa fa-check"></i><b>5.2</b> Poisson distribution <span class="math inline">\(Pois(\lambda)\)</span></a><ul>
+<li class="chapter" data-level="5.2.1" data-path="probability-distributions.html"><a href="probability-distributions.html#aproximation-of-binomial-as-poisson"><i class="fa fa-check"></i><b>5.2.1</b> Aproximation of Binomial as Poisson</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="probability-distributions.html"><a href="probability-distributions.html#exponential-distribution-explambda"><i class="fa fa-check"></i><b>5.3</b> Exponential distribution <span class="math inline">\(Exp(\lambda)\)</span></a></li>
+<li class="chapter" data-level="5.4" data-path="probability-distributions.html"><a href="probability-distributions.html#the-normal-distribution-mathcalnmusigma2"><i class="fa fa-check"></i><b>5.4</b> The Normal distribution <span class="math inline">\(\mathcal{N}(\mu,\sigma^2)\)</span></a></li>
+<li class="chapter" data-level="5.5" data-path="probability-distributions.html"><a href="probability-distributions.html#uniform-distribution-uab"><i class="fa fa-check"></i><b>5.5</b> Uniform distribution <span class="math inline">\(U(a,b)\)</span></a><ul>
+<li class="chapter" data-level="5.5.1" data-path="probability-distributions.html"><a href="probability-distributions.html#exercises"><i class="fa fa-check"></i><b>5.5.1</b> Exercises</a></li>
+<li class="chapter" data-level="5.5.2" data-path="probability-distributions.html"><a href="probability-distributions.html#qq-plot"><i class="fa fa-check"></i><b>5.5.2</b> QQ-plot</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="modelos-lineales-y-analisis-de-la-varianza.html"><a href="modelos-lineales-y-analisis-de-la-varianza.html"><i class="fa fa-check"></i><b>6</b> Modelos lineales y análisis de la varianza</a></li>
+<li class="chapter" data-level="7" data-path="casos-de-estudio.html"><a href="casos-de-estudio.html"><i class="fa fa-check"></i><b>7</b> Casos de estudio</a><ul>
+<li class="chapter" data-level="7.1" data-path="casos-de-estudio.html"><a href="casos-de-estudio.html#el-ranking-forbes-2000-de-las-mayores-empresas-del-mundo-ano-2004"><i class="fa fa-check"></i><b>7.1</b> El ranking Forbes 2000 de las mayores empresas del mundo (año 2004)</a></li>
+<li class="chapter" data-level="7.2" data-path="casos-de-estudio.html"><a href="casos-de-estudio.html#melanoma-maligno-en-los-estados-unidos"><i class="fa fa-check"></i><b>7.2</b> Melanoma maligno en los Estados Unidos</a></li>
+<li class="chapter" data-level="7.3" data-path="casos-de-estudio.html"><a href="casos-de-estudio.html#mapeo-de-las-tasas-de-mortalidad"><i class="fa fa-check"></i><b>7.3</b> Mapeo de las tasas de mortalidad</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="http://idaejin.github.io/" target="blank">Mi página personal</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introducción al software estadístico <code>R</code></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="modelos-lineales-y-analisis-de-la-varianza" class="section level1">
+<h1><span class="header-section-number"> 6</span> Modelos lineales y análisis de la varianza</h1>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="probability-distributions.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="casos-de-estudio.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/idaejin/master/05-modlin-anova.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["curso_Euskaltel.pdf", "curso_Euskaltel.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
