@@ -198,6 +198,8 @@ modelización estadística y aprendizaje automático.
 El objetivo es que al final del curso todos se hayan familiarizado con
 el software estadístico \texttt{R}.
 
+~
+
 \begin{itemize}
 \item
   \textbf{Material complementario (en inglés)}
@@ -252,7 +254,7 @@ Más información
 \item
   Para asignar contenido a un objeto usamos \texttt{\textless{}-}. Por
   ejemplo, \texttt{x\ \textless{}-\ 10} asigna a \texttt{x} el valor
-  \texttt{10}. También podemos usar =.
+  \texttt{10}. También podemos usar \texttt{=}.
 \item
   Para ver el contenido de un objeto simplemente escribimos su nombre.
 \item
@@ -267,40 +269,10 @@ Más información
   que calcula la media.
 \end{itemize}
 
-\section{Guardar los resultados y el
-código}\label{guardar-los-resultados-y-el-codigo}
-
-\begin{itemize}
-\item
-  Al entrar en \texttt{R}, se considera cierto directorio por defecto
-  como el directorio de trabajo. Este directorio puede cambiarse en el
-  menú Archivo, \texttt{Cambiar\ dir}\ldots{} Resulta conveniente tener
-  un directorio diferente para cada proyecto que realicemos.
-\item
-  Al salir de \texttt{R} se nos pregunta
-  \texttt{Guardar\ imagen\ de\ área\ de\ trabajo?}. Si respondemos
-  afirmativamente, se crea un fichero \texttt{.RData} en el directorio
-  de trabajo que contiene todos los objetos del área de trabajo en el
-  momento de salir. Posteriormente, haciendo doble clic en este fichero
-  podremos entrar en \texttt{R} y seguir trabajando exactamente en el
-  mismo punto en que lo habíamos dejado al salir.
-\item
-  Alternativamente podemos usar los comandos \texttt{save} y
-  \texttt{load} para guardar y recuperar objetos. Consulta la ayuda de
-  estos comandos para ver sus diferentes opciones.
-\item
-  Todos los comandos y código de \texttt{R} se pueden guardar en un
-  fichero de texto (con \texttt{extensión.R}) dentro del directorio de
-  trabajo. El comando source se puede usar para ejecutar todo el código
-  contenido en un fichero de texto. En el menú \texttt{Archivo},
-  \texttt{Abrir\ script} podemos acceder a un editor muy simple en el
-  que poder ir escribiendo el código.
-\end{itemize}
-
 \section{Rstudio}\label{rstudio}
 
-RStudio es un IDE (Integrated Development Environment, o Entorno de
-Desarrollo Integrado) de código abierto para \texttt{R}, que permite
+RStudio es un IDE (\emph{Integrated Development Environment}, o Entorno
+de Desarrollo Integrado) de código abierto para \texttt{R}, que permite
 interactuar con \texttt{R} de manera muy simple.
 
 Entre otras ventajas, Rstudio utiliza diferentes colores para las
@@ -342,10 +314,10 @@ tiene varias pestañas:
   generemos con el programa.
 \item
   \textbf{Packages:} permite ver qué librerías (colecciones de funciones
-  que extienen la funcionalidad de R) tenemos instaladas; asimismo nos
-  permite descargar e instalar nuevas librerías.
+  que extienen la funcionalidad de \texttt{R}) tenemos instaladas;
+  asimismo nos permite descargar e instalar nuevas librerías.
 \item
-  \textbf{Help:} permite acceder a ayuda sobre R.
+  \textbf{Help:} permite acceder a ayuda sobre `R.
 \item
   \textbf{Viewer:} Permite acceder a contenido web local.
 \end{itemize}
@@ -516,14 +488,8 @@ tiene varias pestañas:
 \end{Highlighting}
 \end{Shaded}
 
-\section{\texorpdfstring{Instalar y cargar librerías en
-\texttt{R}}{Instalar y cargar librerías en R}}\label{instalar-y-cargar-librerias-en-r}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{install.packages}\NormalTok{(}\StringTok{"DAAG"}\NormalTok{) }\CommentTok{# (Data Analysis And Graphics)}
-\end{Highlighting}
-\end{Shaded}
+\section{\texorpdfstring{Cargar librerías en
+\texttt{R}}{Cargar librerías en R}}\label{cargar-librerias-en-r}
 
 \begin{itemize}
 \tightlist
@@ -661,13 +627,14 @@ Existen varias formas de hacerlo:
   Generalmente leeros datos en formato \texttt{.txt} o \texttt{.csv}
 \end{itemize}
 
-Descara en el siguiente link los datos \texttt{cardata}
-\href{data/cardata.zip}{aquí}
+Vamos a crear una carpeta que llamaremos \texttt{data} y descargaremos
+los datos \texttt{cardata} en el siguiente
+\href{http://idaejin.github.io/courses/R/data/cardata.zip}{enlace}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{mydata1 =}\StringTok{ }\KeywordTok{read.table}\NormalTok{(}\StringTok{"data/cardata.txt"}\NormalTok{) }
-\NormalTok{mydata2 =}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/cardata.csv"}\NormalTok{)  }
+\NormalTok{mydata1 <-}\StringTok{ }\KeywordTok{read.table}\NormalTok{(}\StringTok{"data/cardata.txt"}\NormalTok{) }
+\NormalTok{mydata2 <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"data/cardata.csv"}\NormalTok{)  }
 \end{Highlighting}
 \end{Shaded}
 
@@ -680,7 +647,7 @@ Descara en el siguiente link los datos \texttt{cardata}
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{library}\NormalTok{(gdata)}
-\NormalTok{mydata3 =}\StringTok{ }\KeywordTok{read.xls}\NormalTok{ (}\StringTok{"cardata/cardata.xls"}\NormalTok{, }\DataTypeTok{sheet =} \DecValTok{1}\NormalTok{, }\DataTypeTok{header =} \OtherTok{TRUE}\NormalTok{)}
+\NormalTok{mydata3 <-}\StringTok{ }\KeywordTok{read.xls}\NormalTok{ (}\StringTok{"cardata/cardata.xls"}\NormalTok{, sheet <-}\StringTok{ }\DecValTok{1}\NormalTok{, }\DataTypeTok{header =} \OtherTok{TRUE}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -702,7 +669,7 @@ Descara en el siguiente link los datos \texttt{cardata}
 \begin{itemize}
 \tightlist
 \item
-  O tambi?n
+  O también
 \end{itemize}
 
 \begin{Shaded}
@@ -747,9 +714,7 @@ Descara en el siguiente link los datos \texttt{cardata}
 \section{Vectores}\label{vectores}
 
 \begin{itemize}
-\item
-  Descargar el siguiente código de \texttt{R}
-  \href{http://idaejin.github.io/bcam-courses/rbasics/rbasics.R}{aquí}
+\tightlist
 \item
   Crear dos vectores
 \end{itemize}
@@ -885,7 +850,7 @@ dos variables aleatorias respecto a sus medias
   existencia de una relación lineal entre las dos variables estudiadas.
 \item
   Si \(\sigma_{xy}< 0\)m hay dependencia inversa o negativa, es decir, a
-  grandes valores de \(x\) corresponden peque?os valores de \(y\).
+  grandes valores de \(x\) corresponden pequeños valores de \(y\).
 \end{itemize}
 
 \[
@@ -904,7 +869,7 @@ dos variables aleatorias respecto a sus medias
 
 El \emph{coeficiente de correlación} mide la relacion lineal (positiva o
 negativa) entre dos variables. Formalmente es el cociente entre la
-covarianza y el producto de las desviaciones t?picas de ambas variables.
+covarianza y el producto de las desviaciones típicas de ambas variables.
 Siendo \(\sigma_x\) y \(\sigma_y\) las desviaciones estandar y
 \(\sigma_xy\) la covarianza entre \(x\) e \(y\).
 
@@ -954,7 +919,7 @@ factor}\label{vectores-caracteres-y-variables-factor}
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{Dat <-}\StringTok{ }\KeywordTok{data.frame}\NormalTok{(subject,sex,weight,height)}
-\CommentTok{# a?adir el bmi a Dat}
+\CommentTok{# añadir el bmi a Dat}
 \NormalTok{Dat}\OperatorTok{$}\NormalTok{bmi <-}\StringTok{ }\NormalTok{bmi  }\CommentTok{# o Dat$bmi <- weight/height^2}
 \KeywordTok{class}\NormalTok{(Dat)}
 \end{Highlighting}
@@ -1022,7 +987,8 @@ factor}\label{vectores-caracteres-y-variables-factor}
 ## B   Peter MALE     72   1.80 22.22222
 \end{verbatim}
 
-\section{Trabajando con data frames}\label{trabajando-con-data-frames}
+\subsection{Trabajando con data
+frames}\label{trabajando-con-data-frames}
 
 \textbf{Ejemplo: analizar datos por grupos}
 
@@ -1119,7 +1085,7 @@ factor}\label{vectores-caracteres-y-variables-factor}
 \begin{itemize}
 \tightlist
 \item
-  Qué valores están entre 20 y 25?
+  ¿Qué valores están entre 20 y 25?
 \end{itemize}
 
 \begin{Shaded}
@@ -1559,7 +1525,7 @@ La función \texttt{na.omit()} devuelve un objeto sin los elementos
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-58-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-66-1.pdf}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1718,10 +1684,30 @@ La función \texttt{na.omit()} devuelve un objeto sin los elementos
 \end{Shaded}
 
 \begin{verbatim}
-##                                                    25%        50% 
-##  352.00000   39.60853   84.20792    0.00000    2.42875    4.00000 
-##        75%                       
-##   18.97500  472.00000 -341.00000
+##      vars  n   mean     sd median trimmed    mad   min    max  range  skew
+## mpg     1 32  20.09   6.03  19.20   19.70   5.41 10.40  33.90  23.50  0.61
+## cyl     2 32   6.19   1.79   6.00    6.23   2.97  4.00   8.00   4.00 -0.17
+## disp    3 32 230.72 123.94 196.30  222.52 140.48 71.10 472.00 400.90  0.38
+## hp      4 32 146.69  68.56 123.00  141.19  77.10 52.00 335.00 283.00  0.73
+## drat    5 32   3.60   0.53   3.70    3.58   0.70  2.76   4.93   2.17  0.27
+## wt      6 32   3.22   0.98   3.33    3.15   0.77  1.51   5.42   3.91  0.42
+## qsec    7 32  17.85   1.79  17.71   17.83   1.42 14.50  22.90   8.40  0.37
+## vs      8 32   0.44   0.50   0.00    0.42   0.00  0.00   1.00   1.00  0.24
+## am      9 32   0.41   0.50   0.00    0.38   0.00  0.00   1.00   1.00  0.36
+## gear   10 32   3.69   0.74   4.00    3.62   1.48  3.00   5.00   2.00  0.53
+## carb   11 32   2.81   1.62   2.00    2.65   1.48  1.00   8.00   7.00  1.05
+##      kurtosis    se
+## mpg     -0.37  1.07
+## cyl     -1.76  0.32
+## disp    -1.21 21.91
+## hp      -0.14 12.12
+## drat    -0.71  0.09
+## wt      -0.02  0.17
+## qsec     0.34  0.32
+## vs      -2.00  0.09
+## am      -1.92  0.09
+## gear    -1.07  0.13
+## carb     1.26  0.29
 \end{verbatim}
 
 \chapter{\texorpdfstring{Análisis de datos básico en
@@ -1742,21 +1728,9 @@ La función \texttt{na.omit()} devuelve un objeto sin los elementos
 \end{Shaded}
 
 \begin{verbatim}
-## The following objects are masked from mtcars (pos = 6):
-## 
-##     am, carb, cyl, disp, drat, gear, hp, mpg, qsec, vs, wt
-\end{verbatim}
-
-\begin{verbatim}
 ## The following object is masked from package:ggplot2:
 ## 
 ##     mpg
-\end{verbatim}
-
-\begin{verbatim}
-## The following objects are masked from mtcars (pos = 26):
-## 
-##     am, carb, cyl, disp, drat, gear, hp, mpg, qsec, vs, wt
 \end{verbatim}
 
 \begin{Shaded}
@@ -1766,7 +1740,7 @@ La función \texttt{na.omit()} devuelve un objeto sin los elementos
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-65-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-73-1.pdf}
 
 \begin{itemize}
 \tightlist
@@ -1781,7 +1755,7 @@ La función \texttt{na.omit()} devuelve un objeto sin los elementos
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-66-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-74-1.pdf}
 
 \begin{itemize}
 \tightlist
@@ -1796,7 +1770,7 @@ La función \texttt{na.omit()} devuelve un objeto sin los elementos
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-67-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-75-1.pdf}
 
 \begin{itemize}
 \tightlist
@@ -1810,7 +1784,7 @@ La función \texttt{na.omit()} devuelve un objeto sin los elementos
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-68-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-76-1} \end{center}
 
 \textbf{Ejercicio:}
 
@@ -1916,7 +1890,7 @@ La función \texttt{na.omit()} devuelve un objeto sin los elementos
 ##              16              12              26              11
 \end{verbatim}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-73-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-81-1.pdf}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1941,7 +1915,7 @@ La función \texttt{na.omit()} devuelve un objeto sin los elementos
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-75-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-83-1.pdf}
 
 \begin{itemize}
 \tightlist
@@ -1950,7 +1924,7 @@ La función \texttt{na.omit()} devuelve un objeto sin los elementos
   \texttt{hist}
 \end{itemize}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-76-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-84-1.pdf}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2019,7 +1993,7 @@ La función \texttt{na.omit()} devuelve un objeto sin los elementos
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-79-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-87-1} \end{center}
 
 Identificar un punto en el scatterplot
 
@@ -2039,7 +2013,7 @@ En escala logarítmica
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-81-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-89-1} \end{center}
 
 Identificar un punto en la escala logarítmica
 
@@ -2049,7 +2023,7 @@ Identificar un punto en la escala logarítmica
 \end{Highlighting}
 \end{Shaded}
 
-\section{más opciones gráficas}\label{mas-opciones-graficas}
+\section{Más opciones gráficas}\label{mas-opciones-graficas}
 
 \textbf{Varios conjuntos de datos en un sólo gráfico}
 
@@ -2078,7 +2052,7 @@ aadir nuevas observaciones.
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-83-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-91-1.pdf}
 
 con la leyenda
 
@@ -2094,7 +2068,7 @@ con la leyenda
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-84-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-92-1.pdf}
 
 \textbf{Varios gráficos en un sola imagen}
 
@@ -2112,7 +2086,7 @@ con la leyenda
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-85-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-93-1.pdf}
 
 \textbf{Relaciones entre variables}
 
@@ -2128,7 +2102,7 @@ con la leyenda
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-86-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-94-1.pdf}
 
 \textbf{Gráfico de correlaciones}
 
@@ -2139,12 +2113,21 @@ visualizar una matriz de correlaciones calculada mediante la función
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{library}\NormalTok{(corrplot)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## corrplot 0.84 loaded
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
 \NormalTok{M <-}\StringTok{ }\KeywordTok{cor}\NormalTok{(d)}
 \KeywordTok{corrplot}\NormalTok{(M, }\DataTypeTok{method=}\StringTok{"circle"}\NormalTok{,}\DataTypeTok{type=}\StringTok{"upper"}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-87-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-95-1.pdf}
 
 \textbf{Gráficos de superficies: \texttt{image}, \texttt{contour} y
 \texttt{persp}}
@@ -2166,7 +2149,7 @@ visualizar una matriz de correlaciones calculada mediante la función
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-88-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-96-1.pdf}
 
 Podemos utilizar la función \texttt{persp}
 
@@ -2176,7 +2159,7 @@ Podemos utilizar la función \texttt{persp}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-89-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-97-1} \end{center}
 
 o representar im?genes
 
@@ -2188,7 +2171,7 @@ o representar im?genes
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-90-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-98-1.pdf}
 
 \section{Tablas de clasificación cruzada o de
 contigencia}\label{tablas-de-clasificacion-cruzada-o-de-contigencia}
@@ -2214,23 +2197,6 @@ contigencia}\label{tablas-de-clasificacion-cruzada-o-de-contigencia}
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{attach}\NormalTok{(quine)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## The following objects are masked from quine (pos = 6):
-## 
-##     Age, Days, Eth, Lrn, Sex
-\end{verbatim}
-
-\begin{verbatim}
-## The following objects are masked from quine (pos = 18):
-## 
-##     Age, Days, Eth, Lrn, Sex
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \KeywordTok{table}\NormalTok{(Sex)}
 \end{Highlighting}
 \end{Shaded}
@@ -2290,8 +2256,7 @@ contigencia}\label{tablas-de-clasificacion-cruzada-o-de-contigencia}
 ##   M  9  9 10  7
 \end{verbatim}
 
-\section{cálculos sobre tablas de
-contigencia}\label{calculos-sobre-tablas-de-contigencia}
+\textbf{Cálculos sobre tablas de contigencia}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2366,7 +2331,7 @@ De manera gráfica,
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-97-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-105-1.pdf}
 
 El conjunto de datos de \texttt{R}, \texttt{UCBAdmissions}contiene los
 datos agregadps de los solicitantes a universidad de Berkeley a los seis
@@ -2476,7 +2441,7 @@ excepto en ``A'', donde las tasas de las mujeres es mayor.
 ##   Rejected 1493   1278
 \end{verbatim}
 
-gr?ficamente
+Gráficamente
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2485,7 +2450,7 @@ gr?ficamente
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-102-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-110-1.pdf}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2494,7 +2459,7 @@ gr?ficamente
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-102-2.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-110-2.pdf}
 
 Estos datos ilustran la denominada \emph{paradoja de Simpson}. Este
 hecho ha sido analizado como un posible caso de discriminación por sexo
@@ -2504,8 +2469,11 @@ las 1835 mujeres de las cuales tan s?lo 557 (30.4\%) fueron admitidas.
 Se podr?a por tanto concluir que los hombres tienes tasas de admisión
 mayores que las mujeres.
 \href{https://en.wikipedia.org/wiki/Simpson\%27s_paradox\#UC_Berkeley_gender_bias}{Wikipedia:
-Gender Bias UC Berkeley}. See animation at
-\href{http://vudlab.com/simpsons/}{link}
+Gender Bias UC Berkeley}.
+
+Otro ejemplo de la Paradoja de Simpson:
+
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-111-1} \end{center}
 
 \section{Datos cuantitativos}\label{datos-cuantitativos}
 
@@ -2525,7 +2493,7 @@ Gender Bias UC Berkeley}. See animation at
 ## 6     2.883      55
 \end{verbatim}
 
-Consideremos los datos del geyse Old Faithful en el parque nacional de
+Consideremos los datos del geyser Old Faithful en el parque nacional de
 Yellowstone, EEUU.
 
 \begin{Shaded}
@@ -2534,7 +2502,7 @@ Yellowstone, EEUU.
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-104-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-113-1.pdf}
 
 \subsection{Distribuciones de
 frecuencias}\label{distribuciones-de-frecuencias}
@@ -2633,7 +2601,7 @@ Con \texttt{hist} podemos realizarlo de manera autom?tica:
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-109-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-118-1.pdf}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2641,7 +2609,7 @@ Con \texttt{hist} podemos realizarlo de manera autom?tica:
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-109-2.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-118-2.pdf}
 
 \textbf{Estimación de densidad} construye una estimación dada una
 distribucion de probabilidad para una muestra dada.
@@ -2676,7 +2644,7 @@ distribucion de probabilidad para una muestra dada.
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-110-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-119-1.pdf}
 
 En dos dimensiones:
 
@@ -2687,7 +2655,7 @@ En dos dimensiones:
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-111-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-120-1.pdf}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2774,7 +2742,7 @@ Distribución de frecuencias acumuladas:
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-114-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-123-1.pdf}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2790,7 +2758,7 @@ Distribución de frecuencias acumuladas:
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-115-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-124-1.pdf}
 
 \chapter{\texorpdfstring{Introducción a la programación básica con
 \texttt{R}}{Introducción a la programación básica con R}}\label{introduccion-a-la-programacion-basica-con-r}
@@ -3272,11 +3240,11 @@ por una condición.
 R}\label{distribuciones-de-probabilidad-en-r}
 
 El paquete \texttt{stats} de \texttt{R} (que se instala por defecto al
-instalar R, y se carga en memoria siempre que iniciamos sesión)
+instalar \texttt{R}, y se carga en memoria siempre que iniciamos sesión)
 implementa numerosas funciones para la realización de cálculos asociados
 a distintas distribuciones de probabilidad.
 
-Entre las utilizadas más comunmente podemos citar:
+Entre las utilizadas más comúnmente podemos citar:
 
 \textbf{Distribuciones discretas}:
 
@@ -3292,6 +3260,8 @@ Hipergeométrica & \texttt{hyper}\tabularnewline
 \bottomrule
 \end{longtable}
 
+~
+
 \textbf{Distribuciones contínuas}:
 
 \begin{longtable}[]{@{}ll@{}}
@@ -3306,6 +3276,8 @@ F-Fisher & \texttt{F}\tabularnewline
 Chi-cuadrado & \texttt{chisq}\tabularnewline
 \bottomrule
 \end{longtable}
+
+~
 
 \begin{itemize}
 \item
@@ -3374,7 +3346,7 @@ F(k;n,p) = \mbox{Pr}(X\leq k) = \sum_{i=0}^{k}\binom{n}{i} p^i (1-p)^{n-i}
 }
 \]
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-143-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-152-1} \end{center}
 
 with \emph{mean} \(np\) and \emph{variance} \(np(1-p)\).
 
@@ -3563,7 +3535,7 @@ probabilidad acumulativa de Poisson es
 P(X\leq x ~|~\lambda ) = \frac{e^{-\lambda} \lambda ^x}{x!}\quad \mbox{for $x=0,1,2,...$}
 \]
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-150-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-159-1} \end{center}
 
 \textbf{Pregunta:}
 
@@ -3650,7 +3622,7 @@ donde \(\lambda>0\) es la tasa del evento (también conocida como
 parámetro de tasa, tasa de llegada, tasa de mortalidad, tasa de fracaso,
 tasa de transición). La variable exponencial \(x \in[0,\\infty]\)
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-153-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-162-1} \end{center}
 
 \begin{itemize}
 \tightlist
@@ -3759,7 +3731,7 @@ f(x | \mu,\sigma^2) = \frac{1}{\sqrt{2\sigma^2\pi}} e ^{-\frac{(x-\mu)^2}{2\sigm
 Z = \frac{X-\mu}{\sigma} \sim N(0,1)
 \]
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-156-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-165-1} \end{center}
 
 \textbf{Pregunta:}
 
@@ -3865,7 +3837,7 @@ el examen y saca 585 puntos. ¿Será admitido en esta universidad?
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-160-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-169-1.pdf}
 
 Es \(P(X<585)\) \textgreater{}70\%?
 
@@ -3957,7 +3929,7 @@ da 3 números uniformes en \([1.2,5.8]\).
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-164-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-173-1.pdf}
 
 \begin{itemize}
 \tightlist
@@ -3971,7 +3943,7 @@ da 3 números uniformes en \([1.2,5.8]\).
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-165-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-174-1.pdf}
 
 La media de \(U\) es \(\mathbb{E}[U]=frac{1}{2}(a+b)\), la mediana es
 \(\mathbb{Med}[U]=\frac{1}{2}(a+b)\) y la Varianza es
@@ -4192,14 +4164,14 @@ Representamos los datos
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-168-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-177-1} \end{center}
 
 Un procedimiento matemático para encontrar la curva que mejor se ajusta
 a un conjunto dado de puntos minimizando la suma de los cuadrados de los
 residuos de los puntos de la línea ajustada. Ilustración de los mínimos
 cuadrados de ajuste
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-169-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-178-1} \end{center}
 
 Podemos calcular directamente las cantidades de interés, es decir, la
 solución ordinaria de mínimos cuadrados:
@@ -4324,7 +4296,7 @@ casa), \texttt{age} (edad promedio de las casas), y \texttt{lstat}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-171-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-180-1} \end{center}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4334,35 +4306,17 @@ casa), \texttt{age} (edad promedio de las casas), y \texttt{lstat}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-171-2} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-180-2} \end{center}
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{attach}\NormalTok{(Boston)}
-\end{Highlighting}
-\end{Shaded}
 
-\begin{verbatim}
-## The following objects are masked from Boston (pos = 6):
-## 
-##     age, black, chas, crim, dis, indus, lstat, medv, nox, ptratio,
-##     rad, rm, tax, zn
-\end{verbatim}
-
-\begin{verbatim}
-## The following objects are masked from Boston (pos = 16):
-## 
-##     age, black, chas, crim, dis, indus, lstat, medv, nox, ptratio,
-##     rad, rm, tax, zn
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \KeywordTok{boxplot}\NormalTok{(crim)}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-171-3} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-180-3} \end{center}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4370,7 +4324,7 @@ casa), \texttt{age} (edad promedio de las casas), y \texttt{lstat}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-171-4} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-180-4} \end{center}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4378,7 +4332,7 @@ casa), \texttt{age} (edad promedio de las casas), y \texttt{lstat}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-171-5} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-180-5} \end{center}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4388,7 +4342,7 @@ casa), \texttt{age} (edad promedio de las casas), y \texttt{lstat}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-171-6} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-180-6} \end{center}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4396,7 +4350,7 @@ casa), \texttt{age} (edad promedio de las casas), y \texttt{lstat}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-171-7} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-180-7} \end{center}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4405,7 +4359,7 @@ casa), \texttt{age} (edad promedio de las casas), y \texttt{lstat}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-171-8} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-180-8} \end{center}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4413,7 +4367,7 @@ casa), \texttt{age} (edad promedio de las casas), y \texttt{lstat}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-171-9} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-180-9} \end{center}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4669,7 +4623,7 @@ y \texttt{abline()}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-183-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-192-1} \end{center}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4682,7 +4636,7 @@ y \texttt{abline()}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-184-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-193-1} \end{center}
 
 Hay alguna evidencia de no linealidad en la relación entre
 \texttt{lstat} y \texttt{medv}. Esta cuestión se discutirá más adelante.
@@ -4694,7 +4648,7 @@ Hay alguna evidencia de no linealidad en la relación entre
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-185-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-194-1} \end{center}
 
 La \texttt{librería(visreg)} permite visualizar las funciones de
 regresión
@@ -4707,7 +4661,7 @@ regresión
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-186-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-195-1} \end{center}
 
 Opciones \texttt{pch}
 
@@ -4717,7 +4671,7 @@ Opciones \texttt{pch}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-187-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-196-1} \end{center}
 
 \textbf{Librería \texttt{ggplot2} con \texttt{lm}}
 
@@ -4730,7 +4684,7 @@ Opciones \texttt{pch}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-188-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-197-1} \end{center}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4742,7 +4696,7 @@ Opciones \texttt{pch}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-188-2} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-197-2} \end{center}
 
 ~
 
@@ -4764,7 +4718,7 @@ región de trazado en una cuadrícula de paneles de 2\$ por 2\$.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-189-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-198-1} \end{center}
 
 ~
 
@@ -4781,7 +4735,7 @@ use this function to plot the residuals against the fitted values.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-190-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-199-1} \end{center}
 
 ~
 
@@ -4793,11 +4747,37 @@ cuadrática sea cero). Ver \texttt{?residualPlots}.
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{library}\NormalTok{(car)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Loading required package: carData
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Attaching package: 'car'
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from 'package:psych':
+## 
+##     logit
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from 'package:DAAG':
+## 
+##     vif
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
 \KeywordTok{residualPlots}\NormalTok{(lm.fit)}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-191-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-200-1} \end{center}
 
 \begin{verbatim}
 ##            Test stat Pr(>|Test stat|)    
@@ -4820,7 +4800,7 @@ de los valores de sombrero.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-192-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-201-1} \end{center}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4985,7 +4965,7 @@ de los valores de sombrero.
 ## graphical parameter
 \end{verbatim}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-192-2} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-201-2} \end{center}
 
 \subsection{Regresión lineal múltiple}\label{regresion-lineal-multiple}
 
@@ -5217,7 +5197,7 @@ potencia 2. Ahora realizamos una regresión de \texttt{medv} sobre
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-197-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-206-1.pdf}
 
 ~
 
@@ -5270,7 +5250,7 @@ evidencia de no linealidad en la relación entre \texttt{medv} y
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-199-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-208-1.pdf}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5340,7 +5320,7 @@ un ajuste de regresión.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-201-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-210-1} \end{center}
 
 ~
 
@@ -5384,7 +5364,7 @@ logarítmica.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-203-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-212-1} \end{center}
 
 \subsection{Ejemplo:}\label{ejemplo}
 
@@ -5695,7 +5675,7 @@ Por ejemplo:
 Al ser un modelo con dos predictores continuos se puede representar en
 3D
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-211-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-220-1} \end{center}
 
 El modelo lineal a partir del cual se han obtenido las conclusiones
 asume que el efecto sobre las ventas debido a un incremento en el
@@ -5777,7 +5757,7 @@ evaluar la interacción, o bien de forma directa.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-213-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-222-1} \end{center}
 
 Los resultados muestran una evidencia clara de que la interacción
 \texttt{tv:radio} es significativa y de que el modelo que incorpora la
@@ -5867,7 +5847,7 @@ El siguiente gráfico relaciona \texttt{p} y \texttt{logit(p)}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-215-1} \end{center}
+\begin{center}\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-224-1} \end{center}
 
 \section{\texorpdfstring{Ejemplo: Datos de crédito en Alemania
 (\emph{Credit
@@ -6173,7 +6153,7 @@ Curva ROC con la librería \texttt{ROCR}:
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-223-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-232-1.pdf}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -6371,7 +6351,7 @@ bajo la curva ROC, mejor será la capacidad de predicción del modelo.
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-230-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-239-1.pdf}
 
 \textbf{Especificidad y sensibilidad}
 
@@ -6786,7 +6766,7 @@ algún tipo de validación cruzada, como la validación cruzada k-fold.
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-237-1.pdf}
+\includegraphics{cursoR_Euskaltel_files/figure-latex/unnamed-chunk-246-1.pdf}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -6806,8 +6786,8 @@ Generalizados}\label{modelos-aditivos-generalizados}
 \chapter{Análisis de Componentes Principales, Clasificación y
 Clustering}\label{analisis-de-componentes-principales-clasificacion-y-clustering}
 
-\chapter{Introducción a las técnicas de machine
-learning}\label{introduccion-a-las-tecnicas-de-machine-learning}
+\chapter{Introducción al machine
+learning}\label{introduccion-al-machine-learning}
 
 \chapter{Extras}\label{extras}
 
