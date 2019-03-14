@@ -188,9 +188,26 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="8.4" data-path="modelos-aditivos-generalizados.html"><a href="modelos-aditivos-generalizados.html#ejemplo-calidad-del-aire"><i class="fa fa-check"></i><b>8.4</b> Ejemplo: Calidad del Aire</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="analisis-de-componentes-principales-clasificacion-y-clustering.html"><a href="analisis-de-componentes-principales-clasificacion-y-clustering.html"><i class="fa fa-check"></i><b>9</b> Análisis de Componentes Principales, Clasificación y Clustering</a></li>
-<li class="chapter" data-level="10" data-path="introduccion-al-machine-learning.html"><a href="introduccion-al-machine-learning.html"><i class="fa fa-check"></i><b>10</b> Introducción al machine learning</a></li>
-<li class="chapter" data-level="11" data-path="extras.html"><a href="extras.html"><i class="fa fa-check"></i><b>11</b> Extras</a></li>
+<li class="chapter" data-level="9" data-path="analisis-multivariante.html"><a href="analisis-multivariante.html"><i class="fa fa-check"></i><b>9</b> Análisis multivariante</a><ul>
+<li class="chapter" data-level="9.1" data-path="analisis-multivariante.html"><a href="analisis-multivariante.html#analisis-de-componentes-principales"><i class="fa fa-check"></i><b>9.1</b> Análisis de Componentes Principales</a></li>
+<li class="chapter" data-level="9.2" data-path="analisis-multivariante.html"><a href="analisis-multivariante.html#analisis-discriminante-lineal"><i class="fa fa-check"></i><b>9.2</b> Análisis Discriminante Lineal</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="analisis-multivariante.html"><a href="analisis-multivariante.html#ejemplo-1"><i class="fa fa-check"></i><b>9.2.1</b> Ejemplo:</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="analisis-multivariante.html"><a href="analisis-multivariante.html#k-medias"><i class="fa fa-check"></i><b>9.3</b> K-medias</a></li>
+<li class="chapter" data-level="9.4" data-path="analisis-multivariante.html"><a href="analisis-multivariante.html#cluster-jerarquico"><i class="fa fa-check"></i><b>9.4</b> Cluster jerárquico</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html"><i class="fa fa-check"></i><b>10</b> Introducción a las redes neuronales artificiales</a><ul>
+<li class="chapter" data-level="10.1" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#arquitecturas-de-las-rna"><i class="fa fa-check"></i><b>10.1</b> Arquitecturas de las RNA</a></li>
+<li class="chapter" data-level="10.2" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#ejemplo-datos-boston-housing"><i class="fa fa-check"></i><b>10.2</b> Ejemplo: datos Boston housing</a></li>
+<li class="chapter" data-level="10.3" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#ajuste-de-la-red-neuronal"><i class="fa fa-check"></i><b>10.3</b> Ajuste de la red neuronal</a></li>
+<li class="chapter" data-level="10.4" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#prediccion-con-una-red-neuronal"><i class="fa fa-check"></i><b>10.4</b> Predicción con una red neuronal</a></li>
+<li class="chapter" data-level="10.5" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#evaluando-la-prediccion-mediante-validacion-cruzada"><i class="fa fa-check"></i><b>10.5</b> Evaluando la predicción mediante validación cruzada</a><ul>
+<li class="chapter" data-level="10.5.1" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#comparacion-de-modelos-rna"><i class="fa fa-check"></i><b>10.5.1</b> Comparación de modelos RNA</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="extras.html"><a href="extras.html"><i class="fa fa-check"></i><b>11</b> Extras</a><ul>
+<li class="chapter" data-level="11.1" data-path="extras.html"><a href="extras.html#el-paquete-caret"><i class="fa fa-check"></i><b>11.1</b> El paquete <code>caret</code></a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="http://idaejin.github.io/" target="blank">Mi página personal</a></li>
 
@@ -232,7 +249,7 @@ logitp &lt;-<span class="st"> </span><span class="kw">log</span>(p<span class="o
 <span class="kw">plot</span>(logitp,p,<span class="dt">t=</span><span class="st">&#39;l&#39;</span>,<span class="dt">xlab=</span><span class="st">&quot;log(p/1-p)&quot;</span>)
 <span class="kw">abline</span>(<span class="dt">h=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="fl">0.5</span>,<span class="dv">1</span>),<span class="dt">v=</span><span class="dv">0</span>,<span class="dt">col=</span><span class="st">&quot;grey&quot;</span>)
 <span class="kw">points</span>(<span class="dv">0</span>,<span class="fl">0.5</span>,<span class="dt">pch=</span><span class="dv">19</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_Euskaltel_files/figure-html/logit-06-1.png" width="672" style="display: block; margin: auto;" /></p>
 <div id="ejemplo-datos-de-credito-en-alemania-credit-scoring" class="section level2">
 <h2><span class="header-section-number">7.1</span> Ejemplo: Datos de crédito en Alemania (<em>Credit scoring</em>)</h2>
 <p>Cuando un banco recibe una solicitud de préstamo, basada en el perfil del solicitante, el banco tiene que tomar una decisión sobre si procede o no con la aprobación del préstamo. Hay dos tipos de riesgos asociados a la decisión del banco:</p>
@@ -303,54 +320,48 @@ gcreditdata &lt;-<span class="st"> </span><span class="kw">read.table</span>(<sp
 <span class="st">&quot;repairs&quot;</span>,<span class="st">&quot;education&quot;</span>,<span class="st">&quot;vacation-doesnotexist?&quot;</span>,<span class="st">&quot;retraining&quot;</span>,<span class="st">&quot;business&quot;</span>,<span class="st">&quot;others&quot;</span>)</code></pre></div>
 <p> </p>
 <p>Dividamos los datos en dos grupos (entrenamiento y prueba), 70%/30%.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">gcredit.matrix &lt;-<span class="st"> </span><span class="kw">model.matrix</span>(credit.rating <span class="op">~</span><span class="st"> </span>. , <span class="dt">data =</span> gcreditdata)
-
-n&lt;-<span class="st"> </span><span class="kw">dim</span>(gcreditdata)[<span class="dv">1</span>]
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">n&lt;-<span class="st"> </span><span class="kw">dim</span>(gcreditdata)[<span class="dv">1</span>]
 
 <span class="kw">set.seed</span>(<span class="dv">1234</span>) <span class="co"># select a random sample with</span>
  train &lt;-<span class="st"> </span><span class="kw">sample</span>(<span class="dv">1</span><span class="op">:</span>n , <span class="fl">0.7</span><span class="op">*</span>n)
-xtrain &lt;-<span class="st"> </span>gcredit.matrix[train,]
-xtest  &lt;-<span class="st"> </span>gcredit.matrix[<span class="op">-</span>train,]
+ 
+ gcreditdata.test &lt;-<span class="st"> </span>gcreditdata[<span class="op">-</span>train,]
+gcreditdata.train &lt;-<span class="st"> </span>gcreditdata[train,]
 
 ytrain &lt;-<span class="st"> </span>gcreditdata<span class="op">$</span>credit.rating[train]
-ytrain &lt;-<span class="st"> </span><span class="kw">as.factor</span>(ytrain<span class="op">-</span><span class="dv">1</span>) <span class="co"># convert to 0/1 factor</span>
- ytest &lt;-<span class="st"> </span>gcreditdata<span class="op">$</span>credit.rating[<span class="op">-</span>train]
-ytest  &lt;-<span class="st"> </span><span class="kw">as.factor</span>(ytest<span class="op">-</span><span class="dv">1</span>) <span class="co">#  convert to 0/1 factor</span></code></pre></div>
+ ytest &lt;-<span class="st"> </span>gcreditdata<span class="op">$</span>credit.rating[<span class="op">-</span>train]</code></pre></div>
 <p> </p>
 <p>Un modelo logístico puede ser ajustado con la función <code>glm</code>.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">m1 &lt;-<span class="st"> </span><span class="kw">glm</span>(credit.rating <span class="op">~</span><span class="st"> </span>. , <span class="dt">family =</span> binomial, <span class="dt">data=</span> <span class="kw">data.frame</span>(<span class="dt">credit.rating=</span> ytrain, xtrain))
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">m1 &lt;-<span class="st"> </span><span class="kw">glm</span>(credit.rating <span class="op">~</span><span class="st"> </span>. , <span class="dt">family =</span> binomial, <span class="dt">data=</span> gcreditdata.train)
 <span class="kw">summary</span>(m1)</code></pre></div>
 <pre><code>## 
 ## Call:
-## glm(formula = credit.rating ~ ., family = binomial, data = data.frame(credit.rating = ytrain, 
-##     xtrain))
+## glm(formula = credit.rating ~ ., family = binomial, data = gcreditdata.train)
 ## 
 ## Deviance Residuals: 
 ##     Min       1Q   Median       3Q      Max  
 ## -2.8353  -0.6178   0.3415   0.6729   2.0514  
 ## 
-## Coefficients: (2 not defined because of singularities)
+## Coefficients:
 ##                                 Estimate Std. Error z value Pr(&gt;|z|)    
 ## (Intercept)                    5.259e-01  1.371e+00   0.384 0.701257    
-## X.Intercept.                          NA         NA      NA       NA    
-## account.status.200DM           3.532e-01  2.719e-01   1.299 0.193876    
-## account.status.200DM.1         8.198e-01  4.626e-01   1.772 0.076353 .  
+## account.status&lt;200DM           3.532e-01  2.719e-01   1.299 0.193876    
+## account.status&gt;200DM           8.198e-01  4.626e-01   1.772 0.076353 .  
 ## account.statusNoStatus         1.487e+00  2.782e-01   5.344 9.08e-08 ***
 ## months                        -3.687e-02  1.156e-02  -3.189 0.001428 ** 
 ## credit.historyAllpaid         -1.347e-01  6.539e-01  -0.206 0.836779    
 ## credit.historyAllpaidtillnow   5.296e-01  4.975e-01   1.065 0.287038    
 ## credit.historyDelayinpaying    7.156e-01  5.575e-01   1.284 0.199266    
 ## credit.historyCritical         1.439e+00  5.073e-01   2.837 0.004559 ** 
-## purposecar.used.               1.838e+00  4.856e-01   3.786 0.000153 ***
-## purposefurniture.equipment     1.095e+00  9.231e-01   1.186 0.235728    
-## purposeradio.television        8.879e-01  3.289e-01   2.700 0.006944 ** 
+## purposecar(used)               1.838e+00  4.856e-01   3.786 0.000153 ***
+## purposefurniture/equipment     1.095e+00  9.231e-01   1.186 0.235728    
+## purposeradio/television        8.879e-01  3.289e-01   2.700 0.006944 ** 
 ## purposedomesticappliances      9.928e-01  3.107e-01   3.196 0.001395 ** 
 ## purposerepairs                 5.399e-01  9.006e-01   0.599 0.548881    
 ## purposeeducation              -4.889e-01  6.587e-01  -0.742 0.457933    
-## purposevacation.doesnotexist. -1.800e-01  4.648e-01  -0.387 0.698616    
+## purposevacation-doesnotexist? -1.800e-01  4.648e-01  -0.387 0.698616    
 ## purposeretraining              2.093e+00  1.266e+00   1.653 0.098417 .  
 ## purposebusiness                5.772e-01  3.985e-01   1.448 0.147489    
-## purposeothers                         NA         NA      NA       NA    
 ## credit.amount                 -1.107e-04  5.456e-05  -2.028 0.042526 *  
 ## savingsA62                     5.219e-01  3.548e-01   1.471 0.141326    
 ## savingsA63                     8.722e-01  5.710e-01   1.528 0.126623    
@@ -397,19 +408,19 @@ ytest  &lt;-<span class="st"> </span><span class="kw">as.factor</span>(ytest<spa
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">sig.var&lt;-<span class="st"> </span><span class="kw">summary</span>(m1)<span class="op">$</span>coeff[<span class="op">-</span><span class="dv">1</span>,<span class="dv">4</span>] <span class="op">&lt;</span><span class="fl">0.01</span>
 <span class="kw">names</span>(sig.var)[sig.var <span class="op">==</span><span class="st"> </span><span class="ot">TRUE</span>]</code></pre></div>
 <pre><code>## [1] &quot;account.statusNoStatus&quot;    &quot;months&quot;                   
-## [3] &quot;credit.historyCritical&quot;    &quot;purposecar.used.&quot;         
-## [5] &quot;purposeradio.television&quot;   &quot;purposedomesticappliances&quot;
+## [3] &quot;credit.historyCritical&quot;    &quot;purposecar(used)&quot;         
+## [5] &quot;purposeradio/television&quot;   &quot;purposedomesticappliances&quot;
 ## [7] &quot;savingsA64&quot;                &quot;savingsA65&quot;               
 ## [9] &quot;installment.rate&quot;</code></pre>
 <p> </p>
 <p>Con <code>predict</code> podemos predecir con el modelo logístico el conjunto de test.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pred1&lt;-<span class="st"> </span><span class="kw">predict.glm</span>(m1,<span class="dt">newdata =</span> <span class="kw">data.frame</span>(ytest,xtest), <span class="dt">type=</span><span class="st">&quot;response&quot;</span>)
-result1&lt;-<span class="st"> </span><span class="kw">table</span>(ytest, <span class="kw">floor</span>(pred1<span class="op">+</span><span class="fl">1.5</span>))
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pred1&lt;-<span class="st"> </span><span class="kw">predict.glm</span>(m1,<span class="dt">newdata =</span> gcreditdata.test, <span class="dt">type=</span><span class="st">&quot;response&quot;</span>)
+result1&lt;-<span class="st"> </span><span class="kw">table</span>(ytest, <span class="kw">floor</span>(pred1<span class="op">+</span><span class="fl">0.5</span>))
 result1</code></pre></div>
 <pre><code>##      
-## ytest   1   2
-##    -1  48  51
-##    0   25 176</code></pre>
+## ytest   0   1
+##     0  48  51
+##     1  25 176</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">error1&lt;-<span class="st"> </span><span class="kw">sum</span>(result1[<span class="dv">1</span>,<span class="dv">2</span>], result1[<span class="dv">2</span>,<span class="dv">1</span>])<span class="op">/</span><span class="kw">sum</span>(result1)
 error1</code></pre></div>
 <pre><code>## [1] 0.2533333</code></pre>
@@ -422,10 +433,10 @@ error1</code></pre></div>
 <pre><code>## The following object is masked from &#39;package:stats&#39;:
 ## 
 ##     lowess</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pred =<span class="st"> </span><span class="kw">prediction</span>(pred1,ytest)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pred =<span class="st"> </span>ROCR<span class="op">::</span><span class="kw">prediction</span>(pred1,ytest)
 perf &lt;-<span class="st"> </span><span class="kw">performance</span>(pred, <span class="st">&quot;tpr&quot;</span>, <span class="st">&quot;fpr&quot;</span>)
 <span class="kw">plot</span>(perf)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="cursoR_Euskaltel_files/figure-html/ROCR-1.png" width="672" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">AUCLog1=<span class="kw">performance</span>(pred, <span class="dt">measure =</span> <span class="st">&quot;auc&quot;</span>)<span class="op">@</span>y.values[[<span class="dv">1</span>]]
 <span class="kw">cat</span>(<span class="st">&quot;AUC: &quot;</span>,AUCLog1,<span class="st">&quot;n&quot;</span>)</code></pre></div>
 <pre><code>## AUC:  0.7699382 n</code></pre>
@@ -507,7 +518,7 @@ optCutOff</code></pre></div>
 <p><strong>ROC</strong></p>
 <p><strong>Receiver Operating Characteristics</strong> a curva traza el porcentaje de verdaderos positivos pronosticados con precisión por un modelo logit dado a medida que la probabilidad de corte de la predicción se reduce de 1 a 0. Para un buen modelo, a medida que se reduce el corte, debería marcar más de 1 real como positivo y menos de 0 real como 1. Por lo tanto, para un buen modelo, la curva debería subir bruscamente, indicando que el TPR (eje Y) aumenta más rápido que el FPR (eje X) a medida que disminuye la puntuación de corte. Cuanto mayor sea el área bajo la curva ROC, mejor será la capacidad de predicción del modelo.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plotROC</span>(testData<span class="op">$</span>ABOVE50K, predicted)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p><img src="cursoR_Euskaltel_files/figure-html/plotROC-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p><strong>Especificidad y sensibilidad</strong></p>
 <p>La <strong>Sensibilidad</strong> (o <code>Tasa Verdaderos Positivos</code>) es el porcentaje de 1’s (reales) correctamente predichos por el modelo, mientras que, <strong>especificidad</strong> es el porcentaje de 0’s (reales) correctamente predicho. <strong>La especificidad</strong> también puede calcularse como <code>1-Tasa Falsos Positivos</code>.</p>
 <p><span class="math display">\[
@@ -758,10 +769,10 @@ misClasificError &lt;-<span class="st"> </span><span class="kw">mean</span>(fitt
 <p><strong>Evaluar la capacidad predictiva</strong></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ROCR)
 p &lt;-<span class="st"> </span><span class="kw">predict</span>(mod3, <span class="dt">newdata=</span><span class="kw">subset</span>(test,<span class="dt">select=</span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>,<span class="dv">8</span>)), <span class="dt">type=</span><span class="st">&quot;response&quot;</span>)
-pr &lt;-<span class="st"> </span><span class="kw">prediction</span>(p, test<span class="op">$</span>Survived)
+pr &lt;-<span class="st"> </span>ROCR<span class="op">::</span><span class="kw">prediction</span>(p, test<span class="op">$</span>Survived)
 prf &lt;-<span class="st"> </span><span class="kw">performance</span>(pr, <span class="dt">measure =</span> <span class="st">&quot;tpr&quot;</span>, <span class="dt">x.measure =</span> <span class="st">&quot;fpr&quot;</span>)
 <span class="kw">plot</span>(prf)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+<p><img src="cursoR_Euskaltel_files/figure-html/ROCR2-1.png" width="672" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">auc &lt;-<span class="st"> </span><span class="kw">performance</span>(pr, <span class="dt">measure =</span> <span class="st">&quot;auc&quot;</span>)
 auc &lt;-<span class="st"> </span>auc<span class="op">@</span>y.values[[<span class="dv">1</span>]]
 auc</code></pre></div>
