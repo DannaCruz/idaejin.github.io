@@ -196,7 +196,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="9.3" data-path="analisis-multivariante.html"><a href="analisis-multivariante.html#k-medias"><i class="fa fa-check"></i><b>9.3</b> K-medias</a></li>
 <li class="chapter" data-level="9.4" data-path="analisis-multivariante.html"><a href="analisis-multivariante.html#cluster-jerarquico"><i class="fa fa-check"></i><b>9.4</b> Cluster jerárquico</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html"><i class="fa fa-check"></i><b>10</b> Introducción a las redes neuronales artificiales</a><ul>
+<li class="chapter" data-level="10" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html"><i class="fa fa-check"></i><b>10</b> Introduccion a las redes neuronales artificiales</a><ul>
 <li class="chapter" data-level="10.1" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#arquitecturas-de-las-rna"><i class="fa fa-check"></i><b>10.1</b> Arquitecturas de las RNA</a></li>
 <li class="chapter" data-level="10.2" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#ejemplo-datos-boston-housing"><i class="fa fa-check"></i><b>10.2</b> Ejemplo: datos Boston housing</a></li>
 <li class="chapter" data-level="10.3" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#ajuste-de-la-red-neuronal"><i class="fa fa-check"></i><b>10.3</b> Ajuste de la red neuronal</a></li>
@@ -561,8 +561,8 @@ home_dest       Home/Destination</code></pre>
 <p>Descripción completa <a href="http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/titanic3info.txt">(Aquí)</a></p>
 <p>Descarga los datos <a href="http://idaejin.github.io/courses/R/data/titanic.zip">aquí</a></p>
 <p>Leemos los datos de entreamiento <code>train</code> y <code>test</code>:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">train &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&#39;data/titanic_train.csv&#39;</span>,<span class="dt">header=</span><span class="ot">TRUE</span>,<span class="dt">row.names=</span><span class="dv">1</span>)
- test &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&#39;data/titanic_test.csv&#39;</span>,<span class="dt">header=</span><span class="ot">TRUE</span>,<span class="dt">row.names=</span><span class="dv">1</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">train &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&#39;http://idaejin.github.io/courses/R/data/titanic_train.csv&#39;</span>,<span class="dt">header=</span><span class="ot">TRUE</span>,<span class="dt">row.names=</span><span class="dv">1</span>)
+ test &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&#39;http://idaejin.github.io/courses/R/data/titanic_test.csv&#39;</span>,<span class="dt">header=</span><span class="ot">TRUE</span>,<span class="dt">row.names=</span><span class="dv">1</span>)</code></pre></div>
 <p><strong>Questions:</strong></p>
 <ul>
 <li><p>Ajustar un modelo logístico con <code>pclass</code> como variable explicativa. ¿Cuál es la interpretación del modelo ajustado?</p></li>

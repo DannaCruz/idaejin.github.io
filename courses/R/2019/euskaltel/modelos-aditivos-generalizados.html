@@ -196,7 +196,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="9.3" data-path="analisis-multivariante.html"><a href="analisis-multivariante.html#k-medias"><i class="fa fa-check"></i><b>9.3</b> K-medias</a></li>
 <li class="chapter" data-level="9.4" data-path="analisis-multivariante.html"><a href="analisis-multivariante.html#cluster-jerarquico"><i class="fa fa-check"></i><b>9.4</b> Cluster jerárquico</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html"><i class="fa fa-check"></i><b>10</b> Introducción a las redes neuronales artificiales</a><ul>
+<li class="chapter" data-level="10" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html"><i class="fa fa-check"></i><b>10</b> Introduccion a las redes neuronales artificiales</a><ul>
 <li class="chapter" data-level="10.1" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#arquitecturas-de-las-rna"><i class="fa fa-check"></i><b>10.1</b> Arquitecturas de las RNA</a></li>
 <li class="chapter" data-level="10.2" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#ejemplo-datos-boston-housing"><i class="fa fa-check"></i><b>10.2</b> Ejemplo: datos Boston housing</a></li>
 <li class="chapter" data-level="10.3" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#ajuste-de-la-red-neuronal"><i class="fa fa-check"></i><b>10.3</b> Ajuste de la red neuronal</a></li>
@@ -293,7 +293,7 @@ cols. &lt;-<span class="st"> </span><span class="kw">rainbow</span>(<span class=
 <p>Ahora usamos las funciones <em>suaves</em> <span class="math inline">\(f(\cdot)\)</span> de nuestras variables predictoras, que pueden tomar formas más flexibles. Se supone que los valores observados son de alguna distribución de la familia exponencial, y <span class="math inline">\(\mu\)</span> está relacionado con los predictores a través de una función <em>enlace</em> (<em>o link</em>).</p>
 <p>En este curso se estudiará la implementación de GAMs en <code>R</code> usando el paquete <code>mgcv</code> y funciones de base tipo spline.</p>
 <p>Cargaremos la librería <code>mgcv</code>, y la función <code>gam</code>:</p>
-<p>** La función <code>gam</code></p>
+<p><strong>La función <code>gam</code></strong></p>
 <p>La sintaxis es:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(mgcv)
 fit.gam &lt;-<span class="st"> </span><span class="kw">gam</span>(y <span class="op">~</span><span class="st"> </span><span class="kw">s</span>(x))</code></pre></div>
@@ -303,40 +303,14 @@ fit.gam &lt;-<span class="st"> </span><span class="kw">gam</span>(y <span class=
 <ul>
 <li>La primera opción es la base utilizada para representar los términos suaves <code>s(x)</code> (ver <code>?s</code> o <code>?smooth.terms</code>). El tipo de función base se puede modificar utilizando <code>bs</code> dentro de <code>s(x,bs=&quot;ps&quot;)</code>:</li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th><strong><code>bs</code></strong></th>
-<th><strong>Descripción</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>&quot;tp&quot;</code></td>
-<td>Thin Plate Regression Splines</td>
-</tr>
-<tr class="even">
-<td><code>&quot;ts&quot;</code></td>
-<td>Thin Plate Regression Splines with Shrinkage</td>
-</tr>
-<tr class="odd">
-<td><code>&quot;cr&quot;</code></td>
-<td>Cubic regression spline</td>
-</tr>
-<tr class="even">
-<td><code>&quot;crs&quot;</code></td>
-<td>Cubic regression spline with Shrinkage</td>
-</tr>
-<tr class="odd">
-<td><code>&quot;cc&quot;</code></td>
-<td>Cyclic cubic regression spline</td>
-</tr>
-<tr class="even">
-<td><code>&quot;ps&quot;</code></td>
-<td>P-splines (ver <code>?p.spline</code>)</td>
-</tr>
-</tbody>
-</table>
+<!-- **`bs`**        |  **Descripción** -->
+<!-- ----------------|----------------------- -->
+<!-- `"tp"`          | Thin Plate Regression Splines -->
+<!-- `"ts"`          | Thin Plate Regression Splines with Shrinkage -->
+<!-- `"cr"`          | Cubic regression spline -->
+<!-- `"crs"`         | Cubic regression spline with Shrinkage -->
+<!-- `"cc"`          | Cyclic cubic regression spline -->
+<!-- `"ps"`          | P-splines (ver `?p.spline`) -->
 <p>El resto de argumentos es:</p>
 <ul>
 <li><code>m</code> El orden de la penalización.</li>
@@ -345,15 +319,17 @@ fit.gam &lt;-<span class="st"> </span><span class="kw">gam</span>(y <span class=
 <li><code>sp</code> cualquier parámetro de suavizado suministrado para el término de suavizado.</li>
 <li>etc …</li>
 </ul>
-<p>Para más opciones ver <code>?gam</code>, i.e. <code>method</code> para la selección del parámetro de alisamiento (en general, los métodos basados en la verosimilitud/likelihood tienden a ser más robustos)</p>
-<ul>
-<li><code>method=</code> elegir entre <code>&quot;REML&quot;</code>, <code>&quot;ML&quot;</code> <code>&quot;GCV.Cp&quot;</code>, <code>&quot;GACV.Cp&quot;</code></li>
-</ul>
+<!-- Para más opciones ver `?gam`, i.e. `method` para la selección del parámetro de alisamiento (en general, los métodos basados en la verosimilitud/likelihood tienden a ser más robustos, i.e. `REML` ó `ML`). -->
+<!-- * `method= ` elegir entre `"REML"`, `"ML"` `"GCV.Cp"`, `"GACV.Cp"` -->
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(fit.gam)</code></pre></div>
-<p><code>gam.check</code> produce algunos gráficos de residuos básicos, y proporciona alguna información relacionada con el proceso de ajuste.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">gam.check</span>(fit.gam)</code></pre></div>
-<p>Other residual plots should be examined, e.g.:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(<span class="kw">fitted</span>(fit.gam),<span class="kw">residuals</span>(fit.gam))</code></pre></div>
+<p><code>gam.check</code> produce algunos gráficos de residuos básicos, y proporciona información relacionada con el proceso de ajuste.</p>
+<!-- ```{r gam-check, eval = FALSE} -->
+<!-- gam.check(fit.gam) -->
+<!-- ``` -->
+<!-- Más gráficos de residuos: -->
+<!-- ```{r gam-07, eval = FALSE} -->
+<!-- plot(fitted(fit.gam),residuals(fit.gam)) -->
+<!-- ``` -->
 <div id="ejemplo-salarios" class="section level3">
 <h3><span class="header-section-number">8.2.1</span> Ejemplo: Salarios</h3>
 <p>Salarios y otros datos para un grupo de 3.000 trabajadores varones en la región del Atlántico Medio.</p>
@@ -393,7 +369,7 @@ fit.gam &lt;-<span class="st"> </span><span class="kw">gam</span>(y <span class=
 ## R-sq.(adj) =   0.29   Deviance explained = 29.2%
 ## GCV = 1240.7  Scale est. = 1236.3    n = 3000</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>)) <span class="co">#to partition the Plotting Window</span>
-<span class="kw">plot</span>(gam1,<span class="dt">se =</span> <span class="ot">TRUE</span>) </code></pre></div>
+<span class="kw">plot</span>(gam1,<span class="dt">se =</span> <span class="ot">TRUE</span>)</code></pre></div>
 <p><img src="cursoR_Euskaltel_files/figure-html/wage-07-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Con <code>all.terms = TRUE</code> podemos representar la parte paramétrica:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))
@@ -410,7 +386,7 @@ fit.gam &lt;-<span class="st"> </span><span class="kw">gam</span>(y <span class=
 <h2><span class="header-section-number">8.3</span> Modelos semi-paramétricos</h2>
 <p>Los modelos semi-paramétricos permiten combinar componentes lineales (paramétricos) y no paramétricos, por ejemplo:</p>
 <p><span class="math display">\[
-\boldsymbol{y} = \beta_0 + \beta_1\boldsymbol{x}_1 + ... + \beta_{j-1}\boldsymbol{x}_{j-1} + f(\boldsymbol{x}_j) + \boldsymbol{\epsilon} 
+\boldsymbol{y} = \beta_0 + \beta_1\boldsymbol{x}_1 + ... + \beta_{j-1}\boldsymbol{x}_{j-1} + f(\boldsymbol{x}_j) + \boldsymbol{\epsilon}
 \]</span></p>
 <p>El procedimiento de ajuste es el mismo que se muestra en las secciones anteriores. Simplemente los efectos paramétricos están incluidos en la parte de efectos fijos, <span class="math inline">\(\boldsymbol{X}\)</span>. Un caso interesado es cuando la parte paramétrica incluye una variable factorial con dos o más niveles. Como vimos en el caso lineal, podemos considerar diferentes situaciones: términos suaves paralelos (efecto aditivo) o términos suaves no paralelos (efecto de interacción). Además, podemos considerar la misma cantidad de alisamiento o una cantidad diferente.</p>
 <p><strong>Datos de cebollas</strong></p>
@@ -434,7 +410,7 @@ points.cols &lt;-<span class="st"> </span><span class="kw">c</span>(<span class=
 \]</span></p>
 <p>donde</p>
 <p><span class="math display">\[
-\text{location}_{ij} = 
+\text{location}_{ij} =
 \left\{
 \begin{array}{cl}
 0 &amp; \mbox{si la $i$-ésima observación es de Purnong Landing} \\
@@ -452,7 +428,7 @@ L &lt;-<span class="st"> </span><span class="kw">factor</span>(location)
 <span class="kw">levels</span>(L) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Purnong Landing&quot;</span>,<span class="st">&quot;Virginia&quot;</span>)
 
 <span class="co"># fit a gam with location factor</span>
-fit1 &lt;-<span class="st"> </span><span class="kw">gam</span>(<span class="kw">log</span>(yield) <span class="op">~</span><span class="st"> </span>L <span class="op">+</span><span class="st"> </span><span class="kw">s</span>(dens,<span class="dt">k=</span><span class="dv">20</span>,<span class="dt">m=</span><span class="dv">2</span>,<span class="dt">bs=</span><span class="st">&quot;ps&quot;</span>), 
+fit1 &lt;-<span class="st"> </span><span class="kw">gam</span>(<span class="kw">log</span>(yield) <span class="op">~</span><span class="st"> </span>L <span class="op">+</span><span class="st"> </span><span class="kw">s</span>(dens,<span class="dt">k=</span><span class="dv">20</span>,<span class="dt">m=</span><span class="dv">2</span>,<span class="dt">bs=</span><span class="st">&quot;ps&quot;</span>),
             <span class="dt">method=</span><span class="st">&quot;REML&quot;</span>, <span class="dt">select=</span><span class="ot">TRUE</span>)
 
 <span class="kw">summary</span>(fit1)</code></pre></div>
@@ -499,7 +475,7 @@ fit1.V &lt;-<span class="st"> </span><span class="kw">predict</span>(fit1,<span 
 \]</span></p>
 <p>donde</p>
 <p><span class="math display">\[
-L(j) = 
+L(j) =
 \left\{
 \begin{array}{cl}
 0 &amp; \mbox{si la $i$-ésima observación es de Purnong Landing} \\
@@ -508,7 +484,7 @@ L(j) =
 \right.
 \]</span></p>
 <p>El opción <code>by=</code> dentro de <code>s()</code> permite incluir interacciones curva factor:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">fit2 &lt;-<span class="st"> </span><span class="kw">gam</span>(<span class="kw">log</span>(yield) <span class="op">~</span><span class="st"> </span>L <span class="op">+</span><span class="st"> </span><span class="kw">s</span>(dens,<span class="dt">k=</span><span class="dv">20</span>,<span class="dt">m=</span><span class="dv">2</span>,<span class="dt">bs=</span><span class="st">&quot;ps&quot;</span>,<span class="dt">by=</span>L), 
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">fit2 &lt;-<span class="st"> </span><span class="kw">gam</span>(<span class="kw">log</span>(yield) <span class="op">~</span><span class="st"> </span>L <span class="op">+</span><span class="st"> </span><span class="kw">s</span>(dens,<span class="dt">k=</span><span class="dv">20</span>,<span class="dt">m=</span><span class="dv">2</span>,<span class="dt">bs=</span><span class="st">&quot;ps&quot;</span>,<span class="dt">by=</span>L),
             <span class="dt">method=</span><span class="st">&quot;REML&quot;</span>, <span class="dt">select=</span><span class="ot">TRUE</span>)
 <span class="kw">summary</span>(fit2)</code></pre></div>
 <pre><code>## 
@@ -547,7 +523,7 @@ L(j) =
 ##              4.264039e+02              1.604648e-03 
 ##        s(dens):LVirginia1        s(dens):LVirginia2 
 ##              6.437458e+01              1.053443e-03</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># plot the smooth effects </span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># plot the smooth effects</span>
 <span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))
 <span class="kw">plot</span>(fit2, <span class="dt">se=</span><span class="ot">TRUE</span>)
 
@@ -673,7 +649,7 @@ gam3 &lt;-<span class="st"> </span><span class="kw">gam</span>(wage <span class=
 <p>Veamos los resultados gráficamente:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">3</span>))
 <span class="kw">termplot</span>(airq.lm,<span class="dt">se=</span><span class="ot">TRUE</span>)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/unnamed-chunk-11-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_Euskaltel_files/figure-html/term-air-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>También podemos graficar los residuos del modelo para comprobar las hipótesis del modelo.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))
 <span class="kw">plot</span>(airq.lm,<span class="dt">which=</span><span class="dv">1</span><span class="op">:</span><span class="dv">2</span>)</code></pre></div>
@@ -712,7 +688,7 @@ gam3 &lt;-<span class="st"> </span><span class="kw">gam</span>(wage <span class=
 <p>Ajustando un modelo lineal podemos concluir que puede haber alguna heterokedasticidad que no se tenga en cuenta en el modelo. Sin embargo, la causa más posible es que la relación entre la variable de respuesta y las covariables está lejos de ser lineal.</p>
 <p>Ajustemos un modelo GAM, en primer lugar con una sola variable, es decir:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(mgcv)
-airq.gam1 &lt;-<span class="st"> </span><span class="kw">gam</span>(<span class="kw">log</span>(Ozone) <span class="op">~</span><span class="st"> </span><span class="kw">s</span>(Wind,<span class="dt">bs=</span><span class="st">&quot;ps&quot;</span>,<span class="dt">m=</span><span class="dv">2</span>,<span class="dt">k=</span><span class="dv">10</span>), 
+airq.gam1 &lt;-<span class="st"> </span><span class="kw">gam</span>(<span class="kw">log</span>(Ozone) <span class="op">~</span><span class="st"> </span><span class="kw">s</span>(Wind,<span class="dt">bs=</span><span class="st">&quot;ps&quot;</span>,<span class="dt">m=</span><span class="dv">2</span>,<span class="dt">k=</span><span class="dv">10</span>),
                  <span class="dt">method=</span><span class="st">&quot;REML&quot;</span>, <span class="dt">select=</span><span class="ot">TRUE</span>,<span class="dt">data=</span>airquality)
 <span class="kw">summary</span>(airq.gam1)</code></pre></div>
 <pre><code>## 
