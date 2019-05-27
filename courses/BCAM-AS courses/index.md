@@ -8,7 +8,9 @@ output:
 
 ------------------------
 
-### Measurement Error and Misclassification in Statistical models: Basics and applications
+This is a public repository with course material 
+
+### > Measurement Error and Misclassification in Statistical models: Basics and applications
 
 * **Date:** 27-31 May 2019 (5 sessions)
 * **Time:** 10:00 - 12:00 (a total of 10 hours) 
