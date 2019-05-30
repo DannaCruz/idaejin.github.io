@@ -25,5 +25,5 @@ This is a public repository with course material
 
 - Session 29/05 [here](material/ME_HK_2905.pdf)
 
-
+- Session 30/05 [here](material/ME_HK_305.pdf)
 
