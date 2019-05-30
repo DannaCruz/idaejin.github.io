@@ -10,7 +10,7 @@ output:
 
 This is a public repository with course material 
 
-### > Measurement Error and Misclassification in Statistical models: Basics and applications
+### Measurement Error and Misclassification in Statistical models: Basics and applications
 
 * **Date:** 27-31 May 2019 (5 sessions)
 * **Time:** 10:00 - 12:00 (a total of 10 hours) 
@@ -26,4 +26,18 @@ This is a public repository with course material
 - Session 29/05 [here](material/ME_HK_2905.pdf)
 
 - Session 30/05 [here](material/ME_HK_305.pdf)
+
+
+**References**
+
++ **Küchenhoff H.**, Carroll RJ. _"Segmented regression with errors in predictors: semi-parametric and parametric methods"_ Statistics in Medicine 1997 Jan 15-Feb 15;16(1-3):169-88. [Paper](HK_Carroll_1997.pdf).
+
++ Lederer W., **Küchenhoff H.** _"A short introduction to the SIMEX and MCSIMEX"._ [Paper](Lederer_HK_2006.pdf).
+
++ Gössl C. and **Küchenhoff H.** _"Bayesian analysis of logistic regression with an unknown change point and covariate measurement error"._ [Paper](Goessl_HK_2001.pdf).
+
+
+#### MEM-explorer Shiny App
+
+ + [Here](https://idaejin.shinyapps.io/MEM-Explorer/)
 
