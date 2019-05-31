@@ -29,8 +29,12 @@ This is a public repository with course material
 
 - Session 31/05 [here](material/ME_HK_3105.pdf)
 
+#### Software
 
-**References**
+**R CRAN** [`simex: SIMEX- And MCSIMEX-Algorithm for Measurement Error Models`](https://cran.r-project.org/web/packages/simex/index.html)
+
+
+#### References
 
 + **Küchenhoff H.**, Carroll RJ. _"Segmented regression with errors in predictors: semi-parametric and parametric methods"_ Statistics in Medicine 1997 Jan 15-Feb 15;16(1-3):169-88. [Paper](material/HK_Carroll_1997.pdf).
 
