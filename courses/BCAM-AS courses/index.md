@@ -30,11 +30,11 @@ This is a public repository with course material
 
 **References**
 
-+ **Küchenhoff H.**, Carroll RJ. _"Segmented regression with errors in predictors: semi-parametric and parametric methods"_ Statistics in Medicine 1997 Jan 15-Feb 15;16(1-3):169-88. [Paper](HK_Carroll_1997.pdf).
++ **Küchenhoff H.**, Carroll RJ. _"Segmented regression with errors in predictors: semi-parametric and parametric methods"_ Statistics in Medicine 1997 Jan 15-Feb 15;16(1-3):169-88. [Paper](material/HK_Carroll_1997.pdf).
 
-+ Lederer W., **Küchenhoff H.** _"A short introduction to the SIMEX and MCSIMEX"._ [Paper](Lederer_HK_2006.pdf).
++ Lederer W., **Küchenhoff H.** _"A short introduction to the SIMEX and MCSIMEX"._ [Paper](material/Lederer_HK_2006.pdf).
 
-+ Gössl C. and **Küchenhoff H.** _"Bayesian analysis of logistic regression with an unknown change point and covariate measurement error"._ [Paper](Goessl_HK_2001.pdf).
++ Gössl C. and **Küchenhoff H.** _"Bayesian analysis of logistic regression with an unknown change point and covariate measurement error"._ [Paper](material/Goessl_HK_2001.pdf).
 
 
 #### MEM-explorer Shiny App
