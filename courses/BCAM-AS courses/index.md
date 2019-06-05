@@ -8,7 +8,7 @@ output:
 
 ------------------------
 
-This is a public repository with course material 
+*This is a public repository with course materials organized by BCAM - Applied Statistics group.*
 
 ### Measurement Error and Misclassification in Statistical models: Basics and applications
 
