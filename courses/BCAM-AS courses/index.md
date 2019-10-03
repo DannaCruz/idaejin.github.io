@@ -26,7 +26,7 @@ output:
 
 #### Course material
 
-soon
+> Coming soon
 
 -----------------------
 
