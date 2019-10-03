@@ -1,14 +1,34 @@
 ---
-output: 
-  html_document: 
+title: '**BCAM - Applied Statistics Courses Material**'
+subtitle: ""
+output:
+  html_document:
+    fig_caption: yes
     highlight: haddock
+    keep_md: yes
     theme: spacelab
+    toc: yes
 ---
-# BCAM - Applied Statistics Courses Material
+
 
 ------------------------
 
 *This is a public repository with course materials organized by BCAM - Applied Statistics group.*
+
+-----------------------
+
+### BCAM-UPV/EHU course on _Generalized Additive Models for Location, Shape and Scale_
+
+* **Date:** October, 7-11 2019 (5 sessions)
+* **Time:** 9:00 - 11:00 (a total of 10 hours) 
+* **Location:** BCAM Seminar room
+* **Lecturer:** Dr. Mikis Stasinopoulos, London Metropolitan University, UK.
+
+#### Course material
+
+soon
+
+-----------------------
 
 ### Measurement Error and Misclassification in Statistical models: Basics and applications
 
