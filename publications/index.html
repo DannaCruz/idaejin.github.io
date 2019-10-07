@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -52,9 +53,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type="text/css">
 .main-container {
@@ -79,22 +78,80 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -104,7 +161,7 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore"><strong>Publications</strong></h1>
-<h3 class="subtitle"><em>Dae-Jin Lee</em></h3>
+<h3 class="subtitle">Dae-Jin Lee</h3>
 
 </div>
 
@@ -122,7 +179,7 @@ $(document).ready(function () {
 <div id="journal-papers-and-book-chapters" class="section level4">
 <h4>Journal papers and Book chapters</h4>
 <ul>
-<li><p><strong>Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2018)</strong>, “A beta-binomial mixed-effects model approach for analysing longitudinal discrete and bounded outcomes”. Accepted for publication in <em>Biometrical Journal</em>.</p></li>
+<li><p><strong>Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2019)</strong>, “A beta-binomial mixed-effects model approach for analysing longitudinal discrete and bounded outcomes”. <em>Biometrical Journal</em>, volume 61, Issue 3, May 2019, pages 600-615. <a href="https://doi.org/10.1002/bimj.201700251" class="uri">https://doi.org/10.1002/bimj.201700251</a></p></li>
 <li><p><strong>Rodriguez-Alvarez, MX., Durbán, M., Lee, D.-J. and Eilers, P.H.C. (2018)</strong>, “On the estimation of variance parameters in non-standard generalised linear mixed models: Application to penalised smoothing”. <em>Statistics and Computing</em>. <a href="https://doi.org/10.1007/s11222-018-9818-2">DOI:https://doi.org/10.1007/s11222-018-9818-2</a>.</p></li>
 <li><p><strong>Durbán, M., Lee, D.-J., Aguilera-Morillo, M.C. and Aguilera, A.M. (2018)</strong>, “From spatio-temporal smoothing to functional spatial regression: a penalized approach. Geostatistical Functional Data Analysis”. Theory and Methods. <em>John Wiley &amp; Sons (to appear)</em>.</p></li>
 <li><p><strong>Miles, J., Applebee, C.J., Leboucher, P., Lopez-Fernandez, S., Lee, D.-J., Guarch, R., Ward, S., Parker, P.J., López, J.I., Larijani, B (2017)</strong>, “Time Resolved Amplified FRET Identifies Protein Kinase B Activation State as a Marker for Poor Prognosis in Clear Cell Renal Cell Carcinoma” <em>BBA Clinical, Volume 8, December 2017, Pages 97-102.</em> <a href="http://linkinghub.elsevier.com/retrieve/pii/S2214647417300363">Available online.</a></p></li>
@@ -196,6 +253,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

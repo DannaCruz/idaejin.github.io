@@ -23,7 +23,7 @@ output:
 
 #### Journal papers and Book chapters
 
-* **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2018)**, "A beta-binomial mixed-effects model approach for analysing longitudinal discrete and bounded outcomes". Accepted for publication in *Biometrical Journal*.
+* **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2019)**, "A beta-binomial mixed-effects model approach for analysing longitudinal discrete and bounded outcomes". *Biometrical Journal*, volume 61, Issue 3, May 2019, pages 600-615. [https://doi.org/10.1002/bimj.201700251](https://doi.org/10.1002/bimj.201700251)
 
 * **Rodriguez-Alvarez, MX., Durbán, M., Lee, D.-J. and Eilers, P.H.C. (2018)**, "On the estimation of variance parameters in non-standard generalised linear mixed models: Application to penalised smoothing". *Statistics and Computing*. [DOI:https://doi.org/10.1007/s11222-018-9818-2](https://doi.org/10.1007/s11222-018-9818-2).
 
