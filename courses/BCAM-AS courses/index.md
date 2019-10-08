@@ -26,7 +26,7 @@ output:
 
 #### Course material
 
-> Visit gamlss, [Bilbao Short Course webpage](https://www.gamlss.com/short-courses-and-talks/)
+> Visit [gamlss.com](https://www.gamlss.com/), [Bilbao Short Course webpage](https://www.gamlss.com/short-courses-and-talks/)
 
 -----------------------
 
