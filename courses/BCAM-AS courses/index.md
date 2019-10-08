@@ -26,7 +26,7 @@ output:
 
 #### Course material
 
-> Coming soon
+> Visit gamlss, [Bilbao Short Course webpage](https://www.gamlss.com/short-courses-and-talks/)
 
 -----------------------
 
