@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title> 8 Modelos Aditivos Generalizados | Introducción al software estadístico R</title>
-  <meta name="description" content="Material del curso de Formación en R Euskaltel">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content=" 8 Modelos Aditivos Generalizados | Introducción al software estadístico R" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
 
   <meta property="og:title" content=" 8 Modelos Aditivos Generalizados | Introducción al software estadístico R" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="Material del curso de Formación en R Euskaltel" />
+  
   <meta name="github-repo" content="idaejin/xxx" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content=" 8 Modelos Aditivos Generalizados | Introducción al software estadístico R" />
   
-  <meta name="twitter:description" content="Material del curso de Formación en R Euskaltel" />
-  
-
-<meta name="author" content="Dae-Jin Lee &lt; dlee@bcamath.org &gt;">
-
-
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="regresion-logistica.html">
-<link rel="next" href="analisis-multivariante.html">
+
+<meta name="author" content="Dae-Jin Lee &lt; dlee@bcamath.org &gt;" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="regresión-logística.html"/>
+<link rel="next" href="análisis-multivariante.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -40,6 +39,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -109,100 +111,100 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#rstudio"><i class="fa fa-check"></i><b>2.2</b> Rstudio</a></li>
 <li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#instalar-un-paquete-de-r"><i class="fa fa-check"></i><b>2.3</b> Instalar un paquete de <code>R</code></a></li>
 <li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#empezando-con-r"><i class="fa fa-check"></i><b>2.4</b> Empezando con <code>R</code></a></li>
-<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#cargar-librerias-en-r"><i class="fa fa-check"></i><b>2.5</b> Cargar librerías en <code>R</code></a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#cargar-librerías-en-r"><i class="fa fa-check"></i><b>2.5</b> Cargar librerías en <code>R</code></a></li>
 <li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#lectura-de-datos"><i class="fa fa-check"></i><b>2.6</b> Lectura de datos</a></li>
 <li class="chapter" data-level="2.7" data-path="intro.html"><a href="intro.html#importar-datos"><i class="fa fa-check"></i><b>2.7</b> Importar datos</a></li>
 <li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#exportar-datos"><i class="fa fa-check"></i><b>2.8</b> Exportar datos</a></li>
 <li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#vectores"><i class="fa fa-check"></i><b>2.9</b> Vectores</a></li>
-<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#estadistica-basica"><i class="fa fa-check"></i><b>2.10</b> Estadística básica</a></li>
+<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#estadística-básica"><i class="fa fa-check"></i><b>2.10</b> Estadística básica</a></li>
 <li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#vectores-caracteres-y-variables-factor"><i class="fa fa-check"></i><b>2.11</b> Vectores caracteres y variables factor</a></li>
 <li class="chapter" data-level="2.12" data-path="intro.html"><a href="intro.html#data-frames"><i class="fa fa-check"></i><b>2.12</b> Data frames</a><ul>
 <li class="chapter" data-level="2.12.1" data-path="intro.html"><a href="intro.html#trabajando-con-data-frames"><i class="fa fa-check"></i><b>2.12.1</b> Trabajando con data frames</a></li>
 </ul></li>
-<li class="chapter" data-level="2.13" data-path="intro.html"><a href="intro.html#vectores-logicos"><i class="fa fa-check"></i><b>2.13</b> Vectores lógicos</a></li>
+<li class="chapter" data-level="2.13" data-path="intro.html"><a href="intro.html#vectores-lógicos"><i class="fa fa-check"></i><b>2.13</b> Vectores lógicos</a></li>
 <li class="chapter" data-level="2.14" data-path="intro.html"><a href="intro.html#trabajando-con-vectores"><i class="fa fa-check"></i><b>2.14</b> Trabajando con vectores</a></li>
 <li class="chapter" data-level="2.15" data-path="intro.html"><a href="intro.html#matrices-y-arrays"><i class="fa fa-check"></i><b>2.15</b> Matrices y arrays</a></li>
 <li class="chapter" data-level="2.16" data-path="intro.html"><a href="intro.html#factores"><i class="fa fa-check"></i><b>2.16</b> Factores</a></li>
-<li class="chapter" data-level="2.17" data-path="intro.html"><a href="intro.html#indexando-vectores-con-condiciones-logicas"><i class="fa fa-check"></i><b>2.17</b> Indexando vectores con condiciones lógicas</a></li>
+<li class="chapter" data-level="2.17" data-path="intro.html"><a href="intro.html#indexando-vectores-con-condiciones-lógicas"><i class="fa fa-check"></i><b>2.17</b> Indexando vectores con condiciones lógicas</a></li>
 <li class="chapter" data-level="2.18" data-path="intro.html"><a href="intro.html#valores-faltantes"><i class="fa fa-check"></i><b>2.18</b> Valores faltantes</a></li>
 <li class="chapter" data-level="2.19" data-path="intro.html"><a href="intro.html#trabajando-con-data-frames-1"><i class="fa fa-check"></i><b>2.19</b> Trabajando con data frames</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="basic.html"><a href="basic.html"><i class="fa fa-check"></i><b>3</b> Análisis de datos básico en <code>R</code></a><ul>
-<li class="chapter" data-level="3.1" data-path="basic.html"><a href="basic.html#graficos-sencillos"><i class="fa fa-check"></i><b>3.1</b> Gráficos sencillos</a></li>
+<li class="chapter" data-level="3.1" data-path="basic.html"><a href="basic.html#gráficos-sencillos"><i class="fa fa-check"></i><b>3.1</b> Gráficos sencillos</a></li>
 <li class="chapter" data-level="3.2" data-path="basic.html"><a href="basic.html#scatterplots"><i class="fa fa-check"></i><b>3.2</b> Scatterplots</a></li>
-<li class="chapter" data-level="3.3" data-path="basic.html"><a href="basic.html#mas-opciones-graficas"><i class="fa fa-check"></i><b>3.3</b> Más opciones gráficas</a></li>
-<li class="chapter" data-level="3.4" data-path="basic.html"><a href="basic.html#tablas-de-clasificacion-cruzada-o-de-contigencia"><i class="fa fa-check"></i><b>3.4</b> Tablas de clasificación cruzada o de contigencia</a></li>
+<li class="chapter" data-level="3.3" data-path="basic.html"><a href="basic.html#más-opciones-gráficas"><i class="fa fa-check"></i><b>3.3</b> Más opciones gráficas</a></li>
+<li class="chapter" data-level="3.4" data-path="basic.html"><a href="basic.html#tablas-de-clasificación-cruzada-o-de-contigencia"><i class="fa fa-check"></i><b>3.4</b> Tablas de clasificación cruzada o de contigencia</a></li>
 <li class="chapter" data-level="3.5" data-path="basic.html"><a href="basic.html#datos-cualitativos"><i class="fa fa-check"></i><b>3.5</b> Datos cualitativos</a></li>
 <li class="chapter" data-level="3.6" data-path="basic.html"><a href="basic.html#datos-cuantitativos"><i class="fa fa-check"></i><b>3.6</b> Datos cuantitativos</a><ul>
 <li class="chapter" data-level="3.6.1" data-path="basic.html"><a href="basic.html#distribuciones-de-frecuencias"><i class="fa fa-check"></i><b>3.6.1</b> Distribuciones de frecuencias</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html"><i class="fa fa-check"></i><b>4</b> Introducción a la programación básica con <code>R</code></a><ul>
-<li class="chapter" data-level="4.1" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#condicionales"><i class="fa fa-check"></i><b>4.1</b> Condicionales</a></li>
-<li class="chapter" data-level="4.2" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#operadores-logicos"><i class="fa fa-check"></i><b>4.2</b> Operadores Lógicos</a></li>
-<li class="chapter" data-level="4.3" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#if"><i class="fa fa-check"></i><b>4.3</b> <code>if</code></a></li>
-<li class="chapter" data-level="4.4" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#ifelse"><i class="fa fa-check"></i><b>4.4</b> <code>ifelse</code></a></li>
-<li class="chapter" data-level="4.5" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#loops-o-bucles"><i class="fa fa-check"></i><b>4.5</b> Loops o Bucles</a><ul>
-<li class="chapter" data-level="4.5.1" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#for"><i class="fa fa-check"></i><b>4.5.1</b> <code>for</code></a></li>
-<li class="chapter" data-level="4.5.2" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#while"><i class="fa fa-check"></i><b>4.5.2</b> <code>while</code></a></li>
+<li class="chapter" data-level="4" data-path="introducción-a-la-programación-básica-con-r.html"><a href="introducción-a-la-programación-básica-con-r.html"><i class="fa fa-check"></i><b>4</b> Introducción a la programación básica con <code>R</code></a><ul>
+<li class="chapter" data-level="4.1" data-path="introducción-a-la-programación-básica-con-r.html"><a href="introducción-a-la-programación-básica-con-r.html#condicionales"><i class="fa fa-check"></i><b>4.1</b> Condicionales</a></li>
+<li class="chapter" data-level="4.2" data-path="introducción-a-la-programación-básica-con-r.html"><a href="introducción-a-la-programación-básica-con-r.html#operadores-lógicos"><i class="fa fa-check"></i><b>4.2</b> Operadores Lógicos</a></li>
+<li class="chapter" data-level="4.3" data-path="introducción-a-la-programación-básica-con-r.html"><a href="introducción-a-la-programación-básica-con-r.html#if"><i class="fa fa-check"></i><b>4.3</b> <code>if</code></a></li>
+<li class="chapter" data-level="4.4" data-path="introducción-a-la-programación-básica-con-r.html"><a href="introducción-a-la-programación-básica-con-r.html#ifelse"><i class="fa fa-check"></i><b>4.4</b> <code>ifelse</code></a></li>
+<li class="chapter" data-level="4.5" data-path="introducción-a-la-programación-básica-con-r.html"><a href="introducción-a-la-programación-básica-con-r.html#loops-o-bucles"><i class="fa fa-check"></i><b>4.5</b> Loops o Bucles</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="introducción-a-la-programación-básica-con-r.html"><a href="introducción-a-la-programación-básica-con-r.html#for"><i class="fa fa-check"></i><b>4.5.1</b> <code>for</code></a></li>
+<li class="chapter" data-level="4.5.2" data-path="introducción-a-la-programación-básica-con-r.html"><a href="introducción-a-la-programación-básica-con-r.html#while"><i class="fa fa-check"></i><b>4.5.2</b> <code>while</code></a></li>
 </ul></li>
-<li class="chapter" data-level="4.6" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#famila-de-funciones-apply"><i class="fa fa-check"></i><b>4.6</b> Famila de funciones <code>apply</code></a></li>
-<li class="chapter" data-level="4.7" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#other-loops"><i class="fa fa-check"></i><b>4.7</b> Other Loops</a></li>
-<li class="chapter" data-level="4.8" data-path="introduccion-a-la-programacion-basica-con-r.html"><a href="introduccion-a-la-programacion-basica-con-r.html#improving-speed-performance-of-loops"><i class="fa fa-check"></i><b>4.8</b> Improving Speed Performance of Loops</a></li>
+<li class="chapter" data-level="4.6" data-path="introducción-a-la-programación-básica-con-r.html"><a href="introducción-a-la-programación-básica-con-r.html#famila-de-funciones-apply"><i class="fa fa-check"></i><b>4.6</b> Famila de funciones <code>apply</code></a></li>
+<li class="chapter" data-level="4.7" data-path="introducción-a-la-programación-básica-con-r.html"><a href="introducción-a-la-programación-básica-con-r.html#other-loops"><i class="fa fa-check"></i><b>4.7</b> Other Loops</a></li>
+<li class="chapter" data-level="4.8" data-path="introducción-a-la-programación-básica-con-r.html"><a href="introducción-a-la-programación-básica-con-r.html#improving-speed-performance-of-loops"><i class="fa fa-check"></i><b>4.8</b> Improving Speed Performance of Loops</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="distribuciones-de-probabilidad-en-r.html"><a href="distribuciones-de-probabilidad-en-r.html"><i class="fa fa-check"></i><b>5</b> Distribuciones de probabilidad en R</a><ul>
-<li class="chapter" data-level="5.1" data-path="distribuciones-de-probabilidad-en-r.html"><a href="distribuciones-de-probabilidad-en-r.html#distribucion-binomial-binnp"><i class="fa fa-check"></i><b>5.1</b> Distribución binomial <span class="math inline">\(Bin(n,p)\)</span></a></li>
-<li class="chapter" data-level="5.2" data-path="distribuciones-de-probabilidad-en-r.html"><a href="distribuciones-de-probabilidad-en-r.html#distribucion-de-poisson-poislambda"><i class="fa fa-check"></i><b>5.2</b> Distribución de Poisson <span class="math inline">\(Pois(\lambda)\)</span></a><ul>
-<li class="chapter" data-level="5.2.1" data-path="distribuciones-de-probabilidad-en-r.html"><a href="distribuciones-de-probabilidad-en-r.html#aproximacion-de-binomial-como-poisson"><i class="fa fa-check"></i><b>5.2.1</b> Aproximación de Binomial como Poisson</a></li>
+<li class="chapter" data-level="5.1" data-path="distribuciones-de-probabilidad-en-r.html"><a href="distribuciones-de-probabilidad-en-r.html#distribución-binomial-binnp"><i class="fa fa-check"></i><b>5.1</b> Distribución binomial <span class="math inline">\(Bin(n,p)\)</span></a></li>
+<li class="chapter" data-level="5.2" data-path="distribuciones-de-probabilidad-en-r.html"><a href="distribuciones-de-probabilidad-en-r.html#distribución-de-poisson-poislambda"><i class="fa fa-check"></i><b>5.2</b> Distribución de Poisson <span class="math inline">\(Pois(\lambda)\)</span></a><ul>
+<li class="chapter" data-level="5.2.1" data-path="distribuciones-de-probabilidad-en-r.html"><a href="distribuciones-de-probabilidad-en-r.html#aproximación-de-binomial-como-poisson"><i class="fa fa-check"></i><b>5.2.1</b> Aproximación de Binomial como Poisson</a></li>
 </ul></li>
 <li class="chapter" data-level="5.3" data-path="distribuciones-de-probabilidad-en-r.html"><a href="distribuciones-de-probabilidad-en-r.html#distribution-exponencial-explambda"><i class="fa fa-check"></i><b>5.3</b> Distribution Exponencial <span class="math inline">\(Exp(\lambda)\)</span></a></li>
 <li class="chapter" data-level="5.4" data-path="distribuciones-de-probabilidad-en-r.html"><a href="distribuciones-de-probabilidad-en-r.html#distribution-normal-mathcalnmusigma2"><i class="fa fa-check"></i><b>5.4</b> Distribution Normal <span class="math inline">\(\mathcal{N}(\mu,\sigma^2)\)</span></a></li>
-<li class="chapter" data-level="5.5" data-path="distribuciones-de-probabilidad-en-r.html"><a href="distribuciones-de-probabilidad-en-r.html#distribucion-uniforme-uab"><i class="fa fa-check"></i><b>5.5</b> Distribución Uniforme <span class="math inline">\(U(a,b)\)</span></a></li>
+<li class="chapter" data-level="5.5" data-path="distribuciones-de-probabilidad-en-r.html"><a href="distribuciones-de-probabilidad-en-r.html#distribución-uniforme-uab"><i class="fa fa-check"></i><b>5.5</b> Distribución Uniforme <span class="math inline">\(U(a,b)\)</span></a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="modelos-lineales-y-analisis-de-la-varianza.html"><a href="modelos-lineales-y-analisis-de-la-varianza.html"><i class="fa fa-check"></i><b>6</b> Modelos lineales y análisis de la varianza</a><ul>
-<li class="chapter" data-level="6.1" data-path="modelos-lineales-y-analisis-de-la-varianza.html"><a href="modelos-lineales-y-analisis-de-la-varianza.html#principios-de-la-modelizacion-estadistica"><i class="fa fa-check"></i><b>6.1</b> Principios de la modelización estadística</a><ul>
-<li class="chapter" data-level="6.1.1" data-path="modelos-lineales-y-analisis-de-la-varianza.html"><a href="modelos-lineales-y-analisis-de-la-varianza.html#identificar-y-caracterizar-variables"><i class="fa fa-check"></i><b>6.1.1</b> Identificar y Caracterizar Variables</a></li>
-<li class="chapter" data-level="6.1.2" data-path="modelos-lineales-y-analisis-de-la-varianza.html"><a href="modelos-lineales-y-analisis-de-la-varianza.html#tipos-de-variables-y-tipo-de-modelo"><i class="fa fa-check"></i><b>6.1.2</b> Tipos de variables y tipo de modelo</a></li>
+<li class="chapter" data-level="6" data-path="modelos-lineales-y-análisis-de-la-varianza.html"><a href="modelos-lineales-y-análisis-de-la-varianza.html"><i class="fa fa-check"></i><b>6</b> Modelos lineales y análisis de la varianza</a><ul>
+<li class="chapter" data-level="6.1" data-path="modelos-lineales-y-análisis-de-la-varianza.html"><a href="modelos-lineales-y-análisis-de-la-varianza.html#principios-de-la-modelización-estadística"><i class="fa fa-check"></i><b>6.1</b> Principios de la modelización estadística</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="modelos-lineales-y-análisis-de-la-varianza.html"><a href="modelos-lineales-y-análisis-de-la-varianza.html#identificar-y-caracterizar-variables"><i class="fa fa-check"></i><b>6.1.1</b> Identificar y Caracterizar Variables</a></li>
+<li class="chapter" data-level="6.1.2" data-path="modelos-lineales-y-análisis-de-la-varianza.html"><a href="modelos-lineales-y-análisis-de-la-varianza.html#tipos-de-variables-y-tipo-de-modelo"><i class="fa fa-check"></i><b>6.1.2</b> Tipos de variables y tipo de modelo</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="modelos-lineales-y-analisis-de-la-varianza.html"><a href="modelos-lineales-y-analisis-de-la-varianza.html#el-modelo-lineal-general"><i class="fa fa-check"></i><b>6.2</b> El modelo lineal general</a></li>
-<li class="chapter" data-level="6.3" data-path="modelos-lineales-y-analisis-de-la-varianza.html"><a href="modelos-lineales-y-analisis-de-la-varianza.html#definicion-de-modelos-en-r"><i class="fa fa-check"></i><b>6.3</b> Definición de modelos en <code>R</code></a><ul>
-<li class="chapter" data-level="6.3.1" data-path="modelos-lineales-y-analisis-de-la-varianza.html"><a href="modelos-lineales-y-analisis-de-la-varianza.html#ejemplo-datos-de-precios-de-viviendas-en-boston"><i class="fa fa-check"></i><b>6.3.1</b> Ejemplo: Datos de precios de viviendas en Boston</a></li>
-<li class="chapter" data-level="6.3.2" data-path="modelos-lineales-y-analisis-de-la-varianza.html"><a href="modelos-lineales-y-analisis-de-la-varianza.html#regresion-lineal-multiple"><i class="fa fa-check"></i><b>6.3.2</b> Regresión lineal múltiple</a></li>
-<li class="chapter" data-level="6.3.3" data-path="modelos-lineales-y-analisis-de-la-varianza.html"><a href="modelos-lineales-y-analisis-de-la-varianza.html#modelos-con-interacciones"><i class="fa fa-check"></i><b>6.3.3</b> Modelos con interacciones</a></li>
+<li class="chapter" data-level="6.2" data-path="modelos-lineales-y-análisis-de-la-varianza.html"><a href="modelos-lineales-y-análisis-de-la-varianza.html#el-modelo-lineal-general"><i class="fa fa-check"></i><b>6.2</b> El modelo lineal general</a></li>
+<li class="chapter" data-level="6.3" data-path="modelos-lineales-y-análisis-de-la-varianza.html"><a href="modelos-lineales-y-análisis-de-la-varianza.html#definición-de-modelos-en-r"><i class="fa fa-check"></i><b>6.3</b> Definición de modelos en <code>R</code></a><ul>
+<li class="chapter" data-level="6.3.1" data-path="modelos-lineales-y-análisis-de-la-varianza.html"><a href="modelos-lineales-y-análisis-de-la-varianza.html#ejemplo-datos-de-precios-de-viviendas-en-boston"><i class="fa fa-check"></i><b>6.3.1</b> Ejemplo: Datos de precios de viviendas en Boston</a></li>
+<li class="chapter" data-level="6.3.2" data-path="modelos-lineales-y-análisis-de-la-varianza.html"><a href="modelos-lineales-y-análisis-de-la-varianza.html#regresión-lineal-múltiple"><i class="fa fa-check"></i><b>6.3.2</b> Regresión lineal múltiple</a></li>
+<li class="chapter" data-level="6.3.3" data-path="modelos-lineales-y-análisis-de-la-varianza.html"><a href="modelos-lineales-y-análisis-de-la-varianza.html#modelos-con-interacciones"><i class="fa fa-check"></i><b>6.3.3</b> Modelos con interacciones</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="regresion-logistica.html"><a href="regresion-logistica.html"><i class="fa fa-check"></i><b>7</b> Regresión logística</a><ul>
-<li class="chapter" data-level="7.1" data-path="regresion-logistica.html"><a href="regresion-logistica.html#ejemplo-datos-de-credito-en-alemania-credit-scoring"><i class="fa fa-check"></i><b>7.1</b> Ejemplo: Datos de crédito en Alemania (<em>Credit scoring</em>)</a></li>
-<li class="chapter" data-level="7.2" data-path="regresion-logistica.html"><a href="regresion-logistica.html#ejemplo-predecir-el-salario-de-los-trabajadores"><i class="fa fa-check"></i><b>7.2</b> Ejemplo: Predecir el salario de los trabajadores</a></li>
-<li class="chapter" data-level="7.3" data-path="regresion-logistica.html"><a href="regresion-logistica.html#ejemplo-datos-de-los-supervivientes-del-titanic"><i class="fa fa-check"></i><b>7.3</b> Ejemplo: Datos de los supervivientes del Titanic</a></li>
+<li class="chapter" data-level="7" data-path="regresión-logística.html"><a href="regresión-logística.html"><i class="fa fa-check"></i><b>7</b> Regresión logística</a><ul>
+<li class="chapter" data-level="7.1" data-path="regresión-logística.html"><a href="regresión-logística.html#ejemplo-datos-de-crédito-en-alemania-credit-scoring"><i class="fa fa-check"></i><b>7.1</b> Ejemplo: Datos de crédito en Alemania (<em>Credit scoring</em>)</a></li>
+<li class="chapter" data-level="7.2" data-path="regresión-logística.html"><a href="regresión-logística.html#ejemplo-predecir-el-salario-de-los-trabajadores"><i class="fa fa-check"></i><b>7.2</b> Ejemplo: Predecir el salario de los trabajadores</a></li>
+<li class="chapter" data-level="7.3" data-path="regresión-logística.html"><a href="regresión-logística.html#ejemplo-datos-de-los-supervivientes-del-titanic"><i class="fa fa-check"></i><b>7.3</b> Ejemplo: Datos de los supervivientes del Titanic</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="modelos-aditivos-generalizados.html"><a href="modelos-aditivos-generalizados.html"><i class="fa fa-check"></i><b>8</b> Modelos Aditivos Generalizados</a><ul>
 <li class="chapter" data-level="8.1" data-path="modelos-aditivos-generalizados.html"><a href="modelos-aditivos-generalizados.html#suavizado"><i class="fa fa-check"></i><b>8.1</b> Suavizado</a><ul>
-<li class="chapter" data-level="8.1.1" data-path="modelos-aditivos-generalizados.html"><a href="modelos-aditivos-generalizados.html#regresion-polinomial"><i class="fa fa-check"></i><b>8.1.1</b> Regresión polinomial</a></li>
+<li class="chapter" data-level="8.1.1" data-path="modelos-aditivos-generalizados.html"><a href="modelos-aditivos-generalizados.html#regresión-polinomial"><i class="fa fa-check"></i><b>8.1.1</b> Regresión polinomial</a></li>
 </ul></li>
 <li class="chapter" data-level="8.2" data-path="modelos-aditivos-generalizados.html"><a href="modelos-aditivos-generalizados.html#gams"><i class="fa fa-check"></i><b>8.2</b> GAMs</a><ul>
 <li class="chapter" data-level="8.2.1" data-path="modelos-aditivos-generalizados.html"><a href="modelos-aditivos-generalizados.html#ejemplo-salarios"><i class="fa fa-check"></i><b>8.2.1</b> Ejemplo: Salarios</a></li>
 </ul></li>
-<li class="chapter" data-level="8.3" data-path="modelos-aditivos-generalizados.html"><a href="modelos-aditivos-generalizados.html#modelos-semi-parametricos"><i class="fa fa-check"></i><b>8.3</b> Modelos semi-paramétricos</a><ul>
+<li class="chapter" data-level="8.3" data-path="modelos-aditivos-generalizados.html"><a href="modelos-aditivos-generalizados.html#modelos-semi-paramétricos"><i class="fa fa-check"></i><b>8.3</b> Modelos semi-paramétricos</a><ul>
 <li class="chapter" data-level="8.3.1" data-path="modelos-aditivos-generalizados.html"><a href="modelos-aditivos-generalizados.html#ejemplo"><i class="fa fa-check"></i><b>8.3.1</b> Ejemplo:</a></li>
 </ul></li>
 <li class="chapter" data-level="8.4" data-path="modelos-aditivos-generalizados.html"><a href="modelos-aditivos-generalizados.html#ejemplo-calidad-del-aire"><i class="fa fa-check"></i><b>8.4</b> Ejemplo: Calidad del Aire</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="analisis-multivariante.html"><a href="analisis-multivariante.html"><i class="fa fa-check"></i><b>9</b> Análisis multivariante</a><ul>
-<li class="chapter" data-level="9.1" data-path="analisis-multivariante.html"><a href="analisis-multivariante.html#analisis-de-componentes-principales"><i class="fa fa-check"></i><b>9.1</b> Análisis de Componentes Principales</a></li>
-<li class="chapter" data-level="9.2" data-path="analisis-multivariante.html"><a href="analisis-multivariante.html#analisis-discriminante-lineal"><i class="fa fa-check"></i><b>9.2</b> Análisis Discriminante Lineal</a><ul>
-<li class="chapter" data-level="9.2.1" data-path="analisis-multivariante.html"><a href="analisis-multivariante.html#ejemplo-1"><i class="fa fa-check"></i><b>9.2.1</b> Ejemplo:</a></li>
+<li class="chapter" data-level="9" data-path="análisis-multivariante.html"><a href="análisis-multivariante.html"><i class="fa fa-check"></i><b>9</b> Análisis multivariante</a><ul>
+<li class="chapter" data-level="9.1" data-path="análisis-multivariante.html"><a href="análisis-multivariante.html#análisis-de-componentes-principales"><i class="fa fa-check"></i><b>9.1</b> Análisis de Componentes Principales</a></li>
+<li class="chapter" data-level="9.2" data-path="análisis-multivariante.html"><a href="análisis-multivariante.html#análisis-discriminante-lineal"><i class="fa fa-check"></i><b>9.2</b> Análisis Discriminante Lineal</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="análisis-multivariante.html"><a href="análisis-multivariante.html#ejemplo-1"><i class="fa fa-check"></i><b>9.2.1</b> Ejemplo:</a></li>
 </ul></li>
-<li class="chapter" data-level="9.3" data-path="analisis-multivariante.html"><a href="analisis-multivariante.html#k-medias"><i class="fa fa-check"></i><b>9.3</b> K-medias</a></li>
-<li class="chapter" data-level="9.4" data-path="analisis-multivariante.html"><a href="analisis-multivariante.html#cluster-jerarquico"><i class="fa fa-check"></i><b>9.4</b> Cluster jerárquico</a></li>
+<li class="chapter" data-level="9.3" data-path="análisis-multivariante.html"><a href="análisis-multivariante.html#k-medias"><i class="fa fa-check"></i><b>9.3</b> K-medias</a></li>
+<li class="chapter" data-level="9.4" data-path="análisis-multivariante.html"><a href="análisis-multivariante.html#cluster-jerárquico"><i class="fa fa-check"></i><b>9.4</b> Cluster jerárquico</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html"><i class="fa fa-check"></i><b>10</b> Introduccion a las redes neuronales artificiales</a><ul>
 <li class="chapter" data-level="10.1" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#arquitecturas-de-las-rna"><i class="fa fa-check"></i><b>10.1</b> Arquitecturas de las RNA</a></li>
 <li class="chapter" data-level="10.2" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#ejemplo-datos-boston-housing"><i class="fa fa-check"></i><b>10.2</b> Ejemplo: datos Boston housing</a></li>
 <li class="chapter" data-level="10.3" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#ajuste-de-la-red-neuronal"><i class="fa fa-check"></i><b>10.3</b> Ajuste de la red neuronal</a></li>
-<li class="chapter" data-level="10.4" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#prediccion-con-una-red-neuronal"><i class="fa fa-check"></i><b>10.4</b> Predicción con una red neuronal</a></li>
-<li class="chapter" data-level="10.5" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#evaluando-la-prediccion-mediante-validacion-cruzada"><i class="fa fa-check"></i><b>10.5</b> Evaluando la predicción mediante validación cruzada</a><ul>
-<li class="chapter" data-level="10.5.1" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#comparacion-de-modelos-rna"><i class="fa fa-check"></i><b>10.5.1</b> Comparación de modelos RNA</a></li>
+<li class="chapter" data-level="10.4" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#predicción-con-una-red-neuronal"><i class="fa fa-check"></i><b>10.4</b> Predicción con una red neuronal</a></li>
+<li class="chapter" data-level="10.5" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#evaluando-la-predicción-mediante-validación-cruzada"><i class="fa fa-check"></i><b>10.5</b> Evaluando la predicción mediante validación cruzada</a><ul>
+<li class="chapter" data-level="10.5.1" data-path="introduccion-a-las-redes-neuronales-artificiales.html"><a href="introduccion-a-las-redes-neuronales-artificiales.html#comparación-de-modelos-rna"><i class="fa fa-check"></i><b>10.5.1</b> Comparación de modelos RNA</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="extras.html"><a href="extras.html"><i class="fa fa-check"></i><b>11</b> Extras</a><ul>
@@ -244,8 +246,8 @@ y_i = f(x_i) + \epsilon_i,\qquad \mathbb{E}(\epsilon_i)=0,
 <span class="co">#library(car)</span>
 <span class="kw">data</span>(lidar)
 <span class="kw">plot</span>(logratio<span class="op">~</span>range,<span class="dt">data=</span>lidar)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/LIDAR.07-1.png" width="672" style="display: block; margin: auto;" /></p>
-<div id="regresion-polinomial" class="section level3">
+<p><img src="cursoR_files/figure-html/LIDAR.07-1.png" width="672" style="display: block; margin: auto;" /></p>
+<div id="regresión-polinomial" class="section level3">
 <h3><span class="header-section-number">8.1.1</span> Regresión polinomial</h3>
 <p>Consiste en transformar la variable explicativa <span class="math inline">\(X\)</span>, incluyendo polinomios de grado <span class="math inline">\(p\)</span> tales que: <span class="math display">\[
 y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \beta_p X^p + \epsilon \quad \epsilon\sim\mathcal{N}(0,\sigma^2)
@@ -258,7 +260,7 @@ range.seq &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class=
   <span class="kw">lines</span>(range.seq,<span class="kw">predict</span>(<span class="kw">lm</span>(logratio<span class="op">~</span><span class="kw">poly</span>(range,i),<span class="dt">data=</span>lidar),<span class="kw">data.frame</span>(<span class="dt">range=</span>range.seq)),<span class="dt">lwd=</span><span class="dv">2</span>,<span class="dt">col=</span>cols.[i])
 }
 <span class="kw">legend</span>(<span class="st">&quot;bottomleft&quot;</span>,<span class="kw">c</span>(<span class="st">&quot;p = 1&quot;</span>,<span class="st">&quot;p = 2&quot;</span>,<span class="st">&quot;p = 3&quot;</span>,<span class="st">&quot;p = 4&quot;</span>,<span class="st">&quot;p = 5&quot;</span>),<span class="dt">col=</span>cols.,<span class="dt">lty=</span><span class="dv">1</span><span class="op">:</span><span class="dv">5</span>,<span class="dt">lwd=</span><span class="dv">4</span>)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/poly-07-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_files/figure-html/poly-07-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Podemos tratar estas relaciones no lineales de manera efectiva a través de técnicas más flexibles.</p>
 <p><strong>Regresión local:</strong></p>
 <p>LOESS y LOWESS son dos métodos de regresión no-paramétrica muy relacionados que combinan múltiples modelos de regresión en un modo basado en k-neast-neighbor.</p>
@@ -270,7 +272,7 @@ cols &lt;-<span class="st"> </span><span class="kw">rainbow</span>(<span class="
   <span class="kw">lines</span>(<span class="kw">loess.smooth</span>(range,logratio,<span class="dt">span=</span>span[i], <span class="dt">degree=</span><span class="dv">2</span>),<span class="dt">col=</span>cols.[i],<span class="dt">lwd=</span><span class="fl">2.5</span>,<span class="dt">lty=</span>i)
 }
 <span class="kw">legend</span>(<span class="st">&quot;bottomleft&quot;</span>,<span class="kw">paste</span>(<span class="st">&quot;span = &quot;</span>,<span class="kw">round</span>(span,<span class="dv">3</span>)),<span class="dt">col=</span>cols.,<span class="dt">lwd=</span><span class="fl">2.5</span>,<span class="dt">lty=</span><span class="dv">1</span><span class="op">:</span><span class="dv">6</span>)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/loess-07-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_files/figure-html/loess-07-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Un suavizado <em>kernel</em> es de la forma: <span class="math display">\[
 \hat{y}_i = \frac{\sum_{j=1}^n y_i K\left( \frac{x_i-x_j}{b}\right)}{\sum_{j=1}^n K\left( \frac{x_i-x_j}{b}\right)},
 \]</span> donde <span class="math inline">\(b\)</span> es un parámetro de <em>ancho de banda</em> (<em>bandwidth</em>), y <span class="math inline">\(K\)</span> una función del núcleo/<em>kernel</em>, como en la estimación de densidad. Hay diferentes opciones para el kernel <span class="math inline">\(K\)</span> (por ejemplo: Gaussian), el parámetro de elección crítico es el ancho de banda <em>b</em>.</p>
@@ -283,7 +285,7 @@ cols. &lt;-<span class="st"> </span><span class="kw">rainbow</span>(<span class=
   <span class="kw">lines</span>(<span class="kw">ksmooth</span>(range,logratio,<span class="dt">x.points=</span>range,<span class="st">&quot;normal&quot;</span>, <span class="dt">bandwidth=</span>b[i]),<span class="dt">col=</span>cols.[i],<span class="dt">lwd=</span><span class="fl">2.5</span>,<span class="dt">lty=</span>i)
 }
 <span class="kw">legend</span>(<span class="st">&quot;bottomleft&quot;</span>,<span class="kw">paste</span>(<span class="st">&quot;bandwidth = &quot;</span>,b),<span class="dt">col=</span>cols.,<span class="dt">lwd=</span><span class="fl">2.5</span>,<span class="dt">lty=</span><span class="dv">1</span><span class="op">:</span><span class="dv">5</span>)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/ksmooth-07-1.png" width="672" /></p>
+<p><img src="cursoR_files/figure-html/ksmooth-07-1.png" width="672" /></p>
 </div>
 </div>
 <div id="gams" class="section level2">
@@ -339,7 +341,7 @@ fit.gam &lt;-<span class="st"> </span><span class="kw">gam</span>(y <span class=
 ?Wage <span class="co"># To search more on the dataset</span></code></pre></div>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(mgcv)</code></pre></div>
 <pre><code>## Loading required package: nlme</code></pre>
-<pre><code>## This is mgcv 1.8-27. For overview type &#39;help(&quot;mgcv-package&quot;)&#39;.</code></pre>
+<pre><code>## This is mgcv 1.8-29. For overview type &#39;help(&quot;mgcv-package&quot;)&#39;.</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">gam1 &lt;-<span class="st"> </span><span class="kw">gam</span>(wage<span class="op">~</span><span class="kw">s</span>(age,<span class="dt">k=</span><span class="dv">6</span>)<span class="op">+</span><span class="kw">s</span>(year,<span class="dt">k=</span><span class="dv">6</span>)<span class="op">+</span>education,<span class="dt">data =</span> Wage)
 <span class="kw">summary</span>(gam1)</code></pre></div>
 <pre><code>## 
@@ -370,19 +372,19 @@ fit.gam &lt;-<span class="st"> </span><span class="kw">gam</span>(y <span class=
 ## GCV = 1240.7  Scale est. = 1236.3    n = 3000</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>)) <span class="co">#to partition the Plotting Window</span>
 <span class="kw">plot</span>(gam1,<span class="dt">se =</span> <span class="ot">TRUE</span>)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/wage-07-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_files/figure-html/wage-07-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Con <code>all.terms = TRUE</code> podemos representar la parte paramétrica:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))
 <span class="kw">plot</span>(gam1,<span class="dt">all.terms=</span><span class="ot">TRUE</span>,<span class="dt">scheme=</span><span class="dv">1</span>)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/wage-07b-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_files/figure-html/wage-07b-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Recordemos que la librería <code>visreg</code> permite visualizar modelos de regresión:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(visreg)
 <span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))
 <span class="kw">visreg</span>(gam1)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/gam-07c-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_files/figure-html/gam-07c-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 </div>
-<div id="modelos-semi-parametricos" class="section level2">
+<div id="modelos-semi-paramétricos" class="section level2">
 <h2><span class="header-section-number">8.3</span> Modelos semi-paramétricos</h2>
 <p>Los modelos semi-paramétricos permiten combinar componentes lineales (paramétricos) y no paramétricos, por ejemplo:</p>
 <p><span class="math display">\[
@@ -403,7 +405,7 @@ fit.gam &lt;-<span class="st"> </span><span class="kw">gam</span>(y <span class=
 points.cols &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;red&quot;</span>,<span class="st">&quot;blue&quot;</span>)
 <span class="kw">plot</span>(dens,<span class="kw">log</span>(yield),<span class="dt">col=</span>points.cols[location<span class="op">+</span><span class="dv">1</span>],<span class="dt">pch=</span><span class="dv">16</span>)
 <span class="kw">legend</span>(<span class="st">&quot;topright&quot;</span>,<span class="kw">c</span>(<span class="st">&quot;Purnong Landing&quot;</span>,<span class="st">&quot;Virginia&quot;</span>),<span class="dt">col=</span>points.cols,<span class="dt">pch=</span><span class="kw">rep</span>(<span class="dv">16</span>,<span class="dv">2</span>))</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/onion-07-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_files/figure-html/onion-07-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>El modelo lineal es:</p>
 <p><span class="math display">\[
 \log(\text{yield}_i) = \beta_0 + \beta_1\text{location}_{ij} + \beta_2 \text{dens}_i + \epsilon_i
@@ -468,7 +470,7 @@ fit1.V &lt;-<span class="st"> </span><span class="kw">predict</span>(fit1,<span 
 <span class="kw">lines</span>(dens.g,fit1.V<span class="op">$</span>fit,<span class="dt">col=</span><span class="dv">4</span>,<span class="dt">lwd=</span><span class="dv">2</span>)
 <span class="kw">lines</span>(dens.g,fit1.V<span class="op">$</span>fit<span class="op">+</span><span class="fl">1.96</span><span class="op">*</span>fit1.V<span class="op">$</span>se.fit,<span class="dt">col=</span><span class="dv">4</span>,<span class="dt">lwd=</span><span class="dv">2</span>,<span class="dt">lty=</span><span class="dv">2</span>)
 <span class="kw">lines</span>(dens.g,fit1.V<span class="op">$</span>fit<span class="op">-</span><span class="fl">1.96</span><span class="op">*</span>fit1.V<span class="op">$</span>se.fit,<span class="dt">col=</span><span class="dv">4</span>,<span class="dt">lwd=</span><span class="dv">2</span>,<span class="dt">lty=</span><span class="dv">2</span>)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/onion-07b-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_files/figure-html/onion-07b-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Asumir curvas paralelas para ambas localizaciones implica que la disminución del rendimiento a medida que aumenta la densidad es la misma en ambas localizaciones. En lugar de ajustar un modelo de efectos aditivos, podemos ajustar un modelo de efectos con interacción, como por ejemplo:</p>
 <p><span class="math display">\[
 \log(\text{yield}_i) =\beta_0 + \beta_1 \beta_1\text{location}_{ij} +  f(\text{dens}_i)_{L(j)} + \epsilon_i
@@ -539,7 +541,7 @@ fit2.V &lt;-<span class="st"> </span><span class="kw">predict</span>(fit2,<span 
 <span class="kw">lines</span>(dens.g,fit2.V<span class="op">$</span>fit<span class="op">+</span><span class="fl">1.96</span><span class="op">*</span>fit2.V<span class="op">$</span>se.fit,<span class="dt">col=</span><span class="dv">4</span>,<span class="dt">lwd=</span><span class="dv">2</span>,<span class="dt">lty=</span><span class="dv">2</span>)
 <span class="kw">lines</span>(dens.g,fit2.V<span class="op">$</span>fit<span class="op">-</span><span class="fl">1.96</span><span class="op">*</span>fit2.V<span class="op">$</span>se.fit,<span class="dt">col=</span><span class="dv">4</span>,<span class="dt">lwd=</span><span class="dv">2</span>,<span class="dt">lty=</span><span class="dv">2</span>)</code></pre></div>
 <div class="figure"><span id="fig:curves-07"></span>
-<img src="cursoR_Euskaltel_files/figure-html/curves-07-1.png" alt="*Fitted curves by location*" width="768" />
+<img src="cursoR_files/figure-html/curves-07-1.png" alt="*Fitted curves by location*" width="768" />
 <p class="caption">
 Figure 8.1: <em>Fitted curves by location</em>
 </p>
@@ -609,9 +611,9 @@ gam3 &lt;-<span class="st"> </span><span class="kw">gam</span>(wage <span class=
 ## GCV = 1237.2  Scale est. = 1231.3    n = 3000</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))
 <span class="kw">plot</span>(gam2,<span class="dt">all.terms=</span><span class="ot">TRUE</span>,<span class="dt">scheme=</span><span class="dv">1</span>)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/wage-07c-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_files/figure-html/wage-07c-1.png" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(gam3,<span class="dt">all.terms=</span><span class="ot">TRUE</span>,<span class="dt">scheme=</span><span class="dv">1</span>)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/wage-07c-2.png" width="672" style="display: block; margin: auto;" /><img src="cursoR_Euskaltel_files/figure-html/wage-07c-3.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_files/figure-html/wage-07c-2.png" width="672" style="display: block; margin: auto;" /><img src="cursoR_files/figure-html/wage-07c-3.png" width="672" style="display: block; margin: auto;" /></p>
 <p><strong>Ejercicio:</strong> Selecciona un modelo GAM.</p>
 </div>
 </div>
@@ -620,7 +622,7 @@ gam3 &lt;-<span class="st"> </span><span class="kw">gam</span>(wage <span class=
 <p>Revisemos los datos <code>?airquality</code></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">data</span>(airquality)
 <span class="kw">pairs</span>(airquality, <span class="dt">panel =</span> panel.smooth)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/airq-07-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_files/figure-html/airq-07-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Una simple gráfica de dispersión muestra que algunas de las variables tienen una relación no lineal.</p>
 <p>Consideremos un modelo lineal para la variable de respuesta <code>Ozone</code></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">airq.lm &lt;-<span class="st"> </span><span class="kw">lm</span>(Ozone <span class="op">~</span><span class="st"> </span>Temp <span class="op">+</span><span class="st"> </span>Wind <span class="op">+</span><span class="st"> </span>Solar.R, <span class="dt">data=</span>airquality)
@@ -649,16 +651,16 @@ gam3 &lt;-<span class="st"> </span><span class="kw">gam</span>(wage <span class=
 <p>Veamos los resultados gráficamente:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">3</span>))
 <span class="kw">termplot</span>(airq.lm,<span class="dt">se=</span><span class="ot">TRUE</span>)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/term-air-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_files/figure-html/term-air-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>También podemos graficar los residuos del modelo para comprobar las hipótesis del modelo.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))
 <span class="kw">plot</span>(airq.lm,<span class="dt">which=</span><span class="dv">1</span><span class="op">:</span><span class="dv">2</span>)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/airq-07b-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_files/figure-html/airq-07b-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>La falta de normalidad en los residuos se debe a la asimetría de la variable de respuesta <code>Ozone</code>, podemos aplicar una transformación <code>log</code> para conseguir asimetría, es decir:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))
 <span class="kw">hist</span>(airquality<span class="op">$</span>Ozone, <span class="dt">main=</span><span class="st">&quot;Ozone&quot;</span>)
 <span class="kw">hist</span>(<span class="kw">log</span>(airquality<span class="op">$</span>Ozone), <span class="dt">main =</span><span class="st">&quot;log(Ozone)&quot;</span>)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/airq-07c-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_files/figure-html/airq-07c-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Ahora podemos ajustar un modelo lineal del <span class="math inline">\(\log(Ozono)\)</span>, ¿el modelo se ve más adecuado?</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">lairq.lm &lt;-<span class="st"> </span><span class="kw">lm</span>(<span class="kw">log</span>(Ozone)<span class="op">~</span><span class="st"> </span>Temp <span class="op">+</span><span class="st"> </span>Wind <span class="op">+</span><span class="st"> </span>Solar.R, <span class="dt">data=</span>airquality)
 <span class="kw">summary</span>(lairq.lm)</code></pre></div>
@@ -684,7 +686,7 @@ gam3 &lt;-<span class="st"> </span><span class="kw">gam</span>(wage <span class=
 ## Multiple R-squared:  0.6644, Adjusted R-squared:  0.655 
 ## F-statistic: 70.62 on 3 and 107 DF,  p-value: &lt; 2.2e-16</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(lairq.lm)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/airq-07d-1.png" width="672" /><img src="cursoR_Euskaltel_files/figure-html/airq-07d-2.png" width="672" /><img src="cursoR_Euskaltel_files/figure-html/airq-07d-3.png" width="672" /><img src="cursoR_Euskaltel_files/figure-html/airq-07d-4.png" width="672" /></p>
+<p><img src="cursoR_files/figure-html/airq-07d-1.png" width="672" /><img src="cursoR_files/figure-html/airq-07d-2.png" width="672" /><img src="cursoR_files/figure-html/airq-07d-3.png" width="672" /><img src="cursoR_files/figure-html/airq-07d-4.png" width="672" /></p>
 <p>Ajustando un modelo lineal podemos concluir que puede haber alguna heterokedasticidad que no se tenga en cuenta en el modelo. Sin embargo, la causa más posible es que la relación entre la variable de respuesta y las covariables está lejos de ser lineal.</p>
 <p>Ajustemos un modelo GAM, en primer lugar con una sola variable, es decir:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(mgcv)
@@ -714,10 +716,10 @@ airq.gam1 &lt;-<span class="st"> </span><span class="kw">gam</span>(<span class=
 ## -REML = 128.69  Scale est. = 0.49769   n = 116</code></pre>
 <p>Los resultados muestran que el efecto suave <code>s(Wind)</code> es significativo (con un valor aproximado de <span class="math inline">\(p\)</span> cercano a cero y <code>edf</code> <span class="math inline">\(2.56\)</span>). La siguiente figura muestra el efecto de viento suave. El incremento de la velocidad del viento disminuye los niveles de ozono (dramáticamente hasta 10mph). Tener en cuenta que incluyendo el intercepto, los efectos suaves se centran en cero.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(airq.gam1,<span class="dt">residuals=</span><span class="ot">TRUE</span>,<span class="dt">scheme=</span><span class="dv">1</span>)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/airq-07e-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_files/figure-html/airq-07e-1.png" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">gam.check</span>(airq.gam1)</code></pre></div>
 <div class="figure"><span id="fig:airq-07f"></span>
-<img src="cursoR_Euskaltel_files/figure-html/airq-07f-1.png" alt="*Check plots by `gam.check`*" width="768" />
+<img src="cursoR_files/figure-html/airq-07f-1.png" alt="*Check plots by `gam.check`*" width="768" />
 <p class="caption">
 Figure 8.2: <em>Check plots by <code>gam.check</code></em>
 </p>
@@ -761,7 +763,7 @@ resids.gam &lt;-<span class="st"> </span><span class="kw">gam</span>(resids<span
 ## -REML = 124.14  Scale est. = 0.48659   n = 116</code></pre>
 <p>Los resultados muestran que no hay una variabilidad no-explicada entre la variable y los residuos. Por lo tanto, podemos concluir que no necesitamos más nodos. La siguiente figura apoya esta afirmación.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(resids.gam)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/airq-07g-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_files/figure-html/airq-07g-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Ahora añadimos la funcion <code>Temp</code>:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">airq.gam2 &lt;-<span class="st"> </span><span class="kw">gam</span>(<span class="kw">log</span>(Ozone)<span class="op">~</span><span class="kw">s</span>(Wind,<span class="dt">bs=</span><span class="st">&quot;ps&quot;</span>,<span class="dt">m=</span><span class="dv">2</span>,<span class="dt">k=</span><span class="dv">10</span>)<span class="op">+</span><span class="kw">s</span>(Temp,<span class="dt">bs=</span><span class="st">&quot;ps&quot;</span>,<span class="dt">m=</span><span class="dv">2</span>,<span class="dt">k=</span><span class="dv">10</span>),
                  <span class="dt">method=</span><span class="st">&quot;REML&quot;</span>,<span class="dt">select=</span><span class="ot">TRUE</span>,<span class="dt">data=</span>airquality)
@@ -792,7 +794,7 @@ resids.gam &lt;-<span class="st"> </span><span class="kw">gam</span>(resids<span
 <p>Por tanto el efecto de <code>Temp</code> es significativo.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))
 <span class="kw">plot</span>(airq.gam2,<span class="dt">residuals=</span><span class="ot">TRUE</span>,<span class="dt">scheme=</span><span class="dv">1</span>)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/airq-07h-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_files/figure-html/airq-07h-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Podemos comparar ambos modelos utilizando la función <code>anova</code>:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">anova</span>(airq.gam1,airq.gam2)</code></pre></div>
 <pre><code>## Analysis of Deviance Table
@@ -875,7 +877,7 @@ airq.gam3=<span class="kw">gam</span>(<span class="kw">log</span>(Ozone)<span cl
 <pre><code>## [1] 166.0423</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))
 <span class="kw">plot</span>(airq.gam3,<span class="dt">residuals=</span><span class="ot">TRUE</span>)</code></pre></div>
-<p><img src="cursoR_Euskaltel_files/figure-html/airq-07i-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="cursoR_files/figure-html/airq-07i-1.png" width="672" style="display: block; margin: auto;" /></p>
 
 </div>
 </div>
@@ -884,17 +886,19 @@ airq.gam3=<span class="kw">gam</span>(<span class="kw">log</span>(Ozone)<span cl
           </div>
         </div>
       </div>
-<a href="regresion-logistica.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="analisis-multivariante.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="regresión-logística.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="análisis-multivariante.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -919,7 +923,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["cursoR_Euskaltel.pdf"],
+"download": ["cursoR.pdf"],
 "toc": {
 "collapse": "subsection"
 }
@@ -934,8 +938,9 @@ gitbook.start({
     script.type = "text/javascript";
     var src = "";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(src))
-      src = src.replace(/^https?:/, '');
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
