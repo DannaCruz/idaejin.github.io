@@ -1692,7 +1692,19 @@ La función \texttt{na.omit()} devuelve un objeto sin los elementos
 \end{Shaded}
 
 \begin{verbatim}
-## The following object is masked from Auto:
+## The following object is masked from Auto (pos = 3):
+## 
+##     mpg
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from mtcars (pos = 11):
+## 
+##     am, carb, cyl, disp, drat, gear, hp, mpg, qsec, vs, wt
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from Auto (pos = 18):
 ## 
 ##     mpg
 \end{verbatim}
@@ -1704,7 +1716,7 @@ La función \texttt{na.omit()} devuelve un objeto sin los elementos
 \end{verbatim}
 
 \begin{verbatim}
-## The following objects are masked from mtcars (pos = 39):
+## The following objects are masked from mtcars (pos = 48):
 ## 
 ##     am, carb, cyl, disp, drat, gear, hp, mpg, qsec, vs, wt
 \end{verbatim}
@@ -2161,7 +2173,13 @@ contigencia}\label{tablas-de-clasificaciuxf3n-cruzada-o-de-contigencia}
 \end{Shaded}
 
 \begin{verbatim}
-## The following objects are masked from quine (pos = 31):
+## The following objects are masked from quine (pos = 11):
+## 
+##     Age, Days, Eth, Lrn, Sex
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from quine (pos = 40):
 ## 
 ##     Age, Days, Eth, Lrn, Sex
 \end{verbatim}
@@ -4278,13 +4296,26 @@ casa), \texttt{age} (edad promedio de las casas), y \texttt{lstat}
 \end{Shaded}
 
 \begin{verbatim}
-## The following object is masked from Wage:
+## The following object is masked from Wage (pos = 8):
 ## 
 ##     age
 \end{verbatim}
 
 \begin{verbatim}
-## The following objects are masked from Boston (pos = 29):
+## The following objects are masked from Boston (pos = 11):
+## 
+##     age, black, chas, crim, dis, indus, lstat, medv, nox, ptratio,
+##     rad, rm, tax, zn
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from Wage (pos = 27):
+## 
+##     age
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from Boston (pos = 38):
 ## 
 ##     age, black, chas, crim, dis, indus, lstat, medv, nox, ptratio,
 ##     rad, rm, tax, zn
@@ -6756,7 +6787,13 @@ rendimiento de Purnong Landing de onios es mayor.
 \end{Shaded}
 
 \begin{verbatim}
-## The following objects are masked from onions (pos = 19):
+## The following objects are masked from onions (pos = 11):
+## 
+##     dens, location, yield
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from onions (pos = 28):
 ## 
 ##     dens, location, yield
 \end{verbatim}
@@ -7979,258 +8016,6 @@ Podemos usar \texttt{predict}, ej.:
 
 \includegraphics{cursoR_files/figure-latex/biplot-08b-1.pdf}
 
-\section{Análisis Discriminante
-Lineal}\label{anuxe1lisis-discriminante-lineal}
-
-El análisis discriminante lineal (LDA - \emph{linear discriminant
-analysis}) y el discriminante lineal relacionado de Fisher son métodos
-utilizados en la estadística, el reconocimiento de patrones y el
-aprendizaje automático para encontrar una combinación lineal de
-características que caracteriza o separa dos o más clases de objetos o
-eventos. La combinación resultante puede utilizarse como clasificador
-lineal o, más comúnmente, para la reducción de la dimensionalidad antes
-de su posterior clasificación.
-
-Es un método alternativo más adecuado a la regresión logística cuando la
-variable cualitativa tiene más de dos niveles (\(K \geq 2\)). Supone
-también un modelo más estable cuando el tamaño muestral \(n\) es pequeño
-y la distribución de los predictores es aproximadamente normal en cada
-una de sus clases. El propósito del LDA es encontrar la combinación
-lineal de las variables originales que permita la mejor separación entre
-grupos de un set de datos. El LDA está basado en el clasificador
-Bayesiano.
-
-Ilustración
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(ggplot2)}
-\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =} \KeywordTok{data.frame}\NormalTok{(}\DataTypeTok{x =} \OperatorTok{-}\DecValTok{4}\OperatorTok{:}\DecValTok{4}\NormalTok{), }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ x)) }\OperatorTok{+}
-\CommentTok{# distribución de densidad de k = 1}
-\KeywordTok{stat_function}\NormalTok{(}\DataTypeTok{fun =}\NormalTok{ dnorm,}
-\DataTypeTok{args =} \KeywordTok{list}\NormalTok{(}\DataTypeTok{mean =} \OperatorTok{-}\FloatTok{1.25}\NormalTok{, }\DataTypeTok{sd =} \DecValTok{1}\NormalTok{),}
-\DataTypeTok{color =} \StringTok{"green3"}\NormalTok{) }\OperatorTok{+}
-\CommentTok{# distribución de densidad de k = 2}
-\KeywordTok{stat_function}\NormalTok{(}\DataTypeTok{fun =}\NormalTok{ dnorm,}
-\DataTypeTok{args =} \KeywordTok{list}\NormalTok{(}\DataTypeTok{mean =} \FloatTok{1.25}\NormalTok{, }\DataTypeTok{sd =} \DecValTok{1}\NormalTok{),}
-\DataTypeTok{color =} \StringTok{"firebrick"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\CommentTok{# límite de decisión de Bayes}
-\KeywordTok{geom_vline}\NormalTok{(}\DataTypeTok{xintercept =} \DecValTok{0}\NormalTok{,}
-\DataTypeTok{linetype =} \StringTok{"longdash"}\NormalTok{) }\OperatorTok{+}
-\KeywordTok{theme_bw}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{center}\includegraphics{cursoR_files/figure-latex/LDA-1} \end{center}
-
-En este caso, el clasificador de Bayes asignará la observación a la
-clase \(k = 1\) (verde) si \(x < 0\), y a la clase \(k = 2\) (rojo) si
-\(x > 0\).
-
-\subsection{Ejemplo:}\label{ejemplo-1}
-
-Vamos a predecir si el rendimiento del combustible (gas mileage) de un
-automóvil es alto o bajo en función del resto de predictores del set de
-datos.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(ISLR)}
-\KeywordTok{head}\NormalTok{(Auto, }\DecValTok{3}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-##   mpg cylinders displacement horsepower weight acceleration year origin
-## 1  18         8          307        130   3504         12.0   70      1
-## 2  15         8          350        165   3693         11.5   70      1
-## 3  18         8          318        150   3436         11.0   70      1
-##                        name mpg01
-## 1 chevrolet chevelle malibu     0
-## 2         buick skylark 320     0
-## 3        plymouth satellite     0
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{?Auto}
-
-\KeywordTok{attach}\NormalTok{(Auto) }\CommentTok{# Vector de “0”s (rendimiento bajo) con la misma longitud que la variable mpg }
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## The following objects are masked _by_ .GlobalEnv:
-## 
-##     mpg01, weight
-\end{verbatim}
-
-\begin{verbatim}
-## The following object is masked from Wage (pos = 4):
-## 
-##     year
-\end{verbatim}
-
-\begin{verbatim}
-## The following object is masked from mtcars (pos = 10):
-## 
-##     mpg
-\end{verbatim}
-
-\begin{verbatim}
-## The following objects are masked from Auto (pos = 17):
-## 
-##     acceleration, cylinders, displacement, horsepower, mpg, name,
-##     origin, weight, year
-\end{verbatim}
-
-\begin{verbatim}
-## The following object is masked from Wage (pos = 23):
-## 
-##     year
-\end{verbatim}
-
-\begin{verbatim}
-## The following object is masked from package:ggplot2:
-## 
-##     mpg
-\end{verbatim}
-
-\begin{verbatim}
-## The following object is masked from mtcars (pos = 47):
-## 
-##     mpg
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{mpg01 <-}\StringTok{ }\KeywordTok{rep}\NormalTok{(}\DecValTok{0}\NormalTok{, }\KeywordTok{length}\NormalTok{(mpg))}
-\CommentTok{# Sustitución de “0”s por “1”s (rendimiento alto) si mpg > mediana(mpg) }
-\NormalTok{mpg01[mpg }\OperatorTok{>}\StringTok{ }\KeywordTok{median}\NormalTok{(mpg)] <-}\StringTok{ }\DecValTok{1}
-\NormalTok{Auto <-}\StringTok{ }\KeywordTok{data.frame}\NormalTok{(Auto, mpg01)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{# Correlación entre variables (excluyendo la variable cualitativa “name”)}
-\KeywordTok{cor}\NormalTok{(Auto[, }\OperatorTok{-}\DecValTok{9}\NormalTok{], }\DataTypeTok{method =} \StringTok{"pearson"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-##                     mpg  cylinders displacement horsepower     weight
-## mpg           1.0000000 -0.7776175   -0.8051269 -0.7784268 -0.8322442
-## cylinders    -0.7776175  1.0000000    0.9508233  0.8429834  0.8975273
-## displacement -0.8051269  0.9508233    1.0000000  0.8972570  0.9329944
-## horsepower   -0.7784268  0.8429834    0.8972570  1.0000000  0.8645377
-## weight       -0.8322442  0.8975273    0.9329944  0.8645377  1.0000000
-## acceleration  0.4233285 -0.5046834   -0.5438005 -0.6891955 -0.4168392
-## year          0.5805410 -0.3456474   -0.3698552 -0.4163615 -0.3091199
-## origin        0.5652088 -0.5689316   -0.6145351 -0.4551715 -0.5850054
-## mpg01         0.8369392 -0.7591939   -0.7534766 -0.6670526 -0.7577566
-## mpg01.1       0.8369392 -0.7591939   -0.7534766 -0.6670526 -0.7577566
-##              acceleration       year     origin      mpg01    mpg01.1
-## mpg             0.4233285  0.5805410  0.5652088  0.8369392  0.8369392
-## cylinders      -0.5046834 -0.3456474 -0.5689316 -0.7591939 -0.7591939
-## displacement   -0.5438005 -0.3698552 -0.6145351 -0.7534766 -0.7534766
-## horsepower     -0.6891955 -0.4163615 -0.4551715 -0.6670526 -0.6670526
-## weight         -0.4168392 -0.3091199 -0.5850054 -0.7577566 -0.7577566
-## acceleration    1.0000000  0.2903161  0.2127458  0.3468215  0.3468215
-## year            0.2903161  1.0000000  0.1815277  0.4299042  0.4299042
-## origin          0.2127458  0.1815277  1.0000000  0.5136984  0.5136984
-## mpg01           0.3468215  0.4299042  0.5136984  1.0000000  1.0000000
-## mpg01.1         0.3468215  0.4299042  0.5136984  1.0000000  1.0000000
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{par}\NormalTok{(}\DataTypeTok{mfrow=}\KeywordTok{c}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{))}
-\KeywordTok{boxplot}\NormalTok{(cylinders }\OperatorTok{~}\StringTok{ }\NormalTok{mpg01, }\DataTypeTok{data =}\NormalTok{ Auto, }\DataTypeTok{main =} \StringTok{"Cylinders vs mpg01"}\NormalTok{)}
-\KeywordTok{boxplot}\NormalTok{(displacement }\OperatorTok{~}\StringTok{ }\NormalTok{mpg01, }\DataTypeTok{data =}\NormalTok{ Auto, }\DataTypeTok{main =} \StringTok{"Displacement vs mpg01"}\NormalTok{)}
-\KeywordTok{boxplot}\NormalTok{(horsepower }\OperatorTok{~}\StringTok{ }\NormalTok{mpg01, }\DataTypeTok{data =}\NormalTok{ Auto, }\DataTypeTok{main =} \StringTok{"Horsepower vs mpg01"}\NormalTok{)}
-\KeywordTok{boxplot}\NormalTok{(weight }\OperatorTok{~}\StringTok{ }\NormalTok{mpg01, }\DataTypeTok{data =}\NormalTok{ Auto, }\DataTypeTok{main =} \StringTok{"Weight vs mpg01"}\NormalTok{)}
-\KeywordTok{boxplot}\NormalTok{(acceleration }\OperatorTok{~}\StringTok{ }\NormalTok{mpg01, }\DataTypeTok{data =}\NormalTok{ Auto, }\DataTypeTok{main =} \StringTok{"Acceleration vs mpg01"}\NormalTok{)}
-\KeywordTok{boxplot}\NormalTok{(year }\OperatorTok{~}\StringTok{ }\NormalTok{mpg01, }\DataTypeTok{data =}\NormalTok{ Auto, }\DataTypeTok{main =} \StringTok{"Year vs mpg01"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{center}\includegraphics{cursoR_files/figure-latex/auto-boxplots-1} \end{center}
-
-Representación de distribución en histogramas:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(ggplot2)}
-\KeywordTok{library}\NormalTok{(gridExtra)}
-\NormalTok{p1 <-}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Auto, }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ displacement)) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_histogram}\NormalTok{(}\DataTypeTok{position =} \StringTok{"identity"}\NormalTok{,}
-\DataTypeTok{alpha =} \FloatTok{0.5}\NormalTok{,}
-\KeywordTok{aes}\NormalTok{(}\DataTypeTok{fill =} \KeywordTok{as.factor}\NormalTok{(mpg01)))}\OperatorTok{+}\StringTok{ }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{fill =} \StringTok{"mpg01"}\NormalTok{)}
-\NormalTok{p2 <-}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Auto, }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ horsepower)) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_histogram}\NormalTok{(}\DataTypeTok{position =} \StringTok{"identity"}\NormalTok{,}
-\DataTypeTok{alpha =} \FloatTok{0.5}\NormalTok{,}
-\KeywordTok{aes}\NormalTok{(}\DataTypeTok{fill =} \KeywordTok{as.factor}\NormalTok{(mpg01)))}\OperatorTok{+}\StringTok{ }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{fill =} \StringTok{"mpg01"}\NormalTok{)}
-\NormalTok{p3 <-}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Auto, }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ weight)) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_histogram}\NormalTok{(}\DataTypeTok{position =} \StringTok{"identity"}\NormalTok{,}
-\DataTypeTok{alpha =} \FloatTok{0.5}\NormalTok{,}
-\KeywordTok{aes}\NormalTok{(}\DataTypeTok{fill =} \KeywordTok{as.factor}\NormalTok{(mpg01)))}\OperatorTok{+}\StringTok{ }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{fill =} \StringTok{"mpg01"}\NormalTok{)}
-\KeywordTok{grid.arrange}\NormalTok{(p1, p2, p3)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-\end{verbatim}
-
-\begin{center}\includegraphics{cursoR_files/figure-latex/auto-1} \end{center}
-
-\textbf{Cálculo de la función discriminante}
-
-Primero dividiremos el set de datos en entrenamiento (80\%) para ajustar
-el modelo, y en test (20\%) para evaluarlo.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{set.seed}\NormalTok{(}\DecValTok{1}\NormalTok{)}
-\NormalTok{entrenamiento <-}\StringTok{ }\KeywordTok{sample}\NormalTok{(}\DataTypeTok{x =} \KeywordTok{nrow}\NormalTok{(Auto), }\DataTypeTok{size =} \KeywordTok{nrow}\NormalTok{(Auto)}\OperatorTok{*}\FloatTok{0.8}\NormalTok{, }\DataTypeTok{replace =} \OtherTok{FALSE}\NormalTok{) }\CommentTok{# Subgrupo de datos de entrenamiento}
-\NormalTok{Auto.train <-}\StringTok{ }\NormalTok{Auto[entrenamiento,]}
-\CommentTok{# Subgrupo de datos de test}
-\NormalTok{Auto.test <-}\StringTok{ }\NormalTok{Auto[}\OperatorTok{-}\NormalTok{entrenamiento,]}
-\end{Highlighting}
-\end{Shaded}
-
-Función \texttt{lda} en la librería \texttt{MASS}:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(MASS)}
-\CommentTok{# Modelo LDA con los datos de entrenamiento}
-\NormalTok{modelo.lda <-}\StringTok{ }\KeywordTok{lda}\NormalTok{(}\DataTypeTok{formula =}\NormalTok{ mpg01 }\OperatorTok{~}\StringTok{ }\NormalTok{cylinders }\OperatorTok{+}\StringTok{ }\NormalTok{displacement }\OperatorTok{+}\StringTok{ }\NormalTok{horsepower }\OperatorTok{+}\StringTok{ }\NormalTok{weight , }\DataTypeTok{data =}\NormalTok{ Auto.train)}
-
-\NormalTok{modelo.lda}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## Call:
-## lda(mpg01 ~ cylinders + displacement + horsepower + weight, data = Auto.train)
-## 
-## Prior probabilities of groups:
-##        0        1 
-## 0.514377 0.485623 
-## 
-## Group means:
-##   cylinders displacement horsepower   weight
-## 0  6.677019     269.8323  128.71429 3601.379
-## 1  4.210526     117.4145   78.57895 2350.526
-## 
-## Coefficients of linear discriminants:
-##                        LD1
-## cylinders    -0.4183687107
-## displacement -0.0017457149
-## horsepower    0.0028180950
-## weight       -0.0009283838
-\end{verbatim}
-
 \section{K-medias}\label{k-medias}
 
 K-means Clustering es un algoritmo de aprendizaje no supervisado que
@@ -8370,9 +8155,9 @@ calcular la matriz de confusión.
 \begin{verbatim}
 ##    
 ##      1  2  3
-##   1  0 59  0
+##   1 59  0  0
 ##   2  3  3 65
-##   3 48  0  0
+##   3  0 48  0
 \end{verbatim}
 
 \section{Cluster jerárquico}\label{cluster-jeruxe1rquico}
@@ -8947,31 +8732,6 @@ negativo).
 \end{Shaded}
 
 \begin{center}\includegraphics{cursoR_files/figure-latex/nntools-2} \end{center}
-
-\chapter{Extras}\label{extras}
-
-\section{\texorpdfstring{El paquete
-\texttt{caret}}{El paquete caret}}\label{el-paquete-caret}
-
-El paquete \texttt{caret} (\emph{classification and regression training,
-Kuhn (2016)}) incluye una serie de funciones que facilitan el uso de
-decenas de métodos complejos de clasificación y regresión. Utilizar este
-paquete en lugar de las funciones originales de los métodos presenta dos
-ventajas:
-
-\begin{itemize}
-\item
-  Permite utilizar un código unificado para aplicar reglas de
-  clasificación muy distintas, implementadas en diferentes paquetes.
-\item
-  Es más fácil poner en práctica algunos procedimientos usuales en
-  problemas de clasificación. Por ejemplo, hay funciones específicas
-  para dividir la muestra en datos de entrenamiento y datos de test o
-  para ajustar parámetros mediante validación cruzada.
-\end{itemize}
-
-Mucha información y ayuda sobre uso del paquete se puede encontrar en la
-página web \url{http://topepo.github.io/caret/index.html}.
 
 \bibliography{book.bib,packages.bib}
 
