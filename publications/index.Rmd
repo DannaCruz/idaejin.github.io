@@ -65,6 +65,10 @@ output:
 
 #### In proceedings
 
+* **Lee, D.-J. and Durbán M. (2018)** *"Predicting above-ground treebiomass: a Seemingly Unrelated Penalized Regression approach"* in the Proceedings of the 33rd International Workshop on Statistical Modelling, Bristol, United Kingdom. Vol I. Pages 174--178, Eds. Augustin N. and Wood, S.N.
+
+* **Ayma, D., Lee, D.-J. and Durbán M. (2017)** *"Combining information at different scales in spatial epidemiology: a Composite Link Generalized Additive Model Approach"* in the Proceedings of the 32st International Workshop on Statistical Modelling, Gröningen, The Netherlands. Vol II. Pages 241--244, Eds. Grzegorczyk, M. and Ceoldo G.
+
 * **Lee, D.-J. Ayma, D., Durbán M. and Van de Kasteele, J. (2016)** *"Smooth
 composite link models for spatio-temporal dissagregation of epidemiological data"* in the Proceedings of the 31st International Workshop on Statistical Modelling, Rennes, France.
 
