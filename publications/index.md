@@ -26,6 +26,8 @@ output:
 
 * **Citores, L., Ibaibarriaga, L., Lee, D.-J., Brewer, M.J., Santos, M., Chust, G. (2019)**, "Modelling species presence-absence in the ecological niche theory framework using shape-constrained generalized additive models". _Accepted in: Ecological Modelling._
 
+*	**Carballo, A., Durbán M., Kauermann, G., and Lee, D.-J. (2019)**. "A general framework for prediction in penalized regression". _Accepted in Statistical Modelling._
+
 * **Page, G.L., Rodríguez-Álvarez, MX., Lee, D.-J. (2019)**, "Hierarchical Modeling of Growth Curve Derivatives via Sequences of Quotient Differences". _Accepted in: Journal of the Royal Statistical Society - Series C: Applied Statistics._
 
 * **Najera-Zuloaga, J., Lee, D.-J., and Arostegui, I. (2019)**, "A beta-binomial mixed-effects model approach for analysing longitudinal discrete and bounded outcomes". *Biometrical Journal*, volume 61, Issue 3, May 2019, pages 600-615. [https://doi.org/10.1002/bimj.201700251](https://doi.org/10.1002/bimj.201700251)
